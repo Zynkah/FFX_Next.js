@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "clsx": "^1.2.1",
+    "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
