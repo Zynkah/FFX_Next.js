@@ -23,8 +23,6 @@ export default function Home({ allPostsData }) {
         <p>Welcome To Spira</p>
         <p>
           Slowly I will turn this sample page into my FFX fan page. Stay tuned!
-          <br />
-          Read <Link href="/posts/first-post">this page!</Link>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
