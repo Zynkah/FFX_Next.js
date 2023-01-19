@@ -22,9 +22,27 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <hr />
-        <p>Welcome To Spira</p>
+        <h1>Welcome To Spira</h1>
         <p>
-          Slowly I will turn this sample page into my FFX fan page. Stay tuned!
+          The world of Spira is caught in a cycle of death. Its people live in
+          fear of the great menace known only as Sin. The people seek solace in
+          the temples of Yevon. The Yevon faith teaches that the only way to
+          temporarily defeating Sin is for the summoners to sacrifice their
+          lives while performing the Final Summoning. To this end, summoners
+          periodically set out on pilgrimages with the goal of returning peace
+          to Spira. But even the Final Summoning cannot kill Sin - it only
+          prevents Sin from reviving for a temporary amount of time. In those
+          peaceful periods, known as Calms, the people receive a brief respite
+          from Sin's menace.
+          <br />
+          Lady Yuna of Besaid Village is one such summoner, determined to bring
+          about the next Calm. She meets Tidus, a boy cast into Spira from Dream
+          Zanarkand. Faced with the unfamiliar world, the young man becomes one
+          of Yuna's guardians and joins her on her journey. Their quest throws
+          them into a series of shocking events, including the devastation of
+          the anti-Sin ranks of the Crusaders, the revelation of Sin's true
+          identity, and the betrayal of the temples. Despite this, the group
+          overcomes the trials and forges its own story.
         </p>
         <hr />
       </section>
