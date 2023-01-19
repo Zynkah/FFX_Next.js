@@ -20,6 +20,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <Link href={`/characters/`}>Characters</Link>
       <section className={utilStyles.headingMd}>
         <hr />
         <h1>Welcome To Spira</h1>
