@@ -22,9 +22,10 @@ export default function Home({ allPostsData }) {
       </Head>
       <Link href={`/characters/`}>Characters |</Link>
       <Link href={`/races/`}> Races |</Link>
-      <Link href={`/aeons/`}> Aeons |</Link>
       <Link href={`/summoners/`}> Summoners |</Link>
+      <Link href={`/aeons/`}> Aeons |</Link>
       <Link href={`/locations/`}> Locations |</Link>
+      <Link href={`/blitzball/`}> Blitzball |</Link>
       <section className={utilStyles.headingMd}>
         <hr />
         <h1>Welcome To Spira</h1>
