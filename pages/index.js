@@ -26,6 +26,7 @@ export default function Home({ allPostsData }) {
       <Link href={`/aeons/`}> Aeons |</Link>
       <Link href={`/locations/`}> Locations |</Link>
       <Link href={`/blitzball/`}> Blitzball |</Link>
+      <Link href={`/walkthrough/`}> Walkthrough </Link>
       <section className={utilStyles.headingMd}>
         <hr />
         <h1>Welcome To Spira</h1>
