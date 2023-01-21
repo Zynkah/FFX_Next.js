@@ -137,6 +137,12 @@ export default function Summoners() {
         happiness and risks warning her when her party is pursued by Yevon.
       </p>
       <hr />
+      <h3>O'aka's little sister</h3>
+      <p>
+        She is not named and only very briefly mentioned in the story. All that
+        is known is that she was younger than 22 when she passed.
+      </p>
+      <hr />
     </Layout>
   );
 }
