@@ -1,4 +1,5 @@
 import Layout from "../components/layout";
+import Image from "next/image";
 
 export default function Aeons() {
   return (
@@ -6,6 +7,12 @@ export default function Aeons() {
       <h1>Aeons</h1>
       <hr />
       <h3>Valefor</h3>
+      <Image 
+      src="/images/Valefor.jpeg"
+      height={400}
+      width={513}
+      alt="Valefor"
+      />
       <p>
         An aeon with great wings whose fayth statue is located in Besaid Temple.
         This aerial aeon easily dodges many attacks from the ground. Valefor's
@@ -27,6 +34,12 @@ export default function Aeons() {
       </p>
       <hr />
       <h3>Ifrit</h3>
+      <Image 
+      src="/images/Ifrit.jpg"
+      height={400}
+      width={413}
+      alt="Ifrit"
+      />
       <p>
         A demon that holds dominion over fire, with a fayth statue situated in
         Kilika Temple. According to the writing on its statue illustration,
@@ -43,6 +56,12 @@ export default function Aeons() {
       </p>
       <hr />
       <h3>Ixion</h3>
+      <Image 
+      src="/images/Ixion.jpg"
+      height={400}
+      width={482}
+      alt="Ixion"
+      />
       <p>
         A horned beast covered by lightning whose fayth statue stands in Djose
         Temple. Ixion can manipulate lightning, an affinity represented by the
@@ -59,6 +78,12 @@ export default function Aeons() {
       </p>
       <hr />
       <h3>Shiva</h3>
+      <Image 
+      src="/images/Shiva.jpg"
+      height={400}
+      width={378}
+      alt="Shiva"
+      />
       <p>
         The frozen queen of ice whose fayth statue is situated inside Macalania
         Temple. The mantle in the full-body image is cast off in game when she
@@ -79,6 +104,12 @@ export default function Aeons() {
       </p>
       <hr />
       <h3>Bahamut</h3>
+      <Image 
+      src="/images/Bahamut.jpg"
+      height={400}
+      width={380}
+      alt="Bahamut"
+      />
       <p>
         A four-winged sacred beast with a fayth statue located in Bevelle.
         Unlike the other aeons, the king of dragons is heralded by multiple
@@ -98,6 +129,12 @@ export default function Aeons() {
       </p>
       <hr />
       <h3>Yojimbo</h3>
+      <Image 
+      src="/images/Yojimbo.jpeg"
+      height={400}
+      width={457}
+      alt="Yojimbo"
+      />
       <p>
         A master swordsman whose fayth statue is situated in the Cavern of the
         Stolen Fayth. The blade is his left hand, Zanmato, can only be seen in
@@ -121,6 +158,12 @@ export default function Aeons() {
       </p>
       <hr />
       <h3>Anima</h3>
+      <Image 
+      src="/images/Anima.jpeg"
+      height={400}
+      width={358}
+      alt="Anima"
+      />
       <p>
         An aeon bound in heavy chains whose fayth statue can be found in the
         temple of Yevon-Baaj. Its fayth is Seymour's mother, and the plate
@@ -138,6 +181,12 @@ export default function Aeons() {
       </p>
       <hr />
       <h3>Magus Sisters</h3>
+      <Image 
+      src="/images/Magus_Sisters.jpeg"
+      height={400}
+      width={427}
+      alt="Magus Sisters"
+      />
       <p>
         Three sister aeons whose fayth statue is situated in Remiem Temple. Each
         sister has a different insect motif -- a ladybug for Cindy, the eldest;
