@@ -1,4 +1,5 @@
 import Layout from "../components/layout";
+import Image from "next/image";
 
 export default function Characters() {
   return (
@@ -6,6 +7,12 @@ export default function Characters() {
       <h1>Characters</h1>
       <hr />
       <h3>Tidus</h3>
+      <Image 
+      src="/images/Tidus.jpg"
+      height={400}
+      width={363}
+      alt="Tidus"
+      />
       <p>
         The optimistic crybaby who gives hope to a world gripped in the spiral
         of death. A popular blitzball player from the metropolis of Zanarkand.
@@ -24,6 +31,12 @@ export default function Characters() {
       </p>
       <hr />
       <h3>Yuna</h3>
+      <Image 
+      src="/images/Yuna.jpg"
+      height={400}
+      width={363}
+      alt="Yuna"
+      />
       <p>
         The summoner possessing endless kindness, willing to sacrifice herself
         to save the world. Daughter of High Summoner Braska. When her father
@@ -51,6 +64,12 @@ export default function Characters() {
       </p>
       <hr />
       <h3>Auron</h3>
+      <Image 
+      src="/images/Auron.jpg"
+      height={400}
+      width={345}
+      alt="Auron"
+      />
       <p>
         The legendary guardian who guides a young man to fulfill a promise to a
         friend. A man tasked with watching over Tidus in Dream Zanarkand who
@@ -69,6 +88,12 @@ export default function Characters() {
       </p>
       <hr />
       <h3>Kimahri</h3>
+      <Image 
+      src="/images/Kimahri.jpg"
+      height={400}
+      width={408}
+      alt="Kimahri"
+      />
       <p>
         The hornless Ronso youth dedicating his life to Yuna. A Ronso who serves
         as Yuna's first guardian. His taciturn nature and leonine appearance
@@ -85,6 +110,12 @@ export default function Characters() {
       </p>
       <hr />
       <h3>Wakka</h3>
+      <Image 
+      src="/images/Wakka.jpg"
+      height={400}
+      width={290}
+      alt="Wakka"
+      />
       <p>
         A good-natured older-brother type who has dedicated his youth to
         blitzball. The young coach and most valuable player of Besaid Village's
@@ -102,6 +133,12 @@ export default function Characters() {
       </p>
       <hr />
       <h3>Lulu</h3>
+      <Image 
+      src="/images/Lulu.jpg"
+      height={400}
+      width={313}
+      alt="Lulu"
+      />
       <p>
         The severe yet sweet Black Mage who aids her comrades with a wealth of
         knowledge. A female Black Mage acting as Yuna's guardian who watches
@@ -119,6 +156,12 @@ export default function Characters() {
       </p>
       <hr />
       <h3>Rikku</h3>
+      <Image 
+      src="/images/Rikku.jpg"
+      height={400}
+      width={265}
+      alt="Rikku"
+      />
       <p>
         A hearty and hard-working Al Bhed lass, constantly thinking about what
         she can accomplish. Daughter to the chief of the Al Bhed, a tribe of
