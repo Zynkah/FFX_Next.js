@@ -11,6 +11,9 @@ export default function Aeons() {
       src="/images/Valefor.jpeg"
       height={400}
       width={513}
+      style={{
+        margin: "auto",
+      }}
       alt="Valefor"
       />
       <p>
@@ -38,6 +41,9 @@ export default function Aeons() {
       src="/images/Ifrit.jpg"
       height={400}
       width={413}
+      style={{
+        margin: "auto",
+      }}
       alt="Ifrit"
       />
       <p>
@@ -60,6 +66,9 @@ export default function Aeons() {
       src="/images/Ixion.jpg"
       height={400}
       width={482}
+      style={{
+        margin: "auto",
+      }}
       alt="Ixion"
       />
       <p>
@@ -82,6 +91,9 @@ export default function Aeons() {
       src="/images/Shiva.jpg"
       height={400}
       width={378}
+      style={{
+        margin: "auto",
+      }}
       alt="Shiva"
       />
       <p>
@@ -108,6 +120,9 @@ export default function Aeons() {
       src="/images/Bahamut.jpg"
       height={400}
       width={380}
+      style={{
+        margin: "auto",
+      }}
       alt="Bahamut"
       />
       <p>
@@ -133,6 +148,9 @@ export default function Aeons() {
       src="/images/Yojimbo.jpeg"
       height={400}
       width={457}
+      style={{
+        margin: "auto",
+      }}
       alt="Yojimbo"
       />
       <p>
@@ -162,6 +180,9 @@ export default function Aeons() {
       src="/images/Anima.jpeg"
       height={400}
       width={358}
+      style={{
+        margin: "auto",
+      }}
       alt="Anima"
       />
       <p>
@@ -185,6 +206,9 @@ export default function Aeons() {
       src="/images/Magus_Sisters.jpeg"
       height={400}
       width={427}
+      style={{
+        margin: "auto",
+      }}
       alt="Magus Sisters"
       />
       <p>

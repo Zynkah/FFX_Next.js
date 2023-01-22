@@ -1,4 +1,5 @@
 import Layout from "../components/layout";
+import Image from 'next/image';
 
 export default function Races() {
   return (
@@ -8,6 +9,15 @@ export default function Races() {
       <h2>Humaniods</h2>
       <hr />
       <h3>Humans</h3>
+      <Image 
+      src="/images/Humans.jpeg"
+      height={400}
+      width={500}
+      style={{
+        margin: "auto",
+      }}
+      alt="Human"
+      />
       <p>
         The majority of the population on Spira. They are capable of bearing
         children with the Al Bhed and the Guado. They have a variety of
@@ -19,6 +29,15 @@ export default function Races() {
       </p>
       <hr />
       <h3>Al Bhed</h3>
+      <Image 
+      src="/images/Al_Bhed.jpg"
+      height={300}
+      width={490}
+      style={{
+        margin: "auto",
+      }}
+      alt="Al Bhed"
+      />
       <p>
         A tribe of technologists. Making up 10% of the Spiran population. They
         have a unique language and, unlike other races in Spira, they use
@@ -37,6 +56,15 @@ export default function Races() {
       </p>
       <hr />
       <h3>Guado</h3>
+      <Image 
+      src="/images/Guado.jpg"
+      height={300}
+      width={700}
+      style={{
+        margin: "auto",
+      }}
+      alt="Guado"
+      />
       <p>
         A humanoid race with wooden and elvish appearance, with long limbs,
         oversized hands with claw-like nails, prominent veins on their face and
@@ -57,6 +85,15 @@ export default function Races() {
       </p>
       <hr />
       <h3>Ronso</h3>
+      <Image 
+      src="/images/Ronso.webp"
+      height={300}
+      width={475}
+      style={{
+        margin: "auto",
+      }}
+      alt="Ronso"
+      />
       <p>
         The Ronso is a race of muscular, anthropomorphic feline humanoids from
         the world of Spira. They stand above two meters in height, the males are
@@ -77,6 +114,15 @@ export default function Races() {
       </p>
       <hr />
       <h3>Fayths & Aeons</h3>
+      <Image 
+      src="/images/Aeons.jpg"
+      height={400}
+      width={400}
+      style={{
+        margin: "auto",
+      }}
+      alt="Aeons"
+      />
       <p>
         The Fayth are humans who willingly had their souls sealed in statues in
         a state of dreaming in Spira. A ritual that removes their souls from
@@ -104,6 +150,15 @@ export default function Races() {
       <h2>Demi-Humans</h2>
       <hr />
       <h3>Hypello</h3>
+      <Image 
+      src="/images/Hypello.png"
+      height={400}
+      width={317}
+      style={{
+        margin: "auto",
+      }}
+      alt="Hypello"
+      />
       <p>
         A race of amphibian humanoid creatures. The Hypello have a speech
         impediment, often lisping any words with an 'S', for example shay
@@ -116,6 +171,15 @@ export default function Races() {
       </p>
       <hr />
       <h3>Pelupelu</h3>
+      <Image 
+      src="/images/pelupelu.jpeg"
+      height={400}
+      width={192}
+      style={{
+        margin: "auto",
+      }}
+      alt="Pelupelu"
+      />
       <p>
         A race in Spira that appear to be as tall as a human child. They speak
         very fast and wear a bird-like mask. Tobli is the most notable Pelupelu
@@ -124,6 +188,15 @@ export default function Races() {
       </p>
       <hr />
       <h3>Yevon Music Brigade</h3>
+      <Image 
+      src="/images/Borra.webp"
+      height={400}
+      width={400}
+      style={{
+        margin: "auto",
+      }}
+      alt="Borra"
+      />
       <p>
         They are spirits of Macalania Woods. There are three known types: Avian
         - Borra, Bayra, Frog - Daraya, Donga and Mouse - Pukara, Pukatak. The
@@ -137,6 +210,15 @@ export default function Races() {
       <h2>Creatures</h2>
       <hr />
       <h3>Chocobos</h3>
+      <Image 
+      src="/images/Chocobo.jpg"
+      height={400}
+      width={280}
+      style={{
+        margin: "auto",
+      }}
+      alt="Chocobo"
+      />
       <p>
         Due to the ban of machina, chocobo-powered machines were in wide demand
         until the coming of the Eternal Calm. Chocobos are most commonly seen on
@@ -148,6 +230,15 @@ export default function Races() {
       </p>
       <hr />
       <h3>Shoopufs</h3>
+      <Image 
+      src="/images/Shoopuf.jpeg"
+      height={400}
+      width={577}
+      style={{
+        margin: "auto",
+      }}
+      alt="Shoopuf"
+      />
       <p>
         A species of large elephantine animals. They are used as pack animals by
         the Hypello to transport customers across the Moonflow. They are gentle

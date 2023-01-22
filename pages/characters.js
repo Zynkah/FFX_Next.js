@@ -11,6 +11,9 @@ export default function Characters() {
       src="/images/Tidus.jpg"
       height={400}
       width={363}
+      style={{
+        margin: "auto",
+      }}
       alt="Tidus"
       />
       <p>
@@ -35,6 +38,9 @@ export default function Characters() {
       src="/images/Yuna.jpg"
       height={400}
       width={363}
+      style={{
+        margin: "auto",
+      }}
       alt="Yuna"
       />
       <p>
@@ -68,6 +74,9 @@ export default function Characters() {
       src="/images/Auron.jpg"
       height={400}
       width={345}
+      style={{
+        margin: "auto",
+      }}
       alt="Auron"
       />
       <p>
@@ -92,6 +101,9 @@ export default function Characters() {
       src="/images/Kimahri.jpg"
       height={400}
       width={408}
+      style={{
+        margin: "auto",
+      }}
       alt="Kimahri"
       />
       <p>
@@ -114,6 +126,9 @@ export default function Characters() {
       src="/images/Wakka.jpg"
       height={400}
       width={290}
+      style={{
+        margin: "auto",
+      }}
       alt="Wakka"
       />
       <p>
@@ -137,6 +152,9 @@ export default function Characters() {
       src="/images/Lulu.jpg"
       height={400}
       width={313}
+      style={{
+        margin: "auto",
+      }}
       alt="Lulu"
       />
       <p>
@@ -160,6 +178,9 @@ export default function Characters() {
       src="/images/Rikku.jpg"
       height={400}
       width={265}
+      style={{
+        margin: "auto",
+      }}
       alt="Rikku"
       />
       <p>
