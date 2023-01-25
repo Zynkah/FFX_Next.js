@@ -1,4 +1,5 @@
 import Layout from "../components/layout";
+import Image from "next/image";
 
 export default function Locations() {
   return (
@@ -14,6 +15,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Dream Zanarkand</h3>
+      <Image 
+      src="/images/Dream_Zanarkand.jpg"
+      height={400}
+      width={554}
+      style={{
+        margin: "auto",
+      }}
+      alt="Dream Zanarkand"
+      />
       <p>
         The mechanical metropolis in which Tidus grew up. This city is actually
         a dream summoned by Yu Yevon, who sought to reproduce Zanarkand and its
@@ -22,6 +32,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Submerged Ruins - Temple of Yevon-Baaj</h3>
+      <Image 
+      src="/images/Yevon-Baaj.jpg"
+      height={400}
+      width={532}
+      style={{
+        margin: "auto",
+      }}
+      alt="Yevon-Baaj"
+      />
       <p>
         The ruins of a Yevon temple destroyed by Sin decades earlier, Seymour
         lived here as a youth in the care of his mother, and in this temple's
@@ -30,6 +49,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Salvage Ship</h3>
+      <Image 
+      src="/images/Salvage_Ship.jpg"
+      height={400}
+      width={710}
+      style={{
+        margin: "auto",
+      }}
+      alt="Salvage Ship"
+      />
       <p>
         A ship that belongs to the Al Bhed. It is used to go diving in ruins for
         machina. Brother is the leader of the ship. You visit this ship just
@@ -37,6 +65,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Besaid Island</h3>
+      <Image 
+      src="/images/Besaid_Island.jpg"
+      height={400}
+      width={596}
+      style={{
+        margin: "auto",
+      }}
+      alt="Besaid Island"
+      />
       <p>
         An island on the southern tip of Spira. It is a place abundant with
         nature. Its mountain regions are overgrown and with thick vegetation,
@@ -45,12 +82,30 @@ export default function Locations() {
       </p>
       <hr />
       <h3>S.S. Liki</h3>
+      <Image 
+      src="/images/S.S._Liki.webp"
+      height={400}
+      width={711}
+      style={{
+        margin: "auto",
+      }}
+      alt="S.S. Liki"
+      />
       <p>
         The ship that ferries people between the islands of Besaid and Kilika.
         It is powered by chocobos and sails.
       </p>
       <hr />
       <h3>Kilika Island </h3>
+      <Image 
+      src="/images/Kilika_Island.webp"
+      height={400}
+      width={579}
+      style={{
+        margin: "auto",
+      }}
+      alt="Kilika Island"
+      />
       <p>
         An island to the northwest of Besaid Island. Its residents reside in
         Kilika Port, a community built in the shallows. Lying just beyond the
@@ -59,6 +114,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>S.S. Winno</h3>
+      <Image 
+      src="/images/S.S._Winno.webp"
+      height={400}
+      width={537}
+      style={{
+        margin: "auto",
+      }}
+      alt="S.S. Winno"
+      />
       <p>
         The ship that ferries people between the island of Kilika and the city
         of Luca. This is where you perform the Jecht Shot for the first time.
@@ -70,6 +134,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Luca</h3>
+      <Image 
+      src="/images/Luca.jpg"
+      height={400}
+      width={712}
+      style={{
+        margin: "auto",
+      }}
+      alt="Lucca"
+      />
       <p>
         The second largest city in Spira, it is famed for its massive blitzball
         stadium and a theater that plays movies and music. Luca has its own
@@ -78,6 +151,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Mi'ihen Highroad</h3>
+      <Image 
+      src="/images/Mi'ihen.jpg"
+      height={400}
+      width={578}
+      style={{
+        margin: "auto",
+      }}
+      alt="Mi'ihen Highroad"
+      />
       <p>
         A highway famously walked by the hero Mi'ihen eight hundred years in the
         past. The Hero was the founder of the Crusaders and he has a statue on
@@ -87,6 +169,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Mushroom Rock Road</h3>
+      <Image 
+      src="/images/Mushroom_rock.jpg"
+      height={400}
+      width={574}
+      style={{
+        margin: "auto",
+      }}
+      alt="Mushroom Rock"
+      />
       <p>
         A highway connected to the northern tip of the Mi'ihen Highroad. The
         surrounding rockface resembles a pile of mushrooms; hence the name. The
@@ -95,6 +186,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Djose</h3>
+      <Image 
+      src="/images/Djose.jpg"
+      height={400}
+      width={704}
+      style={{
+        margin: "auto",
+      }}
+      alt="Djose"
+      />
       <p>
         A region located to the south of central Spira. The Djose Highroad is
         know for the wind-eroded cliffs running through the coastlines. Many
@@ -103,6 +203,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Moonflow</h3>
+      <Image 
+      src="/images/Moonflow.png"
+      height={400}
+      width={533}
+      style={{
+        margin: "auto",
+      }}
+      alt="Moonflow"
+      />
       <p>
         A large river that crosses the continent from north to south, filled
         with sunken ruins from a vanished era of technological civilization.
@@ -113,6 +222,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Guadosalam</h3>
+      <Image 
+      src="/images/Guadosalam.jpg"
+      height={400}
+      width={711}
+      style={{
+        margin: "auto",
+      }}
+      alt="Guadosalam"
+      />
       <p>
         The city of the demihuman Guado people. Seymour's mansion is here, as is
         a mystical area replete with pyreflies that is known as the Farplane.
@@ -122,6 +240,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Thunder Plains</h3>
+      <Image 
+      src="/images/Thunder_Plains.jpg"
+      height={400}
+      width={300}
+      style={{
+        margin: "auto",
+      }}
+      alt="Thunder Plains"
+      />
       <p>
         A dangerous wasteland where rain and lightning are constantly released
         from the dark clouds that blanket the sky. In the past, travelers often
@@ -131,6 +258,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Macalania</h3>
+      <Image 
+      src="/images/Macalania.jpg"
+      height={400}
+      width={285}
+      style={{
+        margin: "auto",
+      }}
+      alt="Macalania"
+      />
       <p>
         A shimmering forest can be found in the region, as well as a lake frozen
         over by the fayth in the local temple. The Macalania Woods connect to
@@ -139,6 +275,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Bikanel Island</h3>
+      <Image 
+      src="/images/Bikanel_Island.jpg"
+      height={400}
+      width={711}
+      style={{
+        margin: "auto",
+      }}
+      alt="Bikanel Island"
+      />
       <p>
         A large island to the west of the main continent, largely covered in
         desert. Due to a lack of visitors, the Al Bhed that had been persecuted
@@ -147,6 +292,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Home</h3>
+      <Image 
+      src="/images/Home.jpg"
+      height={400}
+      width={711}
+      style={{
+        margin: "auto",
+      }}
+      alt="Home"
+      />
       <p>
         It is the home of the Al Bhed clan located on Bikanel Island. It is an
         underground fortress hidden amid the Bikanel desert. It was built under
@@ -157,6 +311,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Bevelle</h3>
+      <Image 
+      src="/images/Bevelle.webp"
+      height={400}
+      width={569}
+      style={{
+        margin: "auto",
+      }}
+      alt="Bevelle"
+      />
       <p>
         The largest city in all of Spira, Bevelle is the cradle of Yevon's
         teachings, and the head temple of Yevon sits proudly in the middle of
@@ -165,6 +328,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Calm Lands</h3>
+      <Image 
+      src="/images/Calm_Lands.jpg"
+      height={400}
+      width={597}
+      style={{
+        margin: "auto",
+      }}
+      alt="Calm Lands"
+      />
       <p>
         The plain where high summoners across multiple generations challenged
         Sin in order to bring about the temporary peace of Calm. To the east is
@@ -173,6 +345,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Mt. Gagazet</h3>
+      <Image 
+      src="/images/Mt_Gagazet.jpg"
+      height={400}
+      width={524}
+      style={{
+        margin: "auto",
+      }}
+      alt="Mt Gagazet"
+      />
       <p>
         A sacred mountain in the north of Spira, protected by the Ronso tribe.
         Harsh blizzards sweep the snowy mountain trial, sapping the strength of
@@ -181,6 +362,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Zanarkand Ruins</h3>
+      <Image 
+      src="/images/Zanarkand_Ruins.png"
+      height={400}
+      width={572}
+      style={{
+        margin: "auto",
+      }}
+      alt="Zanarkand Ruins"
+      />
       <p>
         The relics of a city destroyed a thousand years ago, located in the
         northernmost tip of the continent. The fayth of the Final Summoning
@@ -189,6 +379,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Inside Sin</h3>
+      <Image 
+      src="/images/Inside_Sin.jpg"
+      height={400}
+      width={521}
+      style={{
+        margin: "auto",
+      }}
+      alt="Inside Sin"
+      />
       <p>
         A mysterious space overflowing with pyreflies that unfolds within Sin's
         massive body. The existence of realms resembling Dream Zanarkand and a
@@ -196,6 +395,15 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Omega Ruins</h3>
+      <Image 
+      src="/images/Omega_Ruins.jpg"
+      height={400}
+      width={712}
+      style={{
+        margin: "auto",
+      }}
+      alt="Omega Ruins"
+      />
       <p>
         An optional dungeon located within a small group of islands to the east
         of Spira's main continent. You can access this area through the monster
