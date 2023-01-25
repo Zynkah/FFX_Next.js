@@ -1,4 +1,5 @@
 import Layout from "../components/layout";
+import Image from "next/image";
 
 export default function Summoners() {
   return (
@@ -8,6 +9,15 @@ export default function Summoners() {
       <h2>High Summoners</h2>
       <hr />
       <h3>Lady Yunalesca</h3>
+      <Image 
+      src="/images/Yunalesca.webp"
+      height={400}
+      width={236}
+      style={{
+        margin: "auto",
+      }}
+      alt="Yunalesca"
+      />
       <p>
         A legendary heroine who devised the Final Summoning thousands of years
         prior to the events of the story. In the present era, she resides in
@@ -18,6 +28,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Gandof</h3>
+      <Image 
+      src="/images/Gandof.webp"
+      height={400}
+      width={167}
+      style={{
+        margin: "auto",
+      }}
+      alt="Gandof"
+      />
       <p>
         Spira's first high summoner, he defeated Sin through the Final Summoning
         four hundred years ago. Famed for sealing the evil Qactuars in stones
@@ -25,6 +44,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Ohalland</h3>
+      <Image 
+      src="/images/Ohalland.webp"
+      height={400}
+      width={185}
+      style={{
+        margin: "auto",
+      }}
+      alt="Ohalland"
+      />
       <p>
         A high summoner from Kilika Island who defeated Sin 230 years ago. A
         vaunted blitzball player for the Kilika Beasts who took on a godlike
@@ -32,6 +60,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Yocun</h3>
+      <Image 
+      src="/images/Yocun.webp"
+      height={400}
+      width={219}
+      style={{
+        margin: "auto",
+      }}
+      alt="Yocun"
+      />
       <p>
         A high summoner who defeated Sin one hundred years ago and brought about
         a Calm. Originally a member of the Crusaders, she trained continuously
@@ -39,6 +76,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Lord Braska</h3>
+      <Image 
+      src="/images/Braska.webp"
+      height={400}
+      width={320}
+      style={{
+        margin: "auto",
+      }}
+      alt="Braska"
+      />
       <p>
         Yuna's late father and the fourth high summoner of Spira. A former
         priest who became a summoner after Sin killed his wife, an Al Bhed. Ten
@@ -49,6 +95,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Yuna</h3>
+      <Image 
+      src="/images/Yuna_Summoner.jpg"
+      height={400}
+      width={225}
+      style={{
+        margin: "auto",
+      }}
+      alt="Yuna"
+      />
       <p>
         A summoner who is following in the footsteps of her father, the late
         high summoner Braska. At 17 years old, she embarks on her pilgrimage to
@@ -63,6 +118,15 @@ export default function Summoners() {
       <h2>Summoners</h2>
       <hr />
       <h3>Yu Yevon</h3>
+      <Image 
+      src="/images/Yu_Yevon.jpg"
+      height={400}
+      width={269}
+      style={{
+        margin: "auto",
+      }}
+      alt="Yu Yevon"
+      />
       <p>
         The leader of ancient Zanarkand. He is lady Yunalesca's father and the
         creator of Sin. One thousand years ago Zanarkand and Bevelle were at
@@ -78,6 +142,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Lenne</h3>
+      <Image 
+      src="/images/Lenne.jpeg"
+      height={400}
+      width={175}
+      style={{
+        margin: "auto",
+      }}
+      alt="Lenne"
+      />
       <p>
         Summoner who lived back in the time of the ancient war before Sin was
         created. She was a pop-star summoner that was drafted in the war, her
@@ -88,6 +161,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Seymour </h3>
+      <Image 
+      src="/images/Seymour.jpg"
+      height={400}
+      width={322}
+      style={{
+        margin: "auto",
+      }}
+      alt="Seymour"
+      />
       <p>
         A capable individual who became a maester of Yevon's teachings at a
         young age, Seymour faced persecution all his life due to his mixed
@@ -100,6 +182,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Isaaru</h3>
+      <Image 
+      src="/images/Isaaru.jpeg"
+      height={400}
+      width={294}
+      style={{
+        margin: "auto",
+      }}
+      alt="Isaaru"
+      />
       <p>
         A serious and well-mannered summoner with a cool appearance. He idolized
         Braska from a young age and is friendly towards his daughter Yuna.
@@ -107,6 +198,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Dona</h3>
+      <Image 
+      src="/images/Dona.webp"
+      height={400}
+      width={170}
+      style={{
+        margin: "auto",
+      }}
+      alt="Dona"
+      />
       <p>
         A sexy summoner who views Yuna as her rival. She is proud of the bond
         between her and Barthello, her lover and guardian. Though she lacks
@@ -115,6 +215,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Belgemine</h3>
+      <Image 
+      src="/images/Belgemine.webp"
+      height={400}
+      width={252}
+      style={{
+        margin: "auto",
+      }}
+      alt="Belgemine"
+      />
       <p>
         A wandering summoner. Having been a summoner far longer than Yuna, she
         challenges her to multiple battles across the land to better train her
@@ -123,6 +232,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Ginnem</h3>
+      <Image 
+      src="/images/Ginnem.jpeg"
+      height={400}
+      width={314}
+      style={{
+        margin: "auto",
+      }}
+      alt="Ginnem"
+      />
       <p>
         The first summoner to take on Lulu as a guardian. Two years ago she set
         out on a pilgrimage for the Final Summoning but use dup all her strength
@@ -131,6 +249,15 @@ export default function Summoners() {
       </p>
       <hr />
       <h3>Zuke</h3>
+      <Image 
+      src="/images/Zuke.webp"
+      height={400}
+      width={203}
+      style={{
+        margin: "auto",
+      }}
+      alt="Zuke"
+      />
       <p>
         The second summoner who accepted Lulu as his guardian. He failed in his
         pilgrimage half a year ago in the Calm Lands. He wishes only for Lulu's
