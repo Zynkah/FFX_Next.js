@@ -179,7 +179,7 @@ export default function Locations() {
       <hr />
       <h3>Mushroom Rock Road</h3>
       <Image 
-      src="/images/Mushroom_rock.jpg"
+      src="/images/Mushroom_Rock.jpg"
       height={400}
       width={574}
       style={{
