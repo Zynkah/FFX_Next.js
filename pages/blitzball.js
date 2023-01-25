@@ -8,7 +8,7 @@ export default function Blitzball() {
       <Image 
       src="/images/Blitzball_Logo.jpg"
       height={400}
-      width={442}
+      width={422}
       style={{
         margin: "auto",
       }}
