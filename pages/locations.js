@@ -6,6 +6,15 @@ export default function Locations() {
     <Layout>
       <h1>Locations</h1>
       <hr />
+      <Image 
+      src="/images/Spira.jpg"
+      height={400}
+      width={600}
+      style={{
+        margin: "auto",
+      }}
+      alt="Spira"
+      />
       <p>
         The world of Spira consists of islands floating around a massive
         continent that stretches to the north and south. The world seems to be
