@@ -1,9 +1,11 @@
 import Layout from "../components/layout";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Locations() {
   return (
     <Layout>
+      <Link href={`/temples/`}> Temples |</Link>
       <h1>Locations</h1>
       <hr />
       <Image 

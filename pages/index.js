@@ -25,6 +25,7 @@ export default function Home({ allPostsData }) {
       <Link href={`/summoners/`}> Summoners |</Link>
       <Link href={`/aeons/`}> Aeons |</Link>
       <Link href={`/locations/`}> Locations |</Link>
+      <Link href={`/temples/`}> Temples |</Link>
       <Link href={`/scripts/`}> Scripts |</Link>
       <Link href={`/blitzball/`}> Blitzball |</Link>
       <Link href={`/walkthrough/`}> Walkthrough </Link>
