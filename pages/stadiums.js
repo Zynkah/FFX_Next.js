@@ -1,3 +1,10 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Link from "next/link";
+
+export default function Stadiums() {
+  return (
+    <Layout>
+      <h1>Stadiums in Spira</h1>
+    </Layout>
+  );
+}

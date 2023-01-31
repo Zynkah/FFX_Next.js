@@ -5,18 +5,17 @@ import Link from "next/link";
 export default function Locations() {
   return (
     <Layout>
+      <h1>Locations</h1>
       <Link href={`/temples/`}> Temples |</Link>
       <hr />
-      <h1>Locations</h1>
-      <hr />
-      <Image 
-      src="/images/Spira.jpg"
-      height={400}
-      width={600}
-      style={{
-        margin: "auto",
-      }}
-      alt="Spira"
+      <Image
+        src="/images/Spira.jpg"
+        height={400}
+        width={600}
+        style={{
+          margin: "auto",
+        }}
+        alt="Spira"
       />
       <p>
         The world of Spira consists of islands floating around a massive
@@ -27,14 +26,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Dream Zanarkand</h3>
-      <Image 
-      src="/images/Dream_Zanarkand.jpg"
-      height={400}
-      width={554}
-      style={{
-        margin: "auto",
-      }}
-      alt="Dream Zanarkand"
+      <Image
+        src="/images/Dream_Zanarkand.jpg"
+        height={400}
+        width={554}
+        style={{
+          margin: "auto",
+        }}
+        alt="Dream Zanarkand"
       />
       <p>
         The mechanical metropolis in which Tidus grew up. This city is actually
@@ -44,14 +43,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Submerged Ruins - Temple of Yevon-Baaj</h3>
-      <Image 
-      src="/images/Yevon-Baaj.jpg"
-      height={400}
-      width={532}
-      style={{
-        margin: "auto",
-      }}
-      alt="Yevon-Baaj"
+      <Image
+        src="/images/Yevon-Baaj.jpg"
+        height={400}
+        width={532}
+        style={{
+          margin: "auto",
+        }}
+        alt="Yevon-Baaj"
       />
       <p>
         The ruins of a Yevon temple destroyed by Sin decades earlier, Seymour
@@ -61,14 +60,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Salvage Ship</h3>
-      <Image 
-      src="/images/Salvage_Ship.jpg"
-      height={400}
-      width={710}
-      style={{
-        margin: "auto",
-      }}
-      alt="Salvage Ship"
+      <Image
+        src="/images/Salvage_Ship.jpg"
+        height={400}
+        width={710}
+        style={{
+          margin: "auto",
+        }}
+        alt="Salvage Ship"
       />
       <p>
         A ship that belongs to the Al Bhed. It is used to go diving in ruins for
@@ -77,14 +76,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Besaid Island</h3>
-      <Image 
-      src="/images/Besaid_Island.jpg"
-      height={400}
-      width={596}
-      style={{
-        margin: "auto",
-      }}
-      alt="Besaid Island"
+      <Image
+        src="/images/Besaid_Island.jpg"
+        height={400}
+        width={596}
+        style={{
+          margin: "auto",
+        }}
+        alt="Besaid Island"
       />
       <p>
         An island on the southern tip of Spira. It is a place abundant with
@@ -94,14 +93,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>S.S. Liki</h3>
-      <Image 
-      src="/images/S.S._Liki.webp"
-      height={400}
-      width={711}
-      style={{
-        margin: "auto",
-      }}
-      alt="S.S. Liki"
+      <Image
+        src="/images/S.S._Liki.webp"
+        height={400}
+        width={711}
+        style={{
+          margin: "auto",
+        }}
+        alt="S.S. Liki"
       />
       <p>
         The ship that ferries people between the islands of Besaid and Kilika.
@@ -109,14 +108,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Kilika Island </h3>
-      <Image 
-      src="/images/Kilika_Island.webp"
-      height={400}
-      width={579}
-      style={{
-        margin: "auto",
-      }}
-      alt="Kilika Island"
+      <Image
+        src="/images/Kilika_Island.webp"
+        height={400}
+        width={579}
+        style={{
+          margin: "auto",
+        }}
+        alt="Kilika Island"
       />
       <p>
         An island to the northwest of Besaid Island. Its residents reside in
@@ -126,14 +125,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>S.S. Winno</h3>
-      <Image 
-      src="/images/S.S._Winno.webp"
-      height={400}
-      width={537}
-      style={{
-        margin: "auto",
-      }}
-      alt="S.S. Winno"
+      <Image
+        src="/images/S.S._Winno.webp"
+        height={400}
+        width={537}
+        style={{
+          margin: "auto",
+        }}
+        alt="S.S. Winno"
       />
       <p>
         The ship that ferries people between the island of Kilika and the city
@@ -146,14 +145,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Luca</h3>
-      <Image 
-      src="/images/Luca.jpg"
-      height={400}
-      width={712}
-      style={{
-        margin: "auto",
-      }}
-      alt="Lucca"
+      <Image
+        src="/images/Luca.jpg"
+        height={400}
+        width={712}
+        style={{
+          margin: "auto",
+        }}
+        alt="Lucca"
       />
       <p>
         The second largest city in Spira, it is famed for its massive blitzball
@@ -163,14 +162,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Mi'ihen Highroad</h3>
-      <Image 
-      src="/images/Mi'ihen.jpg"
-      height={400}
-      width={578}
-      style={{
-        margin: "auto",
-      }}
-      alt="Mi'ihen Highroad"
+      <Image
+        src="/images/Mi'ihen.jpg"
+        height={400}
+        width={578}
+        style={{
+          margin: "auto",
+        }}
+        alt="Mi'ihen Highroad"
       />
       <p>
         A highway famously walked by the hero Mi'ihen eight hundred years in the
@@ -181,14 +180,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Mushroom Rock Road</h3>
-      <Image 
-      src="/images/Mushroom_Rock.jpg"
-      height={400}
-      width={574}
-      style={{
-        margin: "auto",
-      }}
-      alt="Mushroom Rock"
+      <Image
+        src="/images/Mushroom_Rock.jpg"
+        height={400}
+        width={574}
+        style={{
+          margin: "auto",
+        }}
+        alt="Mushroom Rock"
       />
       <p>
         A highway connected to the northern tip of the Mi'ihen Highroad. The
@@ -198,14 +197,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Djose</h3>
-      <Image 
-      src="/images/Djose.jpg"
-      height={400}
-      width={704}
-      style={{
-        margin: "auto",
-      }}
-      alt="Djose"
+      <Image
+        src="/images/Djose.jpg"
+        height={400}
+        width={704}
+        style={{
+          margin: "auto",
+        }}
+        alt="Djose"
       />
       <p>
         A region located to the south of central Spira. The Djose Highroad is
@@ -215,14 +214,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Moonflow</h3>
-      <Image 
-      src="/images/Moonflow.png"
-      height={400}
-      width={533}
-      style={{
-        margin: "auto",
-      }}
-      alt="Moonflow"
+      <Image
+        src="/images/Moonflow.png"
+        height={400}
+        width={533}
+        style={{
+          margin: "auto",
+        }}
+        alt="Moonflow"
       />
       <p>
         A large river that crosses the continent from north to south, filled
@@ -234,14 +233,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Guadosalam</h3>
-      <Image 
-      src="/images/Guadosalam.jpg"
-      height={400}
-      width={711}
-      style={{
-        margin: "auto",
-      }}
-      alt="Guadosalam"
+      <Image
+        src="/images/Guadosalam.jpg"
+        height={400}
+        width={711}
+        style={{
+          margin: "auto",
+        }}
+        alt="Guadosalam"
       />
       <p>
         The city of the demihuman Guado people. Seymour's mansion is here, as is
@@ -252,14 +251,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Thunder Plains</h3>
-      <Image 
-      src="/images/Thunder_Plains.jpg"
-      height={400}
-      width={300}
-      style={{
-        margin: "auto",
-      }}
-      alt="Thunder Plains"
+      <Image
+        src="/images/Thunder_Plains.jpg"
+        height={400}
+        width={300}
+        style={{
+          margin: "auto",
+        }}
+        alt="Thunder Plains"
       />
       <p>
         A dangerous wasteland where rain and lightning are constantly released
@@ -270,14 +269,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Macalania</h3>
-      <Image 
-      src="/images/Macalania.jpg"
-      height={400}
-      width={285}
-      style={{
-        margin: "auto",
-      }}
-      alt="Macalania"
+      <Image
+        src="/images/Macalania.jpg"
+        height={400}
+        width={285}
+        style={{
+          margin: "auto",
+        }}
+        alt="Macalania"
       />
       <p>
         A shimmering forest can be found in the region, as well as a lake frozen
@@ -287,14 +286,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Bikanel Island</h3>
-      <Image 
-      src="/images/Bikanel_lsland.webp"
-      height={400}
-      width={606}
-      style={{
-        margin: "auto",
-      }}
-      alt="Bikanel Island"
+      <Image
+        src="/images/Bikanel_lsland.webp"
+        height={400}
+        width={606}
+        style={{
+          margin: "auto",
+        }}
+        alt="Bikanel Island"
       />
       <p>
         A large island to the west of the main continent, largely covered in
@@ -304,14 +303,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Home</h3>
-      <Image 
-      src="/images/Home.jpg"
-      height={400}
-      width={522}
-      style={{
-        margin: "auto",
-      }}
-      alt="Home"
+      <Image
+        src="/images/Home.jpg"
+        height={400}
+        width={522}
+        style={{
+          margin: "auto",
+        }}
+        alt="Home"
       />
       <p>
         It is the home of the Al Bhed clan located on Bikanel Island. It is an
@@ -323,14 +322,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Bevelle</h3>
-      <Image 
-      src="/images/Bevelle.webp"
-      height={400}
-      width={569}
-      style={{
-        margin: "auto",
-      }}
-      alt="Bevelle"
+      <Image
+        src="/images/Bevelle.webp"
+        height={400}
+        width={569}
+        style={{
+          margin: "auto",
+        }}
+        alt="Bevelle"
       />
       <p>
         The largest city in all of Spira, Bevelle is the cradle of Yevon's
@@ -340,14 +339,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Calm Lands</h3>
-      <Image 
-      src="/images/Calm_Lands.jpg"
-      height={400}
-      width={597}
-      style={{
-        margin: "auto",
-      }}
-      alt="Calm Lands"
+      <Image
+        src="/images/Calm_Lands.jpg"
+        height={400}
+        width={597}
+        style={{
+          margin: "auto",
+        }}
+        alt="Calm Lands"
       />
       <p>
         The plain where high summoners across multiple generations challenged
@@ -357,14 +356,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Mt. Gagazet</h3>
-      <Image 
-      src="/images/Mt_Gagazet.jpg"
-      height={400}
-      width={524}
-      style={{
-        margin: "auto",
-      }}
-      alt="Mt Gagazet"
+      <Image
+        src="/images/Mt_Gagazet.jpg"
+        height={400}
+        width={524}
+        style={{
+          margin: "auto",
+        }}
+        alt="Mt Gagazet"
       />
       <p>
         A sacred mountain in the north of Spira, protected by the Ronso tribe.
@@ -374,14 +373,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Zanarkand Ruins</h3>
-      <Image 
-      src="/images/Zanarkand_Ruins.png"
-      height={400}
-      width={572}
-      style={{
-        margin: "auto",
-      }}
-      alt="Zanarkand Ruins"
+      <Image
+        src="/images/Zanarkand_Ruins.png"
+        height={400}
+        width={572}
+        style={{
+          margin: "auto",
+        }}
+        alt="Zanarkand Ruins"
       />
       <p>
         The relics of a city destroyed a thousand years ago, located in the
@@ -391,14 +390,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Inside Sin</h3>
-      <Image 
-      src="/images/Inside_Sin.jpg"
-      height={400}
-      width={521}
-      style={{
-        margin: "auto",
-      }}
-      alt="Inside Sin"
+      <Image
+        src="/images/Inside_Sin.jpg"
+        height={400}
+        width={521}
+        style={{
+          margin: "auto",
+        }}
+        alt="Inside Sin"
       />
       <p>
         A mysterious space overflowing with pyreflies that unfolds within Sin's
@@ -407,14 +406,14 @@ export default function Locations() {
       </p>
       <hr />
       <h3>Omega Ruins</h3>
-      <Image 
-      src="/images/Omega_Ruins.jpg"
-      height={400}
-      width={712}
-      style={{
-        margin: "auto",
-      }}
-      alt="Omega Ruins"
+      <Image
+        src="/images/Omega_Ruins.jpg"
+        height={400}
+        width={712}
+        style={{
+          margin: "auto",
+        }}
+        alt="Omega Ruins"
       />
       <p>
         An optional dungeon located within a small group of islands to the east
