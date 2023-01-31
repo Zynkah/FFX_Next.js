@@ -288,9 +288,9 @@ export default function Locations() {
       <hr />
       <h3>Bikanel Island</h3>
       <Image 
-      src="/images/Bikanel_Island.jpg"
+      src="/images/Bikanel_lsland.webp"
       height={400}
-      width={711}
+      width={606}
       style={{
         margin: "auto",
       }}
@@ -307,7 +307,7 @@ export default function Locations() {
       <Image 
       src="/images/Home.jpg"
       height={400}
-      width={711}
+      width={522}
       style={{
         margin: "auto",
       }}

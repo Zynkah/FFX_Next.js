@@ -137,7 +137,7 @@ export default function Temples() {
       <Image 
       src="/images/Yevon-Baaj.jpg"
       height={300}
-      width={399}
+      width={409}
       style={{
         margin: "auto",
       }}
