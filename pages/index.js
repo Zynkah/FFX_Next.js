@@ -21,13 +21,10 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <Link href={`/characters/`}>Characters |</Link>
-      <Link href={`/races/`}> Races |</Link>
+      <Link href={`/culture/`}> Culture |</Link>
       <Link href={`/summoners/`}> Summoners |</Link>
       <Link href={`/aeons/`}> Aeons |</Link>
       <Link href={`/locations/`}> Locations |</Link>
-      <Link href={`/temples/`}> Temples |</Link>
-      <Link href={`/scripts/`}> Scripts |</Link>
-      <Link href={`/blitzball/`}> Blitzball |</Link>
       <Link href={`/walkthrough/`}> Walkthrough </Link>
       <section className={utilStyles.headingMd}>
         <hr />

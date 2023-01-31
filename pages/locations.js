@@ -6,6 +6,7 @@ export default function Locations() {
   return (
     <Layout>
       <Link href={`/temples/`}> Temples |</Link>
+      <hr />
       <h1>Locations</h1>
       <hr />
       <Image 
