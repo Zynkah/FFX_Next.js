@@ -7,6 +7,7 @@ export default function Locations() {
     <Layout>
       <h1>Locations</h1>
       <Link href={`/temples/`}> Temples |</Link>
+      <Link href={`/stadiums/`}> Stadiums</Link>
       <hr />
       <Image
         src="/images/Spira.jpg"
