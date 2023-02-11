@@ -6,14 +6,26 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.8",
+    "@mui/styled-engine-sc": "^5.11.0",
     "clsx": "^1.2.1",
     "date-fns": "^2.29.3",
+    "express": "^4.18.2",
     "gray-matter": "^4.0.3",
+    "mongodb": "^3.6.2",
+    "mongoose": "^6.9.1",
+    "morgan": "^1.10.0",
     "next": "latest",
+    "nodemon": "^2.0.20",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
+    "styled-components": "^5.3.6",
     "swr": "^2.0.1"
   }
 }

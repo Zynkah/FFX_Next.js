@@ -1,10 +1,12 @@
 import Layout from "../components/layout";
+import Paper from "@mui/material/Paper";
 
 export default function Walkthrough() {
   return (
     <Layout>
       <h1>Walkthrough</h1>
       <hr />
+      <Paper elevation={3}>
       <h2>Zanarkand</h2>
       <hr />
       <h3>Objectives: </h3>
@@ -54,6 +56,7 @@ export default function Walkthrough() {
         <br />
         This boss has no weaknesses, does not absorb any magic, has no immunities, and does not have any half damages.
       </p>
+      </Paper>
     </Layout>
   );
 }
