@@ -9,7 +9,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 export default function Races() {
   return (
     <Layout>
-      <h1>Races</h1>
+      <h1>Races & Creatures</h1>
       <hr />
       <h2>Humaniods</h2>
 
