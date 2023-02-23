@@ -35,6 +35,7 @@ export default function Blitzball() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Besaid_Aurochs.jpg"
                   height={400}
                   width={383}
@@ -121,6 +122,7 @@ export default function Blitzball() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Luca_Goers.jpg"
                   height={400}
                   width={589}
@@ -150,6 +152,7 @@ export default function Blitzball() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Kilika_Beasts.jpg"
                   height={400}
                   width={431}
@@ -179,6 +182,7 @@ export default function Blitzball() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Al_Bhed_Psyches.jpg"
                   height={400}
                   width={592}
@@ -208,6 +212,7 @@ export default function Blitzball() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Ronso_Fangs.jpg"
                   height={400}
                   width={795}
@@ -237,6 +242,7 @@ export default function Blitzball() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Guado_Glories.jpg"
                   height={400}
                   width={409}
@@ -266,6 +272,7 @@ export default function Blitzball() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Zanarkand_Duggles.jpg"
                   height={400}
                   width={851}
@@ -287,6 +294,7 @@ export default function Blitzball() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Zanarkand_Abes.jpg"
                   height={400}
                   width={435}
@@ -308,6 +316,7 @@ export default function Blitzball() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Yocun_Nomads.jpg"
                   height={400}
                   width={396}
@@ -329,6 +338,7 @@ export default function Blitzball() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Bevelle_Bells.jpg"
                   height={400}
                   width={344}
@@ -349,14 +359,13 @@ export default function Blitzball() {
           <Paper elevation={3}>
             <Accordion>
               <AccordionSummary>
-                <h2>Recruiting and Scouting</h2>              
+                <h2>Recruiting and Scouting</h2>
                 <p>
                   There are many players scattered throughout Spira who you can
                   scout and add to your team.
                 </p>
               </AccordionSummary>
               <AccordionDetails>
-  
                 <h3>Free Agents</h3>
                 <ul>
                   <li>Brother</li>

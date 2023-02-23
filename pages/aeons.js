@@ -18,6 +18,7 @@ export default function Aeons() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Valefor.jpeg"
                   height={400}
                   width={513}
@@ -61,6 +62,7 @@ export default function Aeons() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Ifrit.jpg"
                   height={400}
                   width={413}
@@ -99,6 +101,7 @@ export default function Aeons() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Ixion.jpg"
                   height={400}
                   width={482}
@@ -136,6 +139,7 @@ export default function Aeons() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Shiva.jpg"
                   height={400}
                   width={378}
@@ -178,6 +182,7 @@ export default function Aeons() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Bahamut.jpg"
                   height={400}
                   width={380}
@@ -218,6 +223,7 @@ export default function Aeons() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Yojimbo.jpeg"
                   height={400}
                   width={457}
@@ -263,6 +269,7 @@ export default function Aeons() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Anima.jpeg"
                   height={400}
                   width={358}
@@ -301,6 +308,7 @@ export default function Aeons() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Magus_Sisters.jpeg"
                   height={400}
                   width={419}

@@ -19,6 +19,7 @@ export default function Temples() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Besaid_Island.jpg"
                   height={300}
                   width={477}
@@ -46,6 +47,7 @@ export default function Temples() {
                 </p>
                 <Link href={`/aeons/`}>
                   <Image
+                    className="cardImage"
                     src="/images/Valefor.jpeg"
                     height={250}
                     width={321}
@@ -69,6 +71,7 @@ export default function Temples() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Kilika_Temple.jpg"
                   height={300}
                   width={381}
@@ -96,6 +99,7 @@ export default function Temples() {
                 </p>
                 <Link href={`/aeons/`}>
                   <Image
+                    className="cardImage"
                     src="/images/Ifrit.jpg"
                     height={250}
                     width={258}
@@ -116,6 +120,7 @@ export default function Temples() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Djose.jpg"
                   height={300}
                   width={529}
@@ -143,6 +148,7 @@ export default function Temples() {
                 </p>
                 <Link href={`/aeons/`}>
                   <Image
+                    className="cardImage"
                     src="/images/Ixion.jpg"
                     height={300}
                     width={351}
@@ -163,6 +169,7 @@ export default function Temples() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Macalania_Temple.jpg"
                   height={300}
                   width={328}
@@ -179,6 +186,7 @@ export default function Temples() {
                   temple.
                 </p>
                 <Image
+                  className="cardImage"
                   src="/images/Glyph_Macalania.webp"
                   height={300}
                   width={272}
@@ -190,6 +198,7 @@ export default function Temples() {
                 <p>You will need to complete a Cloister of Trials first.</p>
                 <Link href={`/aeons/`}>
                   <Image
+                    className="cardImage"
                     src="/images/Shiva.jpg"
                     height={300}
                     width={284}
@@ -210,6 +219,7 @@ export default function Temples() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Bevelle_Temple.png"
                   height={300}
                   width={425}
@@ -237,6 +247,7 @@ export default function Temples() {
                 </p>
                 <Link href={`/aeons/`}>
                   <Image
+                    className="cardImage"
                     src="/images/Bahamut.jpg"
                     height={250}
                     width={237}
@@ -257,6 +268,7 @@ export default function Temples() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Remiem_Temple.png"
                   height={300}
                   width={533}
@@ -301,6 +313,7 @@ export default function Temples() {
                 <p>Mindy</p>
                 <Link href={`/aeons/`}>
                   <Image
+                    className="cardImage"
                     src="/images/Magus_Sisters.jpeg"
                     height={300}
                     width={314}
@@ -321,6 +334,7 @@ export default function Temples() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Yevon-Baaj.jpg"
                   height={300}
                   width={409}
@@ -352,6 +366,7 @@ export default function Temples() {
                 </p>
                 <Link href={`/aeons/`}>
                   <Image
+                    className="cardImage"
                     src="/images/Anima.jpeg"
                     height={300}
                     width={268}
@@ -379,6 +394,7 @@ export default function Temples() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Cavern_of_Stolen_Fayth.webp"
                   height={300}
                   width={412}
@@ -409,6 +425,7 @@ export default function Temples() {
                 </p>
                 <Link href={`/aeons/`}>
                   <Image
+                    className="cardImage"
                     src="/images/Yojimbo.jpeg"
                     height={250}
                     width={258}
@@ -429,6 +446,7 @@ export default function Temples() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Zanarkand_Dome.webp"
                   height={300}
                   width={253}
@@ -451,17 +469,15 @@ export default function Temples() {
                   alt="Zanarkand Dome Glyph"
                 />
                 <p>Glyph</p>
-                <Link href={`/aeons/`}>
-                  <Image
-                    src="/images/Lord_Zaon_Aeon.jpg"
-                    height={250}
-                    width={358}
-                    style={{
-                      margin: "auto",
-                    }}
-                    alt="Lord Zaon"
-                  />
-                </Link>
+                <Image
+                  src="/images/Lord_Zaon_Aeon.jpg"
+                  height={250}
+                  width={358}
+                  style={{
+                    margin: "auto",
+                  }}
+                  alt="Lord Zaon"
+                />
                 <p>Aeon: Lord Zaon (Power lost)</p>
               </AccordionDetails>
             </Accordion>

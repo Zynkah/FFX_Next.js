@@ -19,6 +19,7 @@ export default function Races() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Humans.jpeg"
                   height={400}
                   width={500}
@@ -50,6 +51,7 @@ export default function Races() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Al_Bhed.jpg"
                   height={300}
                   width={490}
@@ -89,6 +91,7 @@ export default function Races() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Guado.jpg"
                   height={300}
                   width={700}
@@ -130,6 +133,7 @@ export default function Races() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Ronso.webp"
                   height={300}
                   width={475}
@@ -174,6 +178,7 @@ export default function Races() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Aeons.jpg"
                   height={400}
                   width={400}
@@ -220,6 +225,7 @@ export default function Races() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Hypello.png"
                   height={400}
                   width={317}
@@ -252,6 +258,7 @@ export default function Races() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/pelupelu.jpeg"
                   height={400}
                   width={192}
@@ -280,6 +287,7 @@ export default function Races() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Borra.webp"
                   height={400}
                   width={400}
@@ -314,6 +322,7 @@ export default function Races() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Chocobo.jpg"
                   height={400}
                   width={280}
@@ -345,6 +354,7 @@ export default function Races() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Shoopuf.jpeg"
                   height={400}
                   width={577}

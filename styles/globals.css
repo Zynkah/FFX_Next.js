@@ -27,8 +27,8 @@ img {
   display: block;
 }
 
-img:hover {
-  opacity: 0.7;
+.cardImage:hover {
+  opacity: 0.6;
 }
 
 h1,

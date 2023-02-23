@@ -12,51 +12,53 @@ export default function Characters() {
       <h1>Characters</h1>
       <hr />
       <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
-            <Paper elevation={3}>
-              <Accordion>
-                <AccordionSummary>
-                  <Image
-                    src="/images/Tidus.jpg"
-                    height={400}
-                    width={363}
-                    style={{
-                      margin: "auto",
-                    }}
-                    alt="Tidus"
-                  />
-                </AccordionSummary>
-                <AccordionDetails>
-                  <h3>Tidus</h3>
-                  <p>
-                    The optimistic crybaby who gives hope to a world gripped in
-                    the spiral of death. A popular blitzball player from the
-                    metropolis of Zanarkand. The son of Jecht, a blitzball
-                    legend, Tidus rebelled against his father from an early age.
-                    During a match, Tidus is attacked by the monstrous fiend
-                    known as Sin. Thrown into the unfamiliar world of Spira, he
-                    joins the summoner Yuna on her journey. Tidas is a cheerful
-                    young teenager, the star blitzball player of the Zanarkand
-                    Abes. He has long resented his father, a renowned blitzball
-                    player who disappeared during Tidus's youth. Shortly after
-                    his father's disappearance, Tidus's mother died of heart
-                    break, she deeply loved Jecht and just completely gave up on
-                    everything after he was gone, even neglecting her own son.
-                    This made Tidus hate his father even more, blaming him for
-                    his mothers death. Auron was Tiuds's guardian after this,
-                    watching him from afar. Tidus's quick moves allow him to
-                    attack even the swiftest of foes with ease.
-                  </p>
-                </AccordionDetails>
-              </Accordion>
-            </Paper>
-          </Grid> 
-        
         <Grid item xs={12} md={6}>
           <Paper elevation={3}>
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
+                  src="/images/Tidus.jpg"
+                  height={400}
+                  width={363}
+                  style={{
+                    margin: "auto",
+                  }}
+                  alt="Tidus"
+                />
+              </AccordionSummary>
+              <AccordionDetails>
+                <h3>Tidus</h3>
+                <p>
+                  The optimistic crybaby who gives hope to a world gripped in
+                  the spiral of death. A popular blitzball player from the
+                  metropolis of Zanarkand. The son of Jecht, a blitzball legend,
+                  Tidus rebelled against his father from an early age. During a
+                  match, Tidus is attacked by the monstrous fiend known as Sin.
+                  Thrown into the unfamiliar world of Spira, he joins the
+                  summoner Yuna on her journey. Tidas is a cheerful young
+                  teenager, the star blitzball player of the Zanarkand Abes. He
+                  has long resented his father, a renowned blitzball player who
+                  disappeared during Tidus's youth. Shortly after his father's
+                  disappearance, Tidus's mother died of heart break, she deeply
+                  loved Jecht and just completely gave up on everything after he
+                  was gone, even neglecting her own son. This made Tidus hate
+                  his father even more, blaming him for his mothers death. Auron
+                  was Tiuds's guardian after this, watching him from afar.
+                  Tidus's quick moves allow him to attack even the swiftest of
+                  foes with ease.
+                </p>
+              </AccordionDetails>
+            </Accordion>
+          </Paper>
+        </Grid>
+
+        <Grid item xs={12} md={6}>
+          <Paper elevation={3}>
+            <Accordion>
+              <AccordionSummary>
+                <Image
+                  className="cardImage"
                   src="/images/Yuna.jpg"
                   height={400}
                   width={363}
@@ -107,6 +109,7 @@ export default function Characters() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Auron.jpg"
                   height={400}
                   width={345}
@@ -146,6 +149,7 @@ export default function Characters() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Kimahri.jpg"
                   height={400}
                   width={408}
@@ -182,6 +186,7 @@ export default function Characters() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Wakka.jpg"
                   height={400}
                   width={290}
@@ -220,6 +225,7 @@ export default function Characters() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Lulu.jpg"
                   height={400}
                   width={313}
@@ -258,6 +264,7 @@ export default function Characters() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Rikku.jpg"
                   height={400}
                   width={265}

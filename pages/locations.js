@@ -38,6 +38,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Dream_Zanarkand.jpg"
                   height={400}
                   width={554}
@@ -65,6 +66,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Yevon-Baaj.jpg"
                   height={400}
                   width={532}
@@ -92,6 +94,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Salvage_Ship.jpg"
                   height={400}
                   width={710}
@@ -119,6 +122,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Besaid_Island.jpg"
                   height={400}
                   width={596}
@@ -147,6 +151,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/S.S._Liki.webp"
                   height={400}
                   width={711}
@@ -172,6 +177,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Kilika_Island.webp"
                   height={400}
                   width={579}
@@ -199,6 +205,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/S.S._Winno.webp"
                   height={400}
                   width={537}
@@ -230,6 +237,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Luca.jpg"
                   height={400}
                   width={712}
@@ -257,6 +265,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Mi'ihen.jpg"
                   height={400}
                   width={578}
@@ -286,6 +295,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Mushroom_Rock.jpg"
                   height={400}
                   width={574}
@@ -314,6 +324,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Djose.jpg"
                   height={400}
                   width={704}
@@ -341,6 +352,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Moonflow.png"
                   height={400}
                   width={533}
@@ -371,6 +383,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Guadosalam.jpg"
                   height={400}
                   width={711}
@@ -399,6 +412,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Farplane.webp"
                   height={400}
                   width={639}
@@ -428,6 +442,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Thunder_Plains.jpg"
                   height={400}
                   width={300}
@@ -457,6 +472,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Macalania.jpg"
                   height={400}
                   width={285}
@@ -485,6 +501,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Bikanel_lsland.webp"
                   height={400}
                   width={606}
@@ -513,6 +530,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Home.jpg"
                   height={400}
                   width={522}
@@ -543,6 +561,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Bevelle.webp"
                   height={400}
                   width={569}
@@ -570,6 +589,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Calm_Lands.jpg"
                   height={400}
                   width={597}
@@ -598,6 +618,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Mt_Gagazet.jpg"
                   height={400}
                   width={524}
@@ -626,6 +647,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Zanarkand_Ruins.png"
                   height={400}
                   width={572}
@@ -654,6 +676,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Inside_Sin.jpg"
                   height={400}
                   width={521}
@@ -681,6 +704,7 @@ export default function Locations() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Omega_Ruins.jpg"
                   height={400}
                   width={712}

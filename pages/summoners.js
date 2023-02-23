@@ -18,6 +18,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Yunalesca.webp"
                   height={400}
                   width={236}
@@ -48,6 +49,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Gandof.webp"
                   height={400}
                   width={167}
@@ -74,6 +76,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Ohalland.webp"
                   height={400}
                   width={185}
@@ -100,6 +103,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Yocun.webp"
                   height={400}
                   width={219}
@@ -126,6 +130,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Braska.webp"
                   height={400}
                   width={320}
@@ -156,6 +161,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Yuna_Summoner.jpg"
                   height={400}
                   width={225}
@@ -188,6 +194,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Yu_Yevon.jpg"
                   height={400}
                   width={326}
@@ -223,6 +230,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Lenne.jpeg"
                   height={400}
                   width={175}
@@ -253,6 +261,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Seymour.jpg"
                   height={400}
                   width={322}
@@ -285,6 +294,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Isaaru.jpeg"
                   height={400}
                   width={294}
@@ -312,6 +322,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Dona.webp"
                   height={400}
                   width={170}
@@ -339,6 +350,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Belgemine.webp"
                   height={400}
                   width={252}
@@ -366,6 +378,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Ginnem.jpeg"
                   height={400}
                   width={314}
@@ -394,6 +407,7 @@ export default function Summoners() {
             <Accordion>
               <AccordionSummary>
                 <Image
+                  className="cardImage"
                   src="/images/Zuke.webp"
                   height={400}
                   width={203}
