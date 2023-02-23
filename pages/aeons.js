@@ -303,7 +303,7 @@ export default function Aeons() {
                 <Image
                   src="/images/Magus_Sisters.jpeg"
                   height={400}
-                  width={427}
+                  width={419}
                   style={{
                     margin: "auto",
                   }}
