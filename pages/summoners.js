@@ -393,7 +393,7 @@ export default function Summoners() {
                 <p>
                   The first summoner to take on Lulu as a guardian. Two years
                   ago she set out on a pilgrimage for the Final Summoning but
-                  use dup all her strength communing with the fayth of the aeon
+                  used up all her strength communing with the fayth of the aeon
                   Yojimbo. She remains on Spira as an unsent, dwelling in the
                   cavern of that fayth, in the Calm Lands.
                 </p>
