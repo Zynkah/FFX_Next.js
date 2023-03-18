@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import Link from "next/link";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -49,73 +50,15 @@ export default function Blitzball() {
                 <h2>Besaid Aurochs</h2>
                 <hr />
                 <p>
-                The Aurochs hail from the seaside village of Besaid, and at the beginning of Final Fantasy X, are under Wakka's captaincy. They are the only team in Spira to have never passed the first round of the Luca blitz tournament. When Tidus joins in exchange for passage, their success rate soars. The player has control over the Besaid Aurochs following the events in Luca.
-                <hr />
-                <h3><b>Team Members:</b></h3>
-                  <b>Tidus</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Venom Tackle, Drain Tackle, Anti-Venom 2
-                  <br />
-                  Location Found :
-                  <br />
-                  N/A
+                  The Aurochs hail from the seaside village of Besaid, and at
+                  the beginning of Final Fantasy X, are under Wakka's captaincy.
+                  They are the only team in Spira to have never passed the first
+                  round of the Luca blitz tournament. When Tidus joins in
+                  exchange for passage, their success rate soars. The player has
+                  control over the Besaid Aurochs following the events in Luca.
+                  <hr />
+                  <Link href={`../blitzball/aurochs/`}>Team Statistics</Link>
                 </p>
-                <p>
-                  <b>Datto</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Wither Shot, Anti-Venom, Wither Shot 2
-                  <br />
-                  Location Found :
-                  <br />
-                  Luca Stadium - Aurochs Locker Room
-                </p>
-                <p>
-                  <b>Letty</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Wither Tackle, Nap Pass, Venom Pass 3
-                  <br />
-                  Location Found :
-                  <br />
-                  Luca Stadium - Aurochs Locker Room
-                </p>
-                <p>
-                  <b>Jassu</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Wither Tackle, Wither Tackle 2, Nap Tackle 2
-                  <br />
-                  Location Found :
-                  <br />
-                  Luca Stadium - Aurochs Locker Room
-                </p>
-                <p>
-                  <b>Botta</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Venom Shot, Venom Pass 2, Nap Tackle
-                  <br />
-                  Location Found :
-                  <br />
-                  Luca Stadium - Aurochs Locker Room
-                </p>
-                <p>
-                  <b>Keepa</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Super Goalie, Volley Shoot, Anti-Wither
-                </p>
-                Location Found :
-                <br />
-                Luca Stadium - Aurochs Locker Room
               </AccordionDetails>
             </Accordion>
           </Paper>
@@ -140,17 +83,14 @@ export default function Blitzball() {
                 <h2>Luca Goers</h2>
                 <hr />
                 <p>
-                At the opening of Final Fantasy X, the Luca Goers reign as the Spira champions. They are captained by the confident and brash forward, Bickson. As they represent the city with the only blitz stadium, they are regarded as the most beloved team in Spira. The team members can be found in and around Luca stadium, if the player wishes to add them to their team.
-                <hr />
-                <h3>Team Members:</h3>
-                <ul>
-                  <li>Bickson</li>
-                  <li>Abus</li>
-                  <li>Graav</li>
-                  <li>Doram</li>
-                  <li>Balgerda</li>
-                  <li>Raudy</li>
-                </ul>
+                  At the opening of Final Fantasy X, the Luca Goers reign as the
+                  Spira champions. They are captained by the confident and brash
+                  forward, Bickson. As they represent the city with the only
+                  blitz stadium, they are regarded as the most beloved team in
+                  Spira. The team members can be found in and around Luca
+                  stadium, if the player wishes to add them to their team.
+                  <hr />
+                  <Link href={`../blitzball/goers/`}>Team Statistics</Link>
                 </p>
               </AccordionDetails>
             </Accordion>
@@ -176,17 +116,12 @@ export default function Blitzball() {
                 <h2>Kilika Beasts</h2>
                 <hr />
                 <p>
-                The Kilika Beasts hail from the small seaside town of Kilika. High Summoner Ohalland used to play for the team before he became a summoner. The Kilika Beasts' team members are found throughout Kilika from the port to the temple.
-                <hr />
-                <h3>Team Members: </h3>
-                <ul>
-                  <li>Larbeight</li>
-                  <li>Isken</li>
-                  <li>Vuroja</li>
-                  <li>Kulukan</li>
-                  <li>Deim</li>
-                  <li>Nizarut</li>
-                </ul>
+                  The Kilika Beasts hail from the small seaside town of Kilika.
+                  High Summoner Ohalland used to play for the team before he
+                  became a summoner. The Kilika Beasts' team members are found
+                  throughout Kilika from the port to the temple.
+                  <hr />
+                  <Link href={`../blitzball/beasts/`}>Team Statistics</Link>
                 </p>
               </AccordionDetails>
             </Accordion>
@@ -212,17 +147,16 @@ export default function Blitzball() {
                 <h2>Al Bhed Psyches</h2>
                 <hr />
                 <p>
-                The Al Bhed Psyches represent the Al Bhed race. During the Luca tournament of Final Fantasy X, they attempt to rig their opening match against the Besaid Aurochs by kidnapping Yuna. Their goalie, Nimrook, is the best goalie in the game. The Al Bhed Psyches are later found on the Fahrenheit, and are available when the player has access to the airship, which is right before entering Bevelle, and permanently after the player has finished the events in Zanarkand.
+                  The Al Bhed Psyches represent the Al Bhed race. During the
+                  Luca tournament of Final Fantasy X, they attempt to rig their
+                  opening match against the Besaid Aurochs by kidnapping Yuna.
+                  Their goalie, Nimrook, is the best goalie in the game. The Al
+                  Bhed Psyches are later found on the Fahrenheit, and are
+                  available when the player has access to the airship, which is
+                  right before entering Bevelle, and permanently after the
+                  player has finished the events in Zanarkand.
                   <hr />
-                  <h3>Team Members: </h3>
-                <ul>
-                  <li>Eigaar</li>
-                  <li>Blappa</li>
-                  <li>Berrik</li>
-                  <li>Judda</li>
-                  <li>Lakkam</li>
-                  <li>Nimrook</li>
-                </ul>
+                  <Link href={`../blitzball/psyches/`}>Team Statistics</Link>
                 </p>
               </AccordionDetails>
             </Accordion>
@@ -248,17 +182,11 @@ export default function Blitzball() {
                 <h2>Ronso Fangs</h2>
                 <hr />
                 <p>
-                The Ronso Fangs represent the Ronso race. Due to their physicality, they rely on power and endurance while lacking in speed. The Ronso Fangs members are found at the Luca Docks.
-                <hr />
-                <h3>Team Members: </h3>
-                <ul>
-                  <li>Basik Ronso</li>
-                  <li>Argai Ronso</li>
-                  <li>Gazna Ronso</li>
-                  <li>Nuvy Ronso</li>
-                  <li>Irga Ronso</li>
-                  <li>Zamzi Ronso</li>
-                </ul>
+                  The Ronso Fangs represent the Ronso race. Due to their
+                  physicality, they rely on power and endurance while lacking in
+                  speed. The Ronso Fangs members are found at the Luca Docks.
+                  <hr />
+                  <Link href={`../blitzball/fangs/`}>Team Statistics</Link>
                 </p>
               </AccordionDetails>
             </Accordion>
@@ -284,17 +212,12 @@ export default function Blitzball() {
                 <h2>Guado Glories</h2>
                 <hr />
                 <p>
-                The Guado Glories represent the Guado race, and hail from Guadosalam. Their players contrast the Ronso Fangs with high speed at the expense of HP, Attack, and Endurance. The Guado Glories team can be found in Guadosalam.
+                  The Guado Glories represent the Guado race, and hail from
+                  Guadosalam. Their players contrast the Ronso Fangs with high
+                  speed at the expense of HP, Attack, and Endurance. The Guado
+                  Glories team can be found in Guadosalam.
                   <hr />
-                  <h3>Team Members: </h3>
-                <ul>
-                  <li>Giera Guado</li>
-                  <li>Zazi Guado</li>
-                  <li>Navara Guado</li>
-                  <li>Auda Guado</li>
-                  <li>Pah Guado</li>
-                  <li>Noy Guado</li>
-                </ul>
+                  <Link href={`../blitzball/glories/`}>Team Statistics</Link>
                 </p>
               </AccordionDetails>
             </Accordion>
@@ -320,7 +243,9 @@ export default function Blitzball() {
                 <h2>Zanarkand Duggles</h2>
                 <hr />
                 <p>
-                The Zanarkand Duggles are another team competing in the Jecht Memorial Cup, featuring black and red outfits. Little is known about the team other than that they "play dirty".
+                  The Zanarkand Duggles are another team competing in the Jecht
+                  Memorial Cup, featuring black and red outfits. Little is known
+                  about the team other than that they "play dirty".
                 </p>
                 <hr />
               </AccordionDetails>
@@ -347,7 +272,11 @@ export default function Blitzball() {
                 <h2>Zanarkand Abes</h2>
                 <hr />
                 <p>
-                The Zanarkand Abes are Tidus's team in Dream Zanarkand, where he is the star player. They have yellow and black outfits. His father, Jecht, also played for the Abes, a shadow Tidus struggles to step out of. They are only available to play against in Final Fantasy X-2.
+                  The Zanarkand Abes are Tidus's team in Dream Zanarkand, where
+                  he is the star player. They have yellow and black outfits. His
+                  father, Jecht, also played for the Abes, a shadow Tidus
+                  struggles to step out of. They are only available to play
+                  against in Final Fantasy X-2.
                 </p>
                 <hr />
               </AccordionDetails>
