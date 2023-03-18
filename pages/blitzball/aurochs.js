@@ -11,7 +11,7 @@ export default function Aurochs() {
     <Layout>
       <h1>Besaid Aurochs</h1>
       <h3>
-        <b>Team Members:</b>
+        <b>Team Members</b>
       </h3>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
@@ -51,7 +51,7 @@ export default function Aurochs() {
               <AccordionSummary>
                 <Image
                   className="cardImage"
-                  src="/images/datto.webp"
+                  src="/images/Datto.webp"
                   height={400}
                   width={174}
                   style={{
@@ -82,7 +82,7 @@ export default function Aurochs() {
               <AccordionSummary>
                 <Image
                   className="cardImage"
-                  src="/images/letty.webp"
+                  src="/images/Letty.webp"
                   height={400}
                   width={121}
                   style={{
@@ -113,7 +113,7 @@ export default function Aurochs() {
               <AccordionSummary>
                 <Image
                   className="cardImage"
-                  src="/images/jassu.webp"
+                  src="/images/Jassu.webp"
                   height={400}
                   width={183}
                   style={{
@@ -144,7 +144,7 @@ export default function Aurochs() {
               <AccordionSummary>
                 <Image
                   className="cardImage"
-                  src="/images/botta.webp"
+                  src="/images/Botta.webp"
                   height={400}
                   width={151}
                   style={{
@@ -175,7 +175,7 @@ export default function Aurochs() {
               <AccordionSummary>
                 <Image
                   className="cardImage"
-                  src="/images/keepa.webp"
+                  src="/images/Keepa.webp"
                   height={400}
                   width={150}
                   style={{
