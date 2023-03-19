@@ -8,13 +8,11 @@ export default function Walkthrough() {
       <hr />
       <Paper elevation={3}>
       <h2>Zanarkand</h2>
-      <hr width={500} />
       <h3>Objectives: </h3>
       <ul>
         <li>Break through the Sinscales</li>
         <li>Eliminate the Sinspawn</li>
       </ul>
-      <hr width={500} />
       <h3>Enemies: </h3>
       <ul>
         <h4>Sinscales:</h4>
@@ -28,7 +26,6 @@ export default function Walkthrough() {
         <li>Drop: N/A</li>
         <li>Steal: N/A</li>
       </ul>
-      <hr width={500} />
       <h3>Story</h3>
       <p>
         <h4>The Star Blitzer</h4>
@@ -41,7 +38,6 @@ export default function Walkthrough() {
         <h4>Progeny of Sin</h4>
         The twosome finally reach the location where the gigantic creature has crash-landed. The fight with the boss begins.
       </p>
-      <hr width={500} />
       <h3>Boss</h3>
       <p>
         <h4>Sinspawn Ammes</h4>

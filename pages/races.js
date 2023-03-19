@@ -12,8 +12,6 @@ export default function Races() {
       <h1>Races & Creatures</h1>
       <hr />
       <h2>Humaniods</h2>
-      <hr width={500} />
-
       <Grid container spacing={2}>
         <Grid item>
           <Paper elevation={3}>
@@ -173,7 +171,6 @@ export default function Races() {
       </Grid>
 
       <h2>Demi-Humans</h2>
-      <hr width={500} />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Paper elevation={3}>
@@ -318,7 +315,6 @@ export default function Races() {
       </Grid>
 
       <h2>Creatures</h2>
-      <hr width={500} />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Paper elevation={3}>

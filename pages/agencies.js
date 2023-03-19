@@ -8,7 +8,6 @@ export default function TravelAgency() {
       <h1>Rin's Travel Agencies</h1>
       <hr />          
       <p>An Al Bhed named Rin owns these inns scattered thoughout Spira.</p>
-      <hr width={700} />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <h2>Mi'ihen Highroad Branch</h2>
