@@ -24,6 +24,7 @@ export default function Scripts() {
         </Grid>
         <Grid item xs={12} md={6} marginY={10}>
           <h2>Spiran Script</h2>
+          <hr width={300} />
           <Image
             src="/images/Sphere-Broadcast-Billboard.webp"
             height={200}
@@ -43,6 +44,7 @@ export default function Scripts() {
 
         <Grid item xs={12} md={6} marginBottom={10}>
           <h2>Al Bhed Script</h2>
+          <hr width={300} />
           <Image
             src="/images/Al-Bhed-Primer-Artwork.webp"
             height={200}
@@ -83,6 +85,7 @@ export default function Scripts() {
         </Grid>
         <Grid item xs={12} md={6} marginBottom={10}>
           <h2>Yevon Script</h2>
+          <hr width={300} />
           <Image
             src="/images/Kilika-temple-artwork-ffx.webp"
             height={200}
