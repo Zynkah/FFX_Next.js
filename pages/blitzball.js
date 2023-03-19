@@ -11,6 +11,7 @@ export default function Blitzball() {
   return (
     <Layout>
       <h1>Blitzball</h1>
+      <hr />
       <Image
         src="/images/Blitzball_Logo.jpg"
         height={400}

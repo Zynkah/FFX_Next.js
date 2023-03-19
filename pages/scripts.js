@@ -9,7 +9,7 @@ export default function Scripts() {
       <h1>Scripts & Religion</h1>
       <hr />
       <h2>Scripts</h2>
-<hr width={500} />
+      <hr width={500} />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} marginY={10}>
           <Image
@@ -22,7 +22,7 @@ export default function Scripts() {
             alt="Spiran Script"
           />
         </Grid>
-        <Grid item xs={12} md={6} marginBottom={10}>
+        <Grid item xs={12} md={6} marginY={10}>
           <h2>Spiran Script</h2>
           <Image
             src="/images/Sphere-Broadcast-Billboard.webp"
@@ -104,15 +104,15 @@ export default function Scripts() {
       <hr width={500} />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} marginTop={10}>
-            <Image
-              src="/images/Mika.webp"
-              height={400}
-              width={400}
-              style={{
-                margin: "auto",
-              }}
-              alt="Grand Maester Mika"
-            />
+          <Image
+            src="/images/Mika.webp"
+            height={400}
+            width={400}
+            style={{
+              margin: "auto",
+            }}
+            alt="Grand Maester Mika"
+          />
         </Grid>
       </Grid>
     </Layout>
