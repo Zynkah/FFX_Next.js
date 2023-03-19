@@ -15,7 +15,7 @@ export default function TravelAgency() {
           <Image
             src="/images/Miihen_Agency.webp"
             height={400}
-            width={600}
+            width={710}
             style={{
               margin: "auto",
             }}
@@ -27,7 +27,7 @@ export default function TravelAgency() {
           <Image
             src="/images/Thunder_Plains_Agency.webp"
             height={400}
-            width={600}
+            width={710}
             style={{
               margin: "auto",
             }}
@@ -39,7 +39,7 @@ export default function TravelAgency() {
           <Image
             src="/images/Lake_Macalania.webp"
             height={400}
-            width={600}
+            width={533}
             style={{
               margin: "auto",
             }}
@@ -51,7 +51,7 @@ export default function TravelAgency() {
           <Image
             src="/images/Calm_Lands_Agency.webp"
             height={400}
-            width={600}
+            width={710}
             style={{
               margin: "auto",
             }}
