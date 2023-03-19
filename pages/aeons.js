@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import Link from "next/link";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -10,6 +11,9 @@ export default function Aeons() {
   return (
     <Layout>
       <h1>Aeons</h1>
+      <Link href={`/summoners/`}> Summoners |</Link>
+      <Link href={`/maesters/`}> Maesters |</Link>
+      <Link href={`/aeons/`}> Aeons</Link>
       <hr />
 
       <Grid container spacing={2}>
