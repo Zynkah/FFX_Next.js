@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 import Link from "next/link";
+import Grid from "@mui/material/Grid";
 
 export default function Culture() {
   return (
@@ -10,23 +11,32 @@ export default function Culture() {
       <Link href={`/scripts/`}> Scripts & Religion |</Link>
       <Link href={`/blitzball/`}> Blitzball </Link>
       <hr />
-      <Image
-        src="/images/Dream_Zanarkand_Culture.jpg"
-        height={400}
-        width={388}
-        style={{
-          margin: "auto",
-        }}
-        alt="Dream Zanarkand Culture"
-      />
-      <p>
-        Spira has a variety of different races and languages thoughout its
-        lands. Each region has its own people, with their own culture. Blitzball
-        is a shared sport most regions have, and brings them together. The fear
-        of Sin and its destruction is another thing they have in common.
-        Although they may have differnt ways to achieve the Calm, they all yearn
-        for peace in the end.
-      </p>
+
+      <Grid container spacing={2}>
+        <Grid item xs={12} md={6} marginBottom={10}>
+          <Image
+            src="/images/Dream_Zanarkand_Culture.jpg"
+            height={400}
+            width={388}
+            style={{
+              margin: "auto",
+            }}
+            alt="Dream Zanarkand Culture"
+          />
+        </Grid>
+        <Grid item xs={12} md={6} marginTop={10}>
+          <p>
+            <b>Spira</b> has a variety of different races and languages
+            thoughout its lands. Each region has its own people, with their own
+            culture.
+            <b> Blitzball</b> is a shared sport most regions have, and brings
+            them together. The fear of <b>Sin</b> and its destruction is another
+            thing they have in common. Although they may have differnt ways to
+            achieve the
+            <b> Calm</b>, they all yearn for peace in the end.
+          </p>
+        </Grid>
+      </Grid>
     </Layout>
   );
 }
