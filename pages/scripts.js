@@ -1,15 +1,12 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
 export default function Scripts() {
   return (
     <Layout>
-      <h1>Scripts & Religion</h1>
+      <h1>Scripts</h1>
       <hr />
-      <h2>Scripts</h2>
-      <hr width={500} />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} marginY={10}>
           <Image
@@ -100,22 +97,6 @@ export default function Scripts() {
             institutions. Some characters have their own individual meanings,
             such as 'fire' or 'Yevon'.
           </p>
-        </Grid>
-      </Grid>
-
-      <h2>Religion</h2>
-      <hr width={500} />
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={6} marginTop={10}>
-          <Image
-            src="/images/Mika.webp"
-            height={400}
-            width={400}
-            style={{
-              margin: "auto",
-            }}
-            alt="Grand Maester Mika"
-          />
         </Grid>
       </Grid>
     </Layout>

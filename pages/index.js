@@ -23,8 +23,6 @@ export default function Home({ allPostsData }) {
       </Head>
       <Link href={`/characters/`}>Characters |</Link>
       <Link href={`/culture/`}> Culture |</Link>
-      <Link href={`/summoners/`}> Summoners |</Link>
-      <Link href={`/aeons/`}> Aeons |</Link>
       <Link href={`/locations/`}> Locations |</Link>
       <Link href={`/walkthrough/`}> Walkthrough </Link>
       <section className={utilStyles.headingMd}>
