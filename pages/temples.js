@@ -12,7 +12,13 @@ export default function Temples() {
     <Layout>
       <h1>Temples in Spira</h1>
       <hr />
-
+      <p>
+        Temples of Yevon are found throughout Spira. At the heart of each temple
+        lies a Chamber of the Fayth, a room that contains a fayth—a statue that
+        houses a willingly-given human soul. Through the soul bonding to a
+        summoner mighty creatures called aeons may be made manifest.
+      </p>
+      <hr />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Paper elevation={3}>

@@ -9,7 +9,7 @@ export default function Culture() {
       <h1>Life in Spira</h1>
       <Link href={`/races/`}> Races & Creatures |</Link>
       <Link href={`/scripts/`}> Scripts & Religion |</Link>
-      <Link href={`/crusaders/`}> Crusaders |</Link>
+      <Link href={`/military/`}> Military |</Link>
       <Link href={`/technology/`}> Technology |</Link>
       <Link href={`/blitzball/`}> Blitzball </Link>
       <hr />
