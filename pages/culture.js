@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid";
 export default function Culture() {
   return (
     <Layout>
-      <h1>Culture in Spira</h1>
+      <h1>Life in Spira</h1>
       <Link href={`/races/`}> Races & Creatures |</Link>
       <Link href={`/scripts/`}> Scripts & Religion |</Link>
       <Link href={`/blitzball/`}> Blitzball </Link>
