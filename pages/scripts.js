@@ -9,9 +9,9 @@ export default function Scripts() {
       <h1>Scripts & Religion</h1>
       <hr />
       <h2>Scripts</h2>
-
+<hr width={500} />
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6} marginBottom={10}>
+        <Grid item xs={12} md={6} marginY={10}>
           <Image
             src="/images/Spiran_Script.webp"
             height={400}
@@ -101,9 +101,9 @@ export default function Scripts() {
       </Grid>
 
       <h2>Religion</h2>
+      <hr width={500} />
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+        <Grid item xs={12} md={6} marginTop={10}>
             <Image
               src="/images/Mika.webp"
               height={400}
@@ -113,7 +113,6 @@ export default function Scripts() {
               }}
               alt="Grand Maester Mika"
             />
-          </Paper>
         </Grid>
       </Grid>
     </Layout>
