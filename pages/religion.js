@@ -15,7 +15,7 @@ export default function Scripts() {
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} marginTop={13}>
           <Image
-            src="/images/CHild_Seymour.webp"
+            src="/images/Child_Seymour.webp"
             height={400}
             width={357}
             style={{
