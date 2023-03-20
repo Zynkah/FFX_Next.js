@@ -33,7 +33,7 @@ export default function Scripts() {
           that Sin was a divine punishment set upon the people for their pride
           in the use of machines. As a result, the temples forbade the use of
           modern technology, and promoted a culture of atonement for past sins
-          in the hopes of appeasing Sin.[25] While the Yevon church forbids most
+          in the hopes of appeasing Sin. While the Yevon church forbids most
           machina including weapons, their capital Bevelle retains machina to
           ensure its dominance. The Al Bhed are seen as dangerous to the Yevon
           clergy because they use machina and pose a threat to the church's
