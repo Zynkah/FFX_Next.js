@@ -11,9 +11,10 @@ export default function Aeons() {
   return (
     <Layout>
       <h1>Aeons</h1>
-      <Link href={`/summoners/`}> Summoners |</Link>
       <Link href={`/maesters/`}> Maesters |</Link>
-      <Link href={`/aeons/`}> Aeons</Link>
+      <Link href={`/summoners/`}> Summoners |</Link>
+      <Link href={`/aeons/`}> Aeons |</Link>
+      <Link href={`/religion/`}> Relgion</Link>
       <hr />
 
       <Grid container spacing={2}>
