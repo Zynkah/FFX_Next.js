@@ -9,17 +9,6 @@ export default function Scripts() {
       <hr />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} marginY={10}>
-          <Image
-            src="/images/Spiran_Script.webp"
-            height={400}
-            width={515}
-            style={{
-              margin: "auto",
-            }}
-            alt="Spiran Script"
-          />
-        </Grid>
-        <Grid item xs={12} md={6} marginY={10}>
           <h2>Spiran Script</h2>
           <hr width={300} />
           <Image
@@ -37,6 +26,17 @@ export default function Scripts() {
             locations. On signs, Blitzball team logos, all over the Luca
             Stadium, and more.
           </p>
+        </Grid>
+        <Grid item xs={12} md={6} marginY={10}>
+          <Image
+            src="/images/Spiran_Script.webp"
+            height={400}
+            width={515}
+            style={{
+              margin: "auto",
+            }}
+            alt="Spiran Script"
+          />
         </Grid>
 
         <Grid item xs={12} md={6} marginBottom={10}>
@@ -70,17 +70,6 @@ export default function Scripts() {
         </Grid>
 
         <Grid item xs={12} md={6} marginBottom={10}>
-          <Image
-            src="/images/Yevon_Script.webp"
-            height={400}
-            width={515}
-            style={{
-              margin: "auto",
-            }}
-            alt="Yevon Script"
-          />
-        </Grid>
-        <Grid item xs={12} md={6} marginBottom={10}>
           <h2>Yevon Script</h2>
           <hr width={300} />
           <Image
@@ -97,6 +86,17 @@ export default function Scripts() {
             institutions. Some characters have their own individual meanings,
             such as 'fire' or 'Yevon'.
           </p>
+        </Grid>
+        <Grid item xs={12} md={6} marginBottom={10}>
+          <Image
+            src="/images/Yevon_Script.webp"
+            height={400}
+            width={515}
+            style={{
+              margin: "auto",
+            }}
+            alt="Yevon Script"
+          />
         </Grid>
       </Grid>
     </Layout>
