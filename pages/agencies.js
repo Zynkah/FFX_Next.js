@@ -6,7 +6,7 @@ export default function TravelAgency() {
   return (
     <Layout>
       <h1>Rin's Travel Agencies</h1>
-      <hr />          
+      <hr />
       <p>An Al Bhed named Rin owns these inns scattered thoughout Spira.</p>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
