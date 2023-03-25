@@ -16,18 +16,19 @@ export default function Culture() {
       <hr />
 
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6} marginTop={5}>
+        <Grid item xs={12} sm={6} md={4} marginTop={5}>
           <Image
             src="/images/Dream_Zanarkand_Culture.jpg"
             height={400}
             width={388}
             style={{
               margin: "auto",
+              borderRadius: '5px',
             }}
             alt="Dream Zanarkand Culture"
           />
         </Grid>
-        <Grid item xs={12} md={6} marginTop={15}>
+        <Grid item xs={12} sm={6} md={8} marginTop={15}>
           <p>
             <b>Spira</b> has a variety of different races and languages
             thoughout its lands. Each region has its own people, with their own
