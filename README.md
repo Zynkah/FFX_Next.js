@@ -3,6 +3,10 @@
 Welcome to my Final Fantasy X fan page! I am the biggest FF Fan in the world, and I want to combine my love for it with my love for programing!
 <hr />
 
+After cloning the repository input:
+
+`npm install next react react-dom`
+
 Inside that directory, you can run several commands:
 
   `npm run dev`

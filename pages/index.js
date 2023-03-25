@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
         <h1>Welcome To Spira</h1>
         <br />
         <Grid container spacing={1}>
-          <Grid item xs={12} md={6} marginBottom={10}>
+          <Grid item xs={12} md={6} marginBottom={10} marginTop={2}>
             <p>
               The world of Spira is caught in a cycle of death. Its people live
               in fear of the great menace known only as Sin. The people seek
@@ -54,8 +54,9 @@ export default function Home({ allPostsData }) {
               width={572}
               style={{
                 margin: "auto",
+                borderRadius: '5px',
               }}
-              alt="Valefor"
+              alt="Zanarkand Ruins"
             />
           </Grid>
           <Grid item xs={12} md={4}>
@@ -65,6 +66,7 @@ export default function Home({ allPostsData }) {
               width={292}
               style={{
                 margin: "auto",
+                borderRadius: '5px',
               }}
               alt="Tidus & Yuna"
             />
