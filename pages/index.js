@@ -78,7 +78,7 @@ export default function Home({ allPostsData }) {
               Their quest throws them into a series of shocking events,
               including the devastation of the anti-Sin ranks of the Crusaders,
               the revelation of Sin's true identity, and the betrayal of the
-              temples. The two are faced with many challenges and have even more hard decisions to make. Thankfully, their friends are there to guide them on their journey. Despite this, the group overcomes the trials and forges its own story.
+              temples. The two are faced with several challenges and have many hard decisions to make. Despite this, the group overcomes the trials and forges its own story. Thankfully, their friends are there to guide them on their journey.
             </p>
           </Grid>
         </Grid>
