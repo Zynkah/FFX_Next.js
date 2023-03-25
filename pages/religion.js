@@ -13,18 +13,19 @@ export default function Scripts() {
       <Link href={`/culture/`}> Culture</Link>
       <hr />
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6} marginTop={13}>
+        <Grid item xs={12} sm={6} md={6} lg={4} marginTop={13}>
           <Image
             src="/images/Child_Seymour.webp"
             height={400}
             width={357}
             style={{
               margin: "auto",
+              borderRadius: '5px',
             }}
             alt="Child Seymour with Anima"
           />
         </Grid>
-        <Grid item xs={12} md={6} marginTop={10}>
+        <Grid item xs={12} sm={6} md={6} lg={8} marginTop={10}>
           Religion is an important part of life for many of the peoples of
           Spira, with a large majority of the population describing themselves
           as "Yevonites". Though by the end of Final Fantasy X some people had
