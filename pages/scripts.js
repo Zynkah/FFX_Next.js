@@ -17,9 +17,11 @@ export default function Scripts() {
             width={231}
             style={{
               margin: "auto",
+              borderRadius: '5px',
             }}
             alt="sphere broadcast billboard"
           />
+          <br />
           <p>
             A curvy script used all across Spira. Characters exist for each
             uppercase and lowercase letter. This language can be found in many
@@ -34,6 +36,7 @@ export default function Scripts() {
             width={515}
             style={{
               margin: "auto",
+              borderRadius: '5px',
             }}
             alt="Spiran Script"
           />
@@ -48,9 +51,11 @@ export default function Scripts() {
             width={296}
             style={{
               margin: "auto",
+              borderRadius: '5px',
             }}
             alt="Al Bhed Primer"
           />
+          <br />
           <p>
             The script used by the Al Bhed, distinctive for its combination of
             two to four fragments to make each character. Uppercase and
@@ -64,6 +69,7 @@ export default function Scripts() {
             width={597}
             style={{
               margin: "auto",
+              borderRadius: '5px',
             }}
             alt="Al Bhed Script"
           />
@@ -78,9 +84,11 @@ export default function Scripts() {
             width={251}
             style={{
               margin: "auto",
+              borderRadius: '5px',
             }}
             alt="inside Kilika temple"
           />
+          <br />
           <p>
             Characters resembling Sanskrit that are used predominantly in Yevon
             institutions. Some characters have their own individual meanings,
@@ -94,6 +102,7 @@ export default function Scripts() {
             width={515}
             style={{
               margin: "auto",
+              borderRadius: '5px',
             }}
             alt="Yevon Script"
           />
