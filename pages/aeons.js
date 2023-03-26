@@ -144,23 +144,8 @@ export default function Aeons() {
               <AccordionDetails>
                 <h3>Bahamut</h3>
                 <p>
-                  A four-winged sacred beast with a fayth statue located in
-                  Bevelle. Unlike the other aeons, the king of dragons is
-                  heralded by multiple magic circles that appear in the heavens
-                  whenever he is summoned into being. Bahamut possesses the
-                  auto-ability Break Damage Barrier. This enables its attacks to
-                  exceed 9999 HP damage right from the start. Bahamut has high
-                  strength, defense and magic attributes. Bahamut's regular
-                  attack causes more damage than any other aeon's. Bahamut can
-                  also cast the highest elemental black magic spells. His unique
-                  attack is Impulse where he charges up four balls of dark magic
-                  and hurls them, damaging all enemies. Impulse is especially
-                  useful when fighting multiple opponents. His overdrive is Mega
-                  Flare, a classic attack for this character. Bahamut anchors
-                  itself and fires a destructive breath attack that annihilates
-                  anything in its path. Bahamut's overdrive consistently deals
-                  over 9999 HP damage to all enemies, and it will continue to
-                  grow stronger.
+                  A four-winged sacred dragon beast with a fayth statue located in
+                  Bevelle. 
                 </p>
                 <Link href={`../aeons/bahamut/`}>Read More</Link>
               </AccordionDetails>
