@@ -1,10 +1,10 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+import { Card, Text } from "@nextui-org/react";
 
 export default function Characters() {
   return (
@@ -13,11 +13,10 @@ export default function Characters() {
       <hr />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Tidus.jpg"
                   height={400}
                   width={363}
@@ -29,7 +28,8 @@ export default function Characters() {
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Tidus</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   The optimistic crybaby who gives hope to a world gripped in
                   the spiral of death. A popular blitzball player from the
                   metropolis of Zanarkand. The son of Jecht, a blitzball legend,
@@ -47,18 +47,17 @@ export default function Characters() {
                   was Tiuds's guardian after this, watching him from afar.
                   Tidus's quick moves allow him to attack even the swiftest of
                   foes with ease.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Yuna.jpg"
                   height={400}
                   width={363}
@@ -70,7 +69,8 @@ export default function Characters() {
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Yuna</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   The summoner possessing endless kindness, willing to sacrifice
                   herself to save the world. Daughter of High Summoner Braska.
                   When her father left for his pilgrimage she was left behind in
@@ -98,18 +98,17 @@ export default function Characters() {
                   obtain the final aeon and defeat Sin. To complete her quest,
                   Yuna has enlisted the aid of her most trusted friends as her
                   guardians.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Auron.jpg"
                   height={400}
                   width={345}
@@ -121,7 +120,8 @@ export default function Characters() {
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Auron</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   The legendary guardian who guides a young man to fulfill a
                   promise to a friend. A man tasked with watching over Tidus in
                   Dream Zanarkand who created the opportunity for Tidus to
@@ -138,18 +138,17 @@ export default function Characters() {
                   guides Yuna and Tidus on their mission to vanquish Sin once
                   more. He swings his gigantic sword with such power that even
                   the toughest fiends are cut asunder.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Kimahri.jpg"
                   height={400}
                   width={408}
@@ -161,7 +160,8 @@ export default function Characters() {
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Kimahri</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   The hornless Ronso youth dedicating his life to Yuna. A Ronso
                   who serves as Yuna's first guardian. His taciturn nature and
                   leonine appearance makes him hard to approach, but in truth
@@ -175,18 +175,17 @@ export default function Characters() {
                   watched over Yuna during her early years. He is devoted to
                   Yuna and serves her loyally as a guardian. Kimahri can learn
                   the special attacks of enemies with his Lancet ability.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Wakka.jpg"
                   height={400}
                   width={290}
@@ -198,7 +197,8 @@ export default function Characters() {
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Wakka</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   A good-natured older-brother type who has dedicated his youth
                   to blitzball. The young coach and most valuable player of
                   Besaid Village's blitzball team, the Besaid Aurochs. Tidus
@@ -214,18 +214,17 @@ export default function Characters() {
                   sport after this year's tournament so that he can devote
                   himself entirely as Yuna's guardian. His deadly blitzball is
                   especially useful for shooting down aerial enemies.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Lulu.jpg"
                   height={400}
                   width={313}
@@ -237,7 +236,8 @@ export default function Characters() {
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Lulu</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   The severe yet sweet Black Mage who aids her comrades with a
                   wealth of knowledge. A female Black Mage acting as Yuna's
                   guardian who watches over her like a big sister. She and Wakka
@@ -253,18 +253,17 @@ export default function Characters() {
                   She treats Yuna as though she were her younger sister.
                   Although she may seem insensitive at times, there are depths
                   to her emotions that only her closest friends can understand.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Rikku.jpg"
                   height={400}
                   width={265}
@@ -276,7 +275,8 @@ export default function Characters() {
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Rikku</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   A hearty and hard-working Al Bhed lass, constantly thinking
                   about what she can accomplish. Daughter to the chief of the Al
                   Bhed, a tribe of people persecuted for opposing the teachings
@@ -294,10 +294,10 @@ export default function Characters() {
                   the Moonflow, her technical expertise allows you to start
                   customizing equipment by adding abilities to the open slots on
                   weapons and armor.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
       </Grid>
     </Layout>
