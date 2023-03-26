@@ -10,7 +10,7 @@ export default function Scripts() {
       <Link href={`/maesters/`}> Maesters |</Link>
       <Link href={`/summoners/`}> Summoners |</Link>
       <Link href={`/aeons/`}> Aeons |</Link>
-      <Link href={`/religion/`}> Relgion</Link>
+      <Link href={`/religion/`}> Back</Link>
       <hr />
       <Grid container spacing={2}>
         <Grid item xs={12} md={12} marginTop={10}>
