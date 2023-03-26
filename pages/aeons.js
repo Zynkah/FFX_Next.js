@@ -1,11 +1,11 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Link from "next/link";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+import { Card, Text } from "@nextui-org/react";
 
 export default function Aeons() {
   return (
@@ -19,158 +19,164 @@ export default function Aeons() {
 
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Valefor.jpeg"
                   height={400}
                   width={513}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Valefor"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Valefor</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   An arieal aeon with great wings whose fayth statue is located in
                   Besaid Temple.
-                </p>
+                </Text>
                 <Link href={`../aeons/valefor/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Ifrit.jpg"
                   height={400}
                   width={413}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Ifrit"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Ifrit</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   A demon that holds dominion over fire, with a fayth statue
                   situated in Kilika Temple.
-                </p>
+                </Text>
                 <Link href={`../aeons/ifrit/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Ixion.jpg"
                   height={400}
                   width={482}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Ixion"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Ixion</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   A horned beast covered by lightning whose fayth statue stands
                   in Djose Temple.
-                </p>
+                </Text>
                 <Link href={`../aeons/ixion/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Shiva.jpg"
                   height={400}
                   width={378}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Shiva"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Shiva</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   The frozen queen of ice whose fayth statue is situated inside
                   Macalania Temple. 
-                </p>
+                </Text>
                 <Link href={`../aeons/shiva/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Bahamut.jpg"
                   height={400}
                   width={380}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Bahamut"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Bahamut</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   A four-winged sacred dragon beast with a fayth statue located in
                   Bevelle. 
-                </p>
+                </Text>
                 <Link href={`../aeons/bahamut/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Yojimbo.jpeg"
                   height={400}
                   width={457}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Yojimbo"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Yojimbo</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   A master swordsman whose fayth statue is situated in the
                   Cavern of the Stolen Fayth. The blade is his left hand,
                   Zanmato, can only be seen in the rare instance that he uses
@@ -193,31 +199,32 @@ export default function Aeons() {
                   he will attack enemies based on how much you pay him.
                   Yojimbo's attacks exceed 9999 HP damage once you activated
                   Auron's Masamune.
-                </p>
+                </Text>
                 <Link href={`../aeons/yojimbo/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Anima.jpeg"
                   height={400}
                   width={358}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Anima"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Anima</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   An aeon bound in heavy chains whose fayth statue can be found
                   in the temple of Yevon-Baaj. Its fayth is Seymour's mother,
                   and the plate around its neck is engraved with her image.
@@ -233,31 +240,32 @@ export default function Aeons() {
                   Pain has a high recovery time. Her overdrive is Oblivion, the
                   most horrifying overdrive that inflicts multiple non-elemental
                   attacks on all enemies.
-                </p>
+                </Text>
                 <Link href={`../aeons/anima/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Magus_Sisters.jpeg"
                   height={400}
                   width={419}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Magus Sisters"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Magus Sisters</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   Three sister aeons whose fayth statue is situated in Remiem
                   Temple. Each sister has a different insect motif -- a ladybug
                   for Cindy, the eldest; a mantis for the middle child, Sandy;
@@ -287,11 +295,11 @@ export default function Aeons() {
                   time, a new command, "Combine Powers!" appears. The sisters
                   will join forces and perform one of the most devastating
                   overdrives in the entire game.
-                </p>
+                </Text>
                 <Link href={`../aeons/magus_sisters/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
       </Grid>
     </Layout>

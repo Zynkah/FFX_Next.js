@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Link from "next/link";
 import Accordion from "@mui/material/Accordion";
