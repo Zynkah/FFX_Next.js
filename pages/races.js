@@ -1,10 +1,10 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+import { Card, Text } from "@nextui-org/react";
 
 export default function Races() {
   return (
@@ -14,23 +14,24 @@ export default function Races() {
       <h2>Humaniods</h2>
       <Grid container spacing={2}>
         <Grid item>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Humans.jpeg"
                   height={400}
                   width={500}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Human"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Humans</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   The majority of the population on Spira. They are capable of
                   bearing children with the Al Bhed and the Guado. They have a
                   variety of appearances, southern humans tend to have a nice
@@ -39,30 +40,31 @@ export default function Races() {
                   follow Yevons teachings and refuse to use any machina at all.
                   They have 3 different blitzball teams: Besaid Aurochs, Kilika
                   Beasts and the Luca Goers.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Al_Bhed.jpg"
                   height={300}
                   width={490}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Al Bhed"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Al Bhed</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   A tribe of technologists. Making up 10% of the Spiran
                   population. They have a unique language and, unlike other
                   races in Spira, they use machina. Spira's main religion,
@@ -79,30 +81,31 @@ export default function Races() {
                   scattered around Spira, often detested by the other races of
                   the world. Cid, Rikku's father and Yuna's uncle, resettled the
                   Al Bhed on Bikanel Island and built a new city called Home.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Guado.jpg"
                   height={300}
                   width={700}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Guado"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Guado</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   A humanoid race with wooden and elvish appearance, with long
                   limbs, oversized hands with claw-like nails, prominent veins
                   on their face and hair resembling flora. They live amongst the
@@ -121,30 +124,31 @@ export default function Races() {
                   under their leader, Jyscal Guado, who was later appointed a
                   Maester of Yevon. Despite their strict religious culture, they
                   are generous and welcoming to guests.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Ronso.webp"
                   height={300}
                   width={475}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Ronso"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Ronso</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   The Ronso is a race of muscular, anthropomorphic feline
                   humanoids from the world of Spira. They stand above two meters
                   in height, the males are considerably larger and more muscular
@@ -163,33 +167,34 @@ export default function Races() {
                   guardian of the sacred mountain. Kelk Ronso is the tribe
                   leader and their representative in Bevelle as a Maester of
                   Yevon. The Ronso have a blitzball team called the Ronso Fangs.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
       </Grid>
 
       <h2>Demi-Humans</h2>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Aeons.jpg"
                   height={400}
                   width={400}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Aeons"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Fayths & Aeons</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   The Fayth are humans who willingly had their souls sealed in
                   statues in a state of dreaming in Spira. A ritual that removes
                   their souls from their still living bodies are sealed into
@@ -214,29 +219,30 @@ export default function Races() {
                   time. This is why during the aeon duels two of the same aeon
                   cannot battle one another, Dark Aeons are an exception to this
                   rule.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Hypello.png"
                   height={400}
                   width={317}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Hypello"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Hypello</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   A race of amphibian humanoid creatures. The Hypello have a
                   speech impediment, often lisping any words with an 'S', for
                   example shay instead of say and yesh in place for yes and some
@@ -246,59 +252,61 @@ export default function Races() {
                   their home. Though the Hypello are excellent swimmers, they
                   have no desire for competition, there for they have no
                   blitzball team.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/pelupelu.jpeg"
                   height={400}
                   width={192}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Pelupelu"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Pelupelu</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   A race in Spira that appear to be as tall as a human child.
                   They speak very fast and wear a bird-like mask. Tobli is the
                   most notable Pelupelu in the Final Fantasy X series as he
                   appears in Final Fantasy X-2, playing a small role in the
                   Moonflow area.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Borra.webp"
                   height={400}
                   width={400}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Borra"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Yevon Music Brigade</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   They are spirits of Macalania Woods. There are three known
                   types: Avian - Borra, Bayra, Frog - Daraya, Donga and Mouse -
                   Pukara, Pukatak. The musician's existence coincides with that
@@ -307,33 +315,34 @@ export default function Races() {
                   prophecy as witnessed on their talks to Yuna about the fading
                   woods and mention of the state of the Farplane. The Mouse
                   musician always speaks in rhymes.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
       </Grid>
 
       <h2>Creatures</h2>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Chocobo.webp"
                   height={400}
                   width={311}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Chocobo"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Chocobos</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   Due to the ban of machina, chocobo-powered machines were in
                   wide demand until the coming of the Eternal Calm. Chocobos are
                   most commonly seen on the Mi'ihen Highroad. Chocobos
@@ -342,62 +351,64 @@ export default function Races() {
                   gain extra height. Chocobos are also used as transportation,
                   either being ridden themselves or pulling chariots. They are
                   raced for fun in the Calm lands.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Shoopuf.jpeg"
                   height={400}
                   width={577}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Shoopuf"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Shoopufs</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                   A species of large elephantine animals. They are used as pack
                   animals by the Hypello to transport customers across the
                   Moonflow. They are gentle creatures who do not mind being
                   ridden by the other species in Spira.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Sin.webp"
                   height={400}
                   width={553}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Shoopuf"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Sin</h3>
-                <p>
+                <Card.Divider />
+                <Text>
                 Sin is a gargantuan whale-like beast that threatens the world of Spira. It was named by the people of Spira who believed the beast came into being as punishment for their ancestors relying on machina and becoming a hedonistic society. By following the teachings of Yevon, the people of Spira believe one day they will atone for their crimes and Sin will vanish.
-                </p>
+                </Text>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
       </Grid>
     </Layout>
