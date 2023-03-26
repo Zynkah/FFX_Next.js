@@ -36,7 +36,7 @@ export default function Aeons() {
               <AccordionDetails>
                 <h3>Valefor</h3>
                 <p>
-                  An aeon with great wings whose fayth statue is located in
+                  An arieal aeon with great wings whose fayth statue is located in
                   Besaid Temple.
                 </p>
                 <Link href={`../aeons/valefor/`}>Read More</Link>
@@ -118,24 +118,7 @@ export default function Aeons() {
                 <h3>Shiva</h3>
                 <p>
                   The frozen queen of ice whose fayth statue is situated inside
-                  Macalania Temple. The mantle in the full-body image is cast
-                  off in game when she is summoned, fluttering safely into
-                  Yuna's outstretched hands. There are parts made of ice
-                  attached to her right arm. This is semitransparent and handled
-                  the same way as the ice on her chest. Diamond Dust sparkles
-                  from the edges of her cape and her tail accessory. Diamond
-                  Dust is a phenomenon that occurs during severe cold when water
-                  particles freeze in the air, causing them to sparkle and
-                  shine. The queen of ice is a gorgeous sight to behold and an
-                  agile attacker. Her unique attack is Heavenly Strike, creating
-                  a giant block of ice and drops it on an enemy. The attack
-                  slightly delays the target's next turn in addition to
-                  inflicting non-elemental damage and the status ailment
-                  threaten. Her overdrive is Diamond Dust, freezing all enemies
-                  in layers of ice, and then destroys everything with a
-                  leisurely snap of her fingers. All of Shiva's attack can
-                  inflict more than 9999 HP damage after you've activated Lulu's
-                  legendary weapon, the Onion Knight.
+                  Macalania Temple. 
                 </p>
                 <Link href={`../aeons/shiva/`}>Read More</Link>
               </AccordionDetails>
