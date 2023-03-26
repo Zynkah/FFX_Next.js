@@ -26,7 +26,6 @@ export default function Ifrit() {
         </Grid>
         <Grid item xs={12} md={4}>
           <Image
-            className="cardImage"
             src="/images/Ifrit.jpg"
             height={300}
             width={309}
@@ -40,7 +39,6 @@ export default function Ifrit() {
 
         <Grid item xs={12} md={4}>
           <Image
-            className="cardImage"
             src="/images/Ifrit-2.webp"
             height={300}
             width={314}
@@ -80,7 +78,6 @@ export default function Ifrit() {
         </Grid>
         <Grid item xs={12} md={4}>
           <Image
-            className="cardImage"
             src="/images/fayth_ifrit.webp"
             height={300}
             width={285}
