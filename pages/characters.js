@@ -22,6 +22,7 @@ export default function Characters() {
                   width={363}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Tidus"
                 />
@@ -63,6 +64,7 @@ export default function Characters() {
                   width={363}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Yuna"
                 />
@@ -114,6 +116,7 @@ export default function Characters() {
                   width={345}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Auron"
                 />
@@ -154,6 +157,7 @@ export default function Characters() {
                   width={408}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Kimahri"
                 />
@@ -191,6 +195,7 @@ export default function Characters() {
                   width={290}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Wakka"
                 />
@@ -230,6 +235,7 @@ export default function Characters() {
                   width={313}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Lulu"
                 />
@@ -269,6 +275,7 @@ export default function Characters() {
                   width={265}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Rikku"
                 />
