@@ -108,6 +108,27 @@ export default function Technology() {
             alt="Gil"
           />
         </Grid>
+
+        <Grid item xs={12} md={6}>
+          <h2>Fire Arms</h2>
+          <hr width={300} />
+          <p>
+            Fire arms are used by many different people in the world of Spira. Mostly seen used by members of the military. Since hand guns and fire arms are used by the military they are not considered as machina. It is not considered blasphemous to use them. In battle you will face many enemies using these weapons.
+          </p>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Image
+            src="/images/Handguns.webp"
+            height={400}
+            width={280}
+            style={{
+              margin: "auto",
+              borderRadius: "5px",
+            }}
+            alt="Handguns"
+          />
+        </Grid>
+
         <Grid item xs={12} md={12}>
           <Divider>
             <h2>Vehicles</h2>
@@ -214,18 +235,7 @@ export default function Technology() {
             alt="Binoculars"
           />
         </Grid>
-        <Grid item xs={12} md={6}>
-          <Image
-            src="/images/Handguns.webp"
-            height={400}
-            width={280}
-            style={{
-              margin: "auto",
-              borderRadius: "5px",
-            }}
-            alt="Handguns"
-          />
-        </Grid>
+
       </Grid>
     </Layout>
   );
