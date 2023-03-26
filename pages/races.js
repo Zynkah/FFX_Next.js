@@ -322,9 +322,9 @@ export default function Races() {
               <AccordionSummary>
                 <Image
                   className="cardImage"
-                  src="/images/Chocobo.jpg"
+                  src="/images/Chocobo.webp"
                   height={400}
-                  width={280}
+                  width={311}
                   style={{
                     margin: "auto",
                   }}
@@ -370,6 +370,30 @@ export default function Races() {
                   animals by the Hypello to transport customers across the
                   Moonflow. They are gentle creatures who do not mind being
                   ridden by the other species in Spira.
+                </p>
+              </AccordionDetails>
+            </Accordion>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Paper elevation={3}>
+            <Accordion>
+              <AccordionSummary>
+                <Image
+                  className="cardImage"
+                  src="/images/Sin.webp"
+                  height={400}
+                  width={553}
+                  style={{
+                    margin: "auto",
+                  }}
+                  alt="Shoopuf"
+                />
+              </AccordionSummary>
+              <AccordionDetails>
+                <h3>Sin</h3>
+                <p>
+                Sin is a gargantuan whale-like beast that threatens the world of Spira. It was named by the people of Spira who believed the beast came into being as punishment for their ancestors relying on machina and becoming a hedonistic society. By following the teachings of Yevon, the people of Spira believe one day they will atone for their crimes and Sin will vanish.
                 </p>
               </AccordionDetails>
             </Accordion>
