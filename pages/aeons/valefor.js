@@ -19,6 +19,7 @@ export default function Valefor() {
             width={385}
             style={{
               margin: "auto",
+              borderRadius: "5px",
             }}
             alt="Valefor"
           />
