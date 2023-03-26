@@ -42,6 +42,7 @@ export default function Military() {
             width={219}
             style={{
               margin: "auto",
+              borderRadius: "5px",
             }}
             alt="Zaon"
           />
@@ -63,6 +64,7 @@ export default function Military() {
             width={177}
             style={{
               margin: "auto",
+              borderRadius: "5px",
             }}
             alt="Warrior Monk"
           />
@@ -85,6 +87,7 @@ export default function Military() {
             width={451}
             style={{
               margin: "auto",
+              borderRadius: "5px",
             }}
             alt="Crimson Squad"
           />
@@ -97,6 +100,33 @@ export default function Military() {
             fulfilling the society's demand for a stronger army, but the true
             reason was to privatize the Crusaders by inserting his hand-reared
             Crimson Squad members.
+          </p>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Image
+            src="/images/Chocobo_Knights.webp"
+            height={300}
+            width={451}
+            style={{
+              margin: "auto",
+              borderRadius: "5px",
+            }}
+            alt="Chocobo Knights"
+          />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <h2>Chocobo Knights</h2>
+          <hr width={300} />
+          <p>
+            The Chocobo Knights of Spira are an elite group of mounted soldiers,
+            consisting of the serious but kind Captain Lucil, cheerful Elma, and
+            the uncomfortable and slightly incompetent Clasko. It is mentioned
+            by an NPC that normally one must be a skilled chocobo rider or
+            achieve combat merit to become a chocobo knight, and that Clasko was
+            likely knighted because he is good at earning chocobos' trust. It is
+            never stated directly that the knights are part of the Crusaders,
+            but they do take part in Operation Mi'ihen and both Lucil and Elma
+            are shown giving orders to Luzzu and Gatta.
           </p>
         </Grid>
       </Grid>
