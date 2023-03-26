@@ -64,21 +64,9 @@ export default function Aeons() {
                 <h3>Ifrit</h3>
                 <p>
                   A demon that holds dominion over fire, with a fayth statue
-                  situated in Kilika Temple. According to the writing on its
-                  statue illustration, Ifrit's fayth was a twenty-three year old
-                  boy named Edmondo. Ifrit has incredibly high strength in
-                  exchange for low defense and magic defense. He can self heal
-                  by casting fire upon himself. His unique attack is meteor
-                  strike, a non-elemental attack that is hurled at one enemy,
-                  but has a longer recovery time that his regular attack. This
-                  is a useful long-range attack. It also penetrates protect
-                  spells despite being a physical attack. Ifrit's Overdrive is
-                  Hellfire, this attack encases its foes in a swirling ball of
-                  fiery vengeance and detonates it for massive damage to all
-                  enemies. All of Ifrit's attacks can reach the 9999 damage
-                  limit when you activate Wakka's legendary weapon, World
-                  Champion.
+                  situated in Kilika Temple. 
                 </p>
+                <Link href={`../aeons/ifrit/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
           </Paper>
@@ -117,6 +105,7 @@ export default function Aeons() {
                   inflict more thank 9999 HP damage once you've activated
                   Kimahri's Spirit Lance.
                 </p>
+                <Link href={`../aeons/ixion/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
           </Paper>
@@ -160,6 +149,7 @@ export default function Aeons() {
                   inflict more than 9999 HP damage after you've activated Lulu's
                   legendary weapon, the Onion Knight.
                 </p>
+                <Link href={`../aeons/shiva/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
           </Paper>
@@ -201,6 +191,7 @@ export default function Aeons() {
                   over 9999 HP damage to all enemies, and it will continue to
                   grow stronger.
                 </p>
+                <Link href={`../aeons/bahamut/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
           </Paper>
@@ -247,6 +238,7 @@ export default function Aeons() {
                   Yojimbo's attacks exceed 9999 HP damage once you activated
                   Auron's Masamune.
                 </p>
+                <Link href={`../aeons/yojimbo/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
           </Paper>
@@ -286,6 +278,7 @@ export default function Aeons() {
                   most horrifying overdrive that inflicts multiple non-elemental
                   attacks on all enemies.
                 </p>
+                <Link href={`../aeons/anima/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
           </Paper>
@@ -339,6 +332,7 @@ export default function Aeons() {
                   will join forces and perform one of the most devastating
                   overdrives in the entire game.
                 </p>
+                <Link href={`../aeons/magus_sisters/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
           </Paper>

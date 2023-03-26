@@ -29,7 +29,7 @@ export default function Valefor() {
             An avian aeon with great dragon-like wings. Her fayth statue is
             located in Besaid Temple and is a teenage girl. She is a
             non-elemental aerial aeon, her symbol from the Yevon Script is the
-            kanji for nothing (mu), but nothingness may also be associated with
+            kanji for nothing (無 mu), but nothingness may also be associated with
             the element of air. Mu is a Zen Buddhist concept expressing negation
             of the self, selflessness, innocence and the purity of soul. These
             are traits a summoner must achieve to succeed in defeating Sin,
