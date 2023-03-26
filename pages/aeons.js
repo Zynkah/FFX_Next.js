@@ -64,7 +64,7 @@ export default function Aeons() {
                 <h3>Ifrit</h3>
                 <p>
                   A demon that holds dominion over fire, with a fayth statue
-                  situated in Kilika Temple. 
+                  situated in Kilika Temple.
                 </p>
                 <Link href={`../aeons/ifrit/`}>Read More</Link>
               </AccordionDetails>
@@ -91,19 +91,7 @@ export default function Aeons() {
                 <h3>Ixion</h3>
                 <p>
                   A horned beast covered by lightning whose fayth statue stands
-                  in Djose Temple. Ixion can manipulate lightning, an affinity
-                  represented by the electric motif of is magic circle. Ixion's
-                  high defense and magic defense attributes make it a good aeon
-                  to summon when the party needs protections from an attack.
-                  Ixion's unique attack is Aerospark, where he fires spinning,
-                  razor-sharp discs that converge on a single enemy and causes
-                  non-elemental damage. The attack also negates magical effects
-                  like protect, shell, reflect, hast, regen and the nul spells.
-                  His overdrive is Thor's Hammer, which envelopes all enemies in
-                  a storming vortex, and then disintegrates it. Lightning based
-                  elemental damage is inflicted against all enemies. Ixion can
-                  inflict more thank 9999 HP damage once you've activated
-                  Kimahri's Spirit Lance.
+                  in Djose Temple.
                 </p>
                 <Link href={`../aeons/ixion/`}>Read More</Link>
               </AccordionDetails>
