@@ -14,7 +14,7 @@ export default function Aeons() {
       <Link href={`/maesters/`}> Maesters |</Link>
       <Link href={`/summoners/`}> Summoners |</Link>
       <Link href={`/aeons/`}> Aeons |</Link>
-      <Link href={`/religion/`}> Relgion</Link>
+      <Link href={`/religion/`}> Back</Link>
       <hr />
 
       <Grid container spacing={2}>
@@ -37,26 +37,9 @@ export default function Aeons() {
                 <h3>Valefor</h3>
                 <p>
                   An aeon with great wings whose fayth statue is located in
-                  Besaid Temple. This aerial aeon easily dodges many attacks
-                  from the ground. Valefor's regular attack is a quick,
-                  snatching motion, which is enhanced by the aeon's high
-                  accuracy. The unique attack is sonic wings, and attack that
-                  sends a shockwave at one enemy, inflicting damage and delaying
-                  the enemy's next turn. Because of the delay effect and short
-                  recovery time, you can often hit enemies repeatedly with sonic
-                  wings. The Overdrive attack is Energy Ray which fires a
-                  super-charged beam that explodes underneath all the foes and
-                  causes non-elemental damage. There is a second secret
-                  overdrive for Valefor as well. You obtain this all you have to
-                  do is return to Besaid and speak to a little girl with a dog
-                  standing next to the temple. You will receive an item that
-                  gives Valefor the Overdrive energy blast. If the little girl
-                  is not in by the temple then look for her in the item shop.
-                  Energy blast inflicts greater damage at the cost of higher
-                  recovery time. Once Yuna activates her ultimate weapon,
-                  Nirvana, all of Valefor's attacks can break the 9999 damage
-                  limit.
+                  Besaid Temple.
                 </p>
+                <Link href={`../aeons/valefor/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
           </Paper>
