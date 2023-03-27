@@ -1,11 +1,11 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 import Link from "next/link";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+import { Card } from "@nextui-org/react";
 
 export default function Locations() {
   return (
@@ -14,12 +14,14 @@ export default function Locations() {
       <Link href={`/temples/`}> Temples |</Link>
       <Link href={`/agencies/`}> Travel Agencies</Link>
       <hr />
+
       <Image
         src="/images/Spira.jpg"
         height={400}
         width={600}
         style={{
           margin: "auto",
+          borderRadius: "5px",
         }}
         alt="Spira"
       />
@@ -34,22 +36,23 @@ export default function Locations() {
 
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Dream_Zanarkand.jpg"
                   height={400}
                   width={554}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Dream Zanarkand"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Dream Zanarkand</h3>
+                <Card.Divider />
                 <p>
                   The mechanical metropolis in which Tidus grew up. This city is
                   actually a dream summoned by Yu Yevon, who sought to reproduce
@@ -58,26 +61,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Yevon-Baaj.jpg"
                   height={400}
                   width={532}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Yevon-Baaj"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Submerged Ruins - Temple of Yevon-Baaj</h3>
+                <Card.Divider />
                 <p>
                   The ruins of a Yevon temple destroyed by Sin decades earlier,
                   Seymour lived here as a youth in the care of his mother, and
@@ -86,26 +90,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Salvage_Ship.jpg"
                   height={400}
                   width={710}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Salvage Ship"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Salvage Ship</h3>
+                <Card.Divider />
                 <p>
                   A ship that belongs to the Al Bhed. It is used to go diving in
                   ruins for machina. Brother is the leader of the ship. You
@@ -114,26 +119,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Besaid_Island.jpg"
                   height={400}
                   width={596}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Besaid Island"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Besaid Island</h3>
+                <Card.Divider />
                 <p>
                   An island on the southern tip of Spira. It is a place abundant
                   with nature. Its mountain regions are overgrown and with thick
@@ -143,52 +149,54 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/S.S._Liki.webp"
                   height={400}
                   width={711}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="S.S. Liki"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>S.S. Liki</h3>
+                <Card.Divider />
                 <p>
                   The ship that ferries people between the islands of Besaid and
                   Kilika. It is powered by chocobos and sails.
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Kilika_Island.webp"
                   height={400}
                   width={579}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Kilika Island"
                 />
               </AccordionSummary>
               <AccordionDetails>
-                <h3>Kilika Island </h3>
+                <h3>Kilika Island</h3>
+                <Card.Divider />
                 <p>
                   An island to the northwest of Besaid Island. Its residents
                   reside in Kilika Port, a community built in the shallows.
@@ -197,26 +205,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/S.S._Winno.webp"
                   height={400}
                   width={537}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="S.S. Winno"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>S.S. Winno</h3>
+                <Card.Divider />
                 <p>
                   The ship that ferries people between the island of Kilika and
                   the city of Luca. This is where you perform the Jecht Shot for
@@ -229,26 +238,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Luca.jpg"
                   height={400}
                   width={712}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Lucca"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Luca</h3>
+                <Card.Divider />
                 <p>
                   The second largest city in Spira, it is famed for its massive
                   blitzball stadium and a theater that plays movies and music.
@@ -257,26 +267,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Mi'ihen.jpg"
                   height={400}
                   width={578}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Mi'ihen Highroad"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Mi'ihen Highroad</h3>
+                <Card.Divider />
                 <p>
                   A highway famously walked by the hero Mi'ihen eight hundred
                   years in the past. The Hero was the founder of the Crusaders
@@ -287,26 +298,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Mushroom_Rock.jpg"
                   height={400}
                   width={574}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Mushroom Rock"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Mushroom Rock Road</h3>
+                <Card.Divider />
                 <p>
                   A highway connected to the northern tip of the Mi'ihen
                   Highroad. The surrounding rockface resembles a pile of
@@ -316,26 +328,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Djose.jpg"
                   height={400}
                   width={704}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Djose"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Djose</h3>
+                <Card.Divider />
                 <p>
                   A region located to the south of central Spira. The Djose
                   Highroad is know for the wind-eroded cliffs running through
@@ -344,26 +357,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Moonflow.png"
                   height={400}
                   width={533}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Moonflow"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Moonflow</h3>
+                <Card.Divider />
                 <p>
                   A large river that crosses the continent from north to south,
                   filled with sunken ruins from a vanished era of technological
@@ -375,26 +389,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Guadosalam.jpg"
                   height={400}
                   width={711}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Guadosalam"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Guadosalam</h3>
+                <Card.Divider />
                 <p>
                   The city of the demihuman Guado people. Seymour's mansion is
                   here, as is a mystical area replete with pyreflies that is
@@ -404,26 +419,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Farplane.webp"
                   height={400}
                   width={639}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Farplane"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Farplane</h3>
+                <Card.Divider />
                 <p>
                   An underworld, it is a gathering place for the dead. Spirits
                   enter the Farplane either after they have been sent by one
@@ -434,26 +450,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Thunder_Plains.jpg"
                   height={400}
                   width={300}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Thunder Plains"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Thunder Plains</h3>
+                <Card.Divider />
                 <p>
                   A dangerous wasteland where rain and lightning are constantly
                   released from the dark clouds that blanket the sky. In the
@@ -464,26 +481,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Macalania.jpg"
                   height={400}
                   width={285}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Macalania"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Macalania</h3>
+                <Card.Divider />
                 <p>
                   A shimmering forest can be found in the region, as well as a
                   lake frozen over by the fayth in the local temple. The
@@ -493,26 +511,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Bikanel_lsland.webp"
                   height={400}
                   width={606}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Bikanel Island"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Bikanel Island</h3>
+                <Card.Divider />
                 <p>
                   A large island to the west of the main continent, largely
                   covered in desert. Due to a lack of visitors, the Al Bhed that
@@ -522,26 +541,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Home.jpg"
                   height={400}
                   width={522}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Home"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Home</h3>
+                <Card.Divider />
                 <p>
                   It is the home of the Al Bhed clan located on Bikanel Island.
                   It is an underground fortress hidden amid the Bikanel desert.
@@ -553,26 +573,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Bevelle.webp"
                   height={400}
                   width={569}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Bevelle"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Bevelle</h3>
+                <Card.Divider />
                 <p>
                   The largest city in all of Spira, Bevelle is the cradle of
                   Yevon's teachings, and the head temple of Yevon sits proudly
@@ -581,26 +602,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Calm_Lands.jpg"
                   height={400}
                   width={597}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Calm Lands"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Calm Lands</h3>
+                <Card.Divider />
                 <p>
                   The plain where high summoners across multiple generations
                   challenged Sin in order to bring about the temporary peace of
@@ -610,26 +632,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Mt_Gagazet.jpg"
                   height={400}
                   width={524}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Mt Gagazet"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Mt. Gagazet</h3>
+                <Card.Divider />
                 <p>
                   A sacred mountain in the north of Spira, protected by the
                   Ronso tribe. Harsh blizzards sweep the snowy mountain trial,
@@ -639,26 +662,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Zanarkand_Ruins.png"
                   height={400}
                   width={572}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Zanarkand Ruins"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Zanarkand Ruins</h3>
+                <Card.Divider />
                 <p>
                   The relics of a city destroyed a thousand years ago, located
                   in the northernmost tip of the continent. The fayth of the
@@ -668,26 +692,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Inside_Sin.jpg"
                   height={400}
                   width={521}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Inside Sin"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Inside Sin</h3>
+                <Card.Divider />
                 <p>
                   A mysterious space overflowing with pyreflies that unfolds
                   within Sin's massive body. The existence of realms resembling
@@ -696,26 +721,27 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Omega_Ruins.jpg"
                   height={400}
                   width={712}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Omega Ruins"
                 />
               </AccordionSummary>
               <AccordionDetails>
                 <h3>Omega Ruins</h3>
+                <Card.Divider />
                 <p>
                   An optional dungeon located within a small group of islands to
                   the east of Spira's main continent. You can access this area
@@ -727,7 +753,7 @@ export default function Locations() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
       </Grid>
     </Layout>
