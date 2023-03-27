@@ -5,7 +5,7 @@ import Link from "next/link";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import { Card, Text } from "@nextui-org/react";
+import { Card } from "@nextui-org/react";
 
 export default function Aeons() {
   return (
@@ -36,10 +36,10 @@ export default function Aeons() {
               <AccordionDetails>
                 <h3>Valefor</h3>
                 <Card.Divider />
-                <Text>
+                <p>
                   An arieal aeon with great wings whose fayth statue is located in
                   Besaid Temple.
-                </Text>
+                </p>
                 <Link href={`../aeons/valefor/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
@@ -64,10 +64,10 @@ export default function Aeons() {
               <AccordionDetails>
                 <h3>Ifrit</h3>
                 <Card.Divider />
-                <Text>
+                <p>
                   A demon that holds dominion over fire, with a fayth statue
                   situated in Kilika Temple.
-                </Text>
+                </p>
                 <Link href={`../aeons/ifrit/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
@@ -92,10 +92,10 @@ export default function Aeons() {
               <AccordionDetails>
                 <h3>Ixion</h3>
                 <Card.Divider />
-                <Text>
+                <p>
                   A horned beast covered by lightning whose fayth statue stands
                   in Djose Temple.
-                </Text>
+                </p>
                 <Link href={`../aeons/ixion/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
@@ -120,10 +120,10 @@ export default function Aeons() {
               <AccordionDetails>
                 <h3>Shiva</h3>
                 <Card.Divider />
-                <Text>
+                <p>
                   The frozen queen of ice whose fayth statue is situated inside
                   Macalania Temple. 
-                </Text>
+                </p>
                 <Link href={`../aeons/shiva/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
@@ -148,10 +148,10 @@ export default function Aeons() {
               <AccordionDetails>
                 <h3>Bahamut</h3>
                 <Card.Divider />
-                <Text>
+                <p>
                   A four-winged sacred dragon beast with a fayth statue located in
                   Bevelle. 
-                </Text>
+                </p>
                 <Link href={`../aeons/bahamut/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
@@ -176,7 +176,7 @@ export default function Aeons() {
               <AccordionDetails>
                 <h3>Yojimbo</h3>
                 <Card.Divider />
-                <Text>
+                <p>
                   A master swordsman whose fayth statue is situated in the
                   Cavern of the Stolen Fayth. The blade is his left hand,
                   Zanmato, can only be seen in the rare instance that he uses
@@ -199,7 +199,7 @@ export default function Aeons() {
                   he will attack enemies based on how much you pay him.
                   Yojimbo's attacks exceed 9999 HP damage once you activated
                   Auron's Masamune.
-                </Text>
+                </p>
                 <Link href={`../aeons/yojimbo/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
@@ -224,7 +224,7 @@ export default function Aeons() {
               <AccordionDetails>
                 <h3>Anima</h3>
                 <Card.Divider />
-                <Text>
+                <p>
                   An aeon bound in heavy chains whose fayth statue can be found
                   in the temple of Yevon-Baaj. Its fayth is Seymour's mother,
                   and the plate around its neck is engraved with her image.
@@ -240,7 +240,7 @@ export default function Aeons() {
                   Pain has a high recovery time. Her overdrive is Oblivion, the
                   most horrifying overdrive that inflicts multiple non-elemental
                   attacks on all enemies.
-                </Text>
+                </p>
                 <Link href={`../aeons/anima/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
@@ -265,7 +265,7 @@ export default function Aeons() {
               <AccordionDetails>
                 <h3>Magus Sisters</h3>
                 <Card.Divider />
-                <Text>
+                <p>
                   Three sister aeons whose fayth statue is situated in Remiem
                   Temple. Each sister has a different insect motif -- a ladybug
                   for Cindy, the eldest; a mantis for the middle child, Sandy;
@@ -295,7 +295,7 @@ export default function Aeons() {
                   time, a new command, "Combine Powers!" appears. The sisters
                   will join forces and perform one of the most devastating
                   overdrives in the entire game.
-                </Text>
+                </p>
                 <Link href={`../aeons/magus_sisters/`}>Read More</Link>
               </AccordionDetails>
             </Accordion>
