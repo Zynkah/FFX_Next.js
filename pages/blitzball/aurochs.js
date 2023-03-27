@@ -1,10 +1,10 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+import { Card } from "@nextui-org/react";
 
 export default function Aurochs() {
   return (
@@ -15,16 +15,16 @@ export default function Aurochs() {
       </h3>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Tidus_blitzball.webp"
                   height={400}
                   width={145}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Tidus"
                 />
@@ -43,19 +43,20 @@ export default function Aurochs() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
+        
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Datto.webp"
                   height={400}
                   width={174}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Datto"
                 />
@@ -74,19 +75,20 @@ export default function Aurochs() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
+        
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Letty.webp"
                   height={400}
                   width={121}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Letty"
                 />
@@ -105,19 +107,20 @@ export default function Aurochs() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
+        
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Jassu.webp"
                   height={400}
                   width={183}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Jassu"
                 />
@@ -136,19 +139,20 @@ export default function Aurochs() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
+        
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Botta.webp"
                   height={400}
                   width={151}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Botta"
                 />
@@ -167,19 +171,20 @@ export default function Aurochs() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
+        
         <Grid item xs={12} md={6}>
-          <Paper elevation={3}>
+          <Card isPressable isHoverable variant="bordered">
             <Accordion>
               <AccordionSummary>
                 <Image
-                  className="cardImage"
                   src="/images/Keepa.webp"
                   height={400}
                   width={150}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt="Keepa"
                 />
@@ -196,7 +201,7 @@ export default function Aurochs() {
                 </p>
               </AccordionDetails>
             </Accordion>
-          </Paper>
+          </Card>
         </Grid>
       </Grid>
     </Layout>
