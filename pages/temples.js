@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import { Card, Text } from "@nextui-org/react";
+import { Card } from "@nextui-org/react";
 
 export default function Temples() {
   return (
@@ -38,7 +38,7 @@ export default function Temples() {
               <AccordionDetails>
                 <h3>Besaid Temple</h3>
                 <Card.Divider />
-                <Text>This temple is in the Besaid Village.</Text>
+                <p>This temple is in the Besaid Village.</p>
                 <br />
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={4}>
