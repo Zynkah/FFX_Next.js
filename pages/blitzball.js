@@ -5,7 +5,7 @@ import Link from "next/link";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import { Card, Text } from "@nextui-org/react";
+import { Card } from "@nextui-org/react";
 
 export default function Blitzball() {
   return (
@@ -51,14 +51,14 @@ export default function Blitzball() {
               <AccordionDetails>
                 <h2>Besaid Aurochs</h2>
                 <Card.Divider />
-                <Text>
+                <p>
                   The Aurochs hail from the seaside village of Besaid, and at
                   the beginning of Final Fantasy X, are under Wakka's captaincy.
                   They are the only team in Spira to have never passed the first
                   round of the Luca blitz tournament. When Tidus joins in
                   exchange for passage, their success rate soars. The player has
                   control over the Besaid Aurochs following the events in Luca.
-                </Text>
+                </p>
                 <Link href={`../blitzball/aurochs/`}>Team Statistics</Link>
               </AccordionDetails>
             </Accordion>
@@ -83,14 +83,14 @@ export default function Blitzball() {
               <AccordionDetails>
                 <h2>Luca Goers</h2>
                 <Card.Divider />
-                <Text>
+                <p>
                   At the opening of Final Fantasy X, the Luca Goers reign as the
                   Spira champions. They are captained by the confident and brash
                   forward, Bickson. As they represent the city with the only
                   blitz stadium, they are regarded as the most beloved team in
                   Spira. The team members can be found in and around Luca
                   stadium, if the player wishes to add them to their team.
-                </Text>
+                </p>
                 <Link href={`../blitzball/goers/`}>Team Statistics</Link>
               </AccordionDetails>
             </Accordion>
@@ -115,12 +115,12 @@ export default function Blitzball() {
               <AccordionDetails>
                 <h2>Kilika Beasts</h2>
                 <Card.Divider />
-                <Text>
+                <p>
                   The Kilika Beasts hail from the small seaside town of Kilika.
                   High Summoner Ohalland used to play for the team before he
                   became a summoner. The Kilika Beasts' team members are found
                   throughout Kilika from the port to the temple.
-                </Text>
+                </p>
                 <Link href={`../blitzball/beasts/`}>Team Statistics</Link>
               </AccordionDetails>
             </Accordion>
@@ -145,7 +145,7 @@ export default function Blitzball() {
               <AccordionDetails>
                 <h2>Al Bhed Psyches</h2>
                 <Card.Divider />
-                <Text>
+                <p>
                   The Al Bhed Psyches represent the Al Bhed race. During the
                   Luca tournament of Final Fantasy X, they attempt to rig their
                   opening match against the Besaid Aurochs by kidnapping Yuna.
@@ -154,7 +154,7 @@ export default function Blitzball() {
                   available when the player has access to the airship, which is
                   right before entering Bevelle, and permanently after the
                   player has finished the events in Zanarkand.
-                </Text>
+                </p>
                 <Link href={`../blitzball/psyches/`}>Team Statistics</Link>
               </AccordionDetails>
             </Accordion>
@@ -179,11 +179,11 @@ export default function Blitzball() {
               <AccordionDetails>
                 <h2>Ronso Fangs</h2>
                 <Card.Divider />
-                <Text>
+                <p>
                   The Ronso Fangs represent the Ronso race. Due to their
                   physicality, they rely on power and endurance while lacking in
                   speed. The Ronso Fangs members are found at the Luca Docks.
-                </Text>
+                </p>
                 <Link href={`../blitzball/fangs/`}>Team Statistics</Link>
               </AccordionDetails>
             </Accordion>
@@ -208,12 +208,12 @@ export default function Blitzball() {
               <AccordionDetails>
                 <h2>Guado Glories</h2>
                 <Card.Divider />
-                <Text>
+                <p>
                   The Guado Glories represent the Guado race, and hail from
                   Guadosalam. Their players contrast the Ronso Fangs with high
                   speed at the expense of HP, Attack, and Endurance. The Guado
                   Glories team can be found in Guadosalam.
-                </Text>
+                </p>
                 <Link href={`../blitzball/glories/`}>Team Statistics</Link>
               </AccordionDetails>
             </Accordion>
@@ -238,11 +238,11 @@ export default function Blitzball() {
               <AccordionDetails>
                 <h2>Zanarkand Duggles</h2>
                 <Card.Divider />
-                <Text>
+                <p>
                   The Zanarkand Duggles are another team competing in the Jecht
                   Memorial Cup, featuring black and red outfits. Little is known
                   about the team other than that they "play dirty".
-                </Text>
+                </p>
               </AccordionDetails>
             </Accordion>
           </Card>
@@ -266,13 +266,13 @@ export default function Blitzball() {
               <AccordionDetails>
                 <h2>Zanarkand Abes</h2>
                 <Card.Divider />
-                <Text>
+                <p>
                   The Zanarkand Abes are Tidus's team in Dream Zanarkand, where
                   he is the star player. They have yellow and black outfits. His
                   father, Jecht, also played for the Abes, a shadow Tidus
                   struggles to step out of. They are only available to play
                   against in Final Fantasy X-2.
-                </Text>
+                </p>
               </AccordionDetails>
             </Accordion>
           </Card>
@@ -330,10 +330,10 @@ export default function Blitzball() {
               </AccordionSummary>
               <AccordionDetails>
               <Card.Divider />
-                <Text>
+                <p>
                   There are many players scattered throughout Spira who you can
                   scout and add to your team.
-                </Text>
+                </p>
                 <h3>Free Agents</h3>
                 <Grid container spacing={2}>
                 <Grid item xs={12} md={4}>
