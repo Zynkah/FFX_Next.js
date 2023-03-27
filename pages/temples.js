@@ -628,6 +628,7 @@ export default function Temples() {
                       width={194}
                       style={{
                         margin: "auto",
+                        borderRadius: "5px",
                       }}
                       alt="Sandy Glyph"
                     />
