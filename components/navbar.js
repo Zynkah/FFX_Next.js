@@ -2,10 +2,33 @@ import { Navbar, Link } from "@nextui-org/react";
 import Image from "next/image";
 
 export default function Nav() {
+  const collapseItems = [
+    {
+      name: 'Characters',
+      href: '/characters'
+    },
+    {
+      name: 'Culture',
+      href: '/culture'
+    },
+    {
+      name: 'Locations',
+      href: '/locations'
+    },
+    {
+      name: 'Weapons',
+      href: '/weapons'
+    },
+    {
+      name: 'Walkthrough',
+      href: '/walkthrough'
+    },
+  ];
   return (
     <Navbar isBordered variant="sticky">
       <Navbar.Brand>
-        <Link href='/'>
+        <Navbar.Toggle aria-label="toggle navigation" />
+        <Link href="/">
           <Image
             priority
             src="/images/logo.jpg"
@@ -18,18 +41,33 @@ export default function Nav() {
           />
         </Link>
       </Navbar.Brand>
-      <Navbar.Content enableCursorHighlight hideIn='xs'>
-        <Navbar.Link href='/characters'>Characters</Navbar.Link>
-        <Navbar.Link href='/culture'>Culture</Navbar.Link>
-        <Navbar.Link href='/locations'>Locations</Navbar.Link>
-        <Navbar.Link href='/weapons'>Weapons</Navbar.Link>
-        <Navbar.Link href='/walkthrough'>Walkthrough</Navbar.Link>
+      <Navbar.Content enableCursorHighlight hideIn="xs">
+        <Navbar.Link href="/characters">Characters</Navbar.Link>
+        <Navbar.Link href="/culture">Culture</Navbar.Link>
+        <Navbar.Link href="/locations">Locations</Navbar.Link>
+        <Navbar.Link href="/weapons">Weapons</Navbar.Link>
+        <Navbar.Link href="/walkthrough">Walkthrough</Navbar.Link>
       </Navbar.Content>
       <Navbar.Content>
-        <Navbar.Link color="inherit" href='/catalogue'>
+        <Navbar.Link color="inherit" href="/catalogue">
           Catalogue
         </Navbar.Link>
       </Navbar.Content>
+      <Navbar.Collapse>
+        {collapseItems.map((item) => (
+          <Navbar.CollapseItem key={item}>
+            <Link
+              color="inherit"
+              css={{
+                minWidth: "100%",
+              }}
+              href={item.href}
+            >
+              {item.name}
+            </Link>
+          </Navbar.CollapseItem>
+        ))}
+      </Navbar.Collapse>
     </Navbar>
   );
 }
