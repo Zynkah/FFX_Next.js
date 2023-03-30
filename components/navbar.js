@@ -19,7 +19,7 @@ export default function Nav() {
         </Link>
       </Navbar.Brand>
 
-      <Navbar.Content enableCursorHighlight>
+      <Navbar.Content enableCursorHighlight hideIn='xs'>
         <Navbar.Link href={`/characters/`}>Characters</Navbar.Link>
         <Navbar.Link href={`/culture/`}>Culture</Navbar.Link>
         <Navbar.Link href={`/locations/`}>Locations</Navbar.Link>
@@ -28,7 +28,7 @@ export default function Nav() {
       </Navbar.Content>
       <Navbar.Content>
         <Navbar.Link color="inherit" href={`/catalogue/`}>
-          Index
+          Catalogue
         </Navbar.Link>
       </Navbar.Content>
     </Navbar>
