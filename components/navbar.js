@@ -27,20 +27,20 @@ export default function Nav() {
   return (
     <Navbar isBordered variant="sticky">
       <Navbar.Brand>
-        
-        <Link href="/">
+        <Navbar.Toggle aria-label="toggle navigation" />
+        <Link href="/" block color="secondary">
           <Image
             priority
             src="/images/logo.jpg"
             style={{
               borderRadius: "5px",
-              marginRight: 10,
+              marginLeft: 12,
             }}
             height={30}
             width={46}
             alt="FFX Logo"
           />
-        </Link><Navbar.Toggle aria-label="toggle navigation" />
+        </Link>
       </Navbar.Brand>
       <Navbar.Content enableCursorHighlight hideIn="xs">
         <Navbar.Link href="/characters">Characters</Navbar.Link>
