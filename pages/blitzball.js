@@ -31,7 +31,7 @@ export default function Blitzball() {
       <hr />
       <h2>Teams</h2>
       <hr />
-
+      <br />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Card isPressable isHoverable variant="bordered">

@@ -10,8 +10,7 @@ export default function Technology() {
       <hr />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <h2>Machina</h2>
-          <hr width={300} />
+          <Divider><h2>Machina</h2></Divider>
           <p>
             Machina was invented over 3000 years ago and became powerful enough
             to surpass magic. According to the Final Fantasy X Scenario
@@ -31,6 +30,8 @@ export default function Technology() {
           </p>
         </Grid>
         <Grid item xs={12} md={6}>
+          <br />
+          <br />
           <Image
             src="/images/Machina_Cannon.webp"
             height={400}
@@ -43,8 +44,7 @@ export default function Technology() {
           />
         </Grid>
         <Grid item xs={12} md={6}>
-          <h2>Movie Spheres</h2>
-          <hr width={300} />
+          <Divider><h2>Movie Spheres</h2></Divider>
           <p>
             Pyreflies can crystallize into spheres by reacting to people's
             feelings and memories and binding them with images and audio.
@@ -63,6 +63,8 @@ export default function Technology() {
           </p>
         </Grid>
         <Grid item xs={12} md={6}>
+          <br />
+          <br />
           <Image
             src="/images/sphere.webp"
             height={400}
@@ -75,8 +77,7 @@ export default function Technology() {
           />
         </Grid>
         <Grid item xs={12} md={6}>
-          <h2>Gil</h2>
-          <hr width={300} />
+          <Divider><h2>Gil</h2></Divider>
           <p>
             Gil (ギル, Giru?), also translated as GP, Gold, and G, is the
             currency in all Final Fantasy games. It is acquired throughout each
@@ -97,6 +98,8 @@ export default function Technology() {
           </p>
         </Grid>
         <Grid item xs={12} md={6}>
+          <br />
+          <br />
           <Image
             src="/images/Gil.webp"
             height={400}
@@ -110,13 +113,14 @@ export default function Technology() {
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <h2>Fire Arms</h2>
-          <hr width={300} />
+          <Divider><h2>Fire Arms</h2></Divider>
           <p>
             Fire arms are used by many different people in the world of Spira. Mostly seen used by members of the military. Since hand guns and fire arms are used by the military they are not considered as machina. It is not considered blasphemous to use them. In battle you will face many enemies using these weapons.
           </p>
         </Grid>
         <Grid item xs={12} md={6}>
+          <br />
+          <br />
           <Image
             src="/images/Handguns.webp"
             height={400}

@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
+import { Divider } from "@nextui-org/react";
 
 export default function Weapons() {
   return (
@@ -9,8 +10,11 @@ export default function Weapons() {
       <hr />
       <Grid container spacing={1} marginTop={5}>
         <Grid item xs={12}>
-          <h2>Tidus</h2>
-          <hr width={300} />
+          <Divider>
+            <h2>Tidus</h2>
+          </Divider>
+          <br />
+          <br />
           <p>Tidus wields a sword with a shield as his weapon and armor.</p>
         </Grid>
         <Grid item xs={12} md={4}>
@@ -56,12 +60,16 @@ export default function Weapons() {
             }}
             alt="Tidus Shields"
           />
+          <br />
+          <br />
         </Grid>
 
-
         <Grid item xs={12}>
-          <h2>Yuna</h2>
-          <hr width={300} />
+          <Divider>
+            <h2>Yuna</h2>
+          </Divider>
+          <br />
+          <br />
           <p>Yuna heals with a rod and is embued by a ring.</p>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -85,14 +93,18 @@ export default function Weapons() {
             }}
             alt="Yuna's Rings"
           />
+          <br />
+          <br />
         </Grid>
 
         <Grid item xs={12}>
-          <h2>Wakka</h2>
-          <hr width={300} />
+          <Divider>
+            <h2>Wakka</h2>
+          </Divider>
+          <br />
+          <br />
           <p>Wakka beats down his enemies using a Blitzball.</p>
         </Grid>
-
         <Grid item xs={12}>
           <Image
             src="/images/WakkasBalls.webp"
@@ -103,17 +115,21 @@ export default function Weapons() {
             }}
             alt="Wakka's Balls"
           />
+          <br />
+          <br />
         </Grid>
 
         <Grid item xs={12}>
-          <h2>Lulu</h2>
-          <hr width={300} />
+          <Divider>
+            <h2>Lulu</h2>
+          </Divider>
+          <br />
+          <br />
           <p>
             Lulu uses her magic through her plushes as weapons with a bangle as
             her armor.
           </p>
         </Grid>
-
         <Grid item xs={12} md={3}>
           <Image
             src="/images/Doll-Cactuar.webp"
@@ -190,16 +206,20 @@ export default function Weapons() {
             }}
             alt="Doll-OnionKnight"
           />
+          <br />
+          <br />
         </Grid>
-
-
 
         <Grid item xs={12}>
-          <h2>Kimarhi</h2>
-          <hr width={300} />
-          <p>Kimarhi slashes enemies with his lance and has armlets as armor.</p>
+          <Divider>
+            <h2>Kimahri</h2>
+          </Divider>
+          <br />
+          <br />
+          <p>
+            Kimarhi slashes enemies with his lance and has armlets as armor.
+          </p>
         </Grid>
-
         <Grid item xs={12} md={4}>
           <Image
             src="/images/KimahrisLances.webp"
@@ -232,14 +252,23 @@ export default function Weapons() {
             }}
             alt="Kimahri's Armlets"
           />
+          <br />
+          <br />
         </Grid>
 
         <Grid item xs={12}>
-          <h2>Auron</h2>
-          <hr width={300} />
-          <p>Auron pierces through his enemies with a katana and protects himeself with bracers.</p>
+          <Divider>
+            <h2>Auron</h2>
+          </Divider>
+          <br />
+          <br />
+          <p>
+            Auron pierces through his enemies with a katana and protects
+            himeself with bracers.
+          </p>
         </Grid>
-
+        <br />
+        <br />
         <Grid item xs={12}>
           <Image
             src="/images/AuronsKatanas.webp"
@@ -272,11 +301,16 @@ export default function Weapons() {
             }}
             alt="Auron's Bracers"
           />
+          <br />
+          <br />
         </Grid>
 
         <Grid item xs={12}>
-          <h2>Rikku</h2>
-          <hr width={300} />
+          <Divider>
+            <h2>Rikku</h2>
+          </Divider>
+          <br />
+          <br />
           <p>Rikku mugs her enemies with her claws and guards with targes.</p>
         </Grid>
 

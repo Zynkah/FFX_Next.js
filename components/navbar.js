@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <Navbar isBordered variant="sticky">
       <Navbar.Brand>
-        <Link href="/">
+        <Link href='/'>
           <Image
             priority
             src="/images/logo.jpg"
@@ -18,16 +18,15 @@ export default function Nav() {
           />
         </Link>
       </Navbar.Brand>
-
       <Navbar.Content enableCursorHighlight hideIn='xs'>
-        <Navbar.Link href={`/characters/`}>Characters</Navbar.Link>
-        <Navbar.Link href={`/culture/`}>Culture</Navbar.Link>
-        <Navbar.Link href={`/locations/`}>Locations</Navbar.Link>
-        <Navbar.Link href={`/weapons/`}>Weapons</Navbar.Link>
-        <Navbar.Link href={`/walkthrough/`}>Walkthrough</Navbar.Link>
+        <Navbar.Link href='/characters'>Characters</Navbar.Link>
+        <Navbar.Link href='/culture'>Culture</Navbar.Link>
+        <Navbar.Link href='/locations'>Locations</Navbar.Link>
+        <Navbar.Link href='/weapons'>Weapons</Navbar.Link>
+        <Navbar.Link href='/walkthrough'>Walkthrough</Navbar.Link>
       </Navbar.Content>
       <Navbar.Content>
-        <Navbar.Link color="inherit" href={`/catalogue/`}>
+        <Navbar.Link color="inherit" href='/catalogue'>
           Catalogue
         </Navbar.Link>
       </Navbar.Content>
