@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import Nav from "./navbar";
 
 const name = "Final Fantasy X";
 export const siteTitle = "Final Fantasy X";
@@ -22,8 +23,8 @@ export default function Layout({ children, home }) {
               priority
               src="/images/logo.jpg"
               className={utilStyles.borderCircle}
-              height={144}
-              width={222}
+              height={250}
+              width={384}
               alt="FFX Logo"
             />
             <h1 className={utilStyles.heading2xl}>{name}</h1>
@@ -48,6 +49,7 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+      <Nav />
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
