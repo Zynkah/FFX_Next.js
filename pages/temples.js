@@ -19,6 +19,7 @@ export default function Temples() {
         summoner mighty creatures called aeons may be made manifest.
       </p>
       <hr />
+      <br />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Card isPressable isHoverable variant="bordered">

@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
+import { Divider } from "@nextui-org/react";
 
 export default function Scripts() {
   return (
@@ -9,8 +10,9 @@ export default function Scripts() {
       <hr />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} marginY={10}>
-          <h2>Spiran Script</h2>
-          <hr width={300} />
+          <Divider><h2>Spiran Script</h2></Divider>
+          <br />
+          <br />
           <Image
             src="/images/Sphere-Broadcast-Billboard.webp"
             height={200}
@@ -43,8 +45,9 @@ export default function Scripts() {
         </Grid>
 
         <Grid item xs={12} md={6} marginBottom={10}>
-          <h2>Al Bhed Script</h2>
-          <hr width={300} />
+          <Divider><h2>Al Bhed Script</h2></Divider>
+          <br />
+          <br />
           <Image
             src="/images/Al-Bhed-Primer-Artwork.webp"
             height={200}
@@ -76,8 +79,9 @@ export default function Scripts() {
         </Grid>
 
         <Grid item xs={12} md={6} marginBottom={10}>
-          <h2>Yevon Script</h2>
-          <hr width={300} />
+          <Divider><h2>Yevon Script</h2></Divider>
+          <br />
+          <br />
           <Image
             src="/images/Kilika-temple-artwork-ffx.webp"
             height={200}

@@ -11,6 +11,7 @@ export default function Characters() {
     <Layout>
       <h1>Characters</h1>
       <hr />
+      <br />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Card isPressable isHoverable variant="bordered">

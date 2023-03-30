@@ -14,7 +14,7 @@ export default function Locations() {
       <Link href={`/temples/`}> Temples |</Link>
       <Link href={`/agencies/`}> Travel Agencies</Link>
       <hr />
-
+      <br />
       <Image
         src="/images/Spira.jpg"
         height={400}
@@ -33,7 +33,7 @@ export default function Locations() {
         beings.
       </p>
       <hr />
-
+      <br />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Card isPressable isHoverable variant="bordered">
