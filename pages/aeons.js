@@ -16,7 +16,7 @@ export default function Aeons() {
       <Link href={`/aeons/`}> Aeons |</Link>
       <Link href={`/religion/`}> Back</Link>
       <hr />
-
+      <br />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Card isPressable isHoverable variant="bordered">
@@ -37,8 +37,8 @@ export default function Aeons() {
                 <h3>Valefor</h3>
                 <Card.Divider />
                 <p>
-                  An arieal aeon with great wings whose fayth statue is located in
-                  Besaid Temple.
+                  An arieal aeon with great wings whose fayth statue is located
+                  in Besaid Temple.
                 </p>
                 <Link href={`../aeons/valefor/`}>Read More</Link>
               </AccordionDetails>
@@ -122,7 +122,7 @@ export default function Aeons() {
                 <Card.Divider />
                 <p>
                   The frozen queen of ice whose fayth statue is situated inside
-                  Macalania Temple. 
+                  Macalania Temple.
                 </p>
                 <Link href={`../aeons/shiva/`}>Read More</Link>
               </AccordionDetails>
@@ -149,8 +149,8 @@ export default function Aeons() {
                 <h3>Bahamut</h3>
                 <Card.Divider />
                 <p>
-                  A four-winged sacred dragon beast with a fayth statue located in
-                  Bevelle. 
+                  A four-winged sacred dragon beast with a fayth statue located
+                  in Bevelle.
                 </p>
                 <Link href={`../aeons/bahamut/`}>Read More</Link>
               </AccordionDetails>
