@@ -16,7 +16,7 @@ export default function Summoners() {
       <Link href={`/aeons/`}> Aeons |</Link>
       <Link href={`/religion/`}> Back</Link>
       <hr />
-
+<br />
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Card isPressable isHoverable variant="bordered">
