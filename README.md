@@ -1,7 +1,29 @@
-<b>Final Fantasy X Fan Page </b>
-<hr />
-Welcome to my Final Fantasy X fan page! I am the biggest FF Fan in the world, and I want to combine my love for it with my love for programing!
-<hr />
+# Final Fantasy X Fan Page
+Welcome to my [Final Fantasy X](https://final-fantasy-x.vercel.app/) fan page! I am the biggest FF Fan in the world, and I want to combine my love for it with my love for programing!
+
+## Tech Stack
+The repository uses the following tech stack/libraries.
+- Front-end
+    -   [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+    -   [Material UI](https://mui.com/) - offers a comprehensive suite of UI tools to help you ship new features faster.
+    -   [Next UI](https://nextui.org/) - offers a comprehensive suite of UI tools to help you ship new features faster.  
+- Back-end
+     -   [Next.JS](https://nextjs.org/) - provides hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
+          -   [Node.JS](https://nodejs.org/en/) - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+-   Tooling
+    -   [Prettier](https://prettier.io/) - An opinionated code formatter
+    -   [EsLint](https://eslint.org/) - statically analyzes your code to quickly find problems
+-   Deployment & CI/CD
+    -   [Github Actions](https://docs.github.com/en/actions/using-workflows) - actions that run on PR requests (linting/build/test etc)
+    -   [Vercel](https://vercel.com/) - website hosting
+    
+## Getting Started
+
+```bash
+$npm install                    # installs dependencies
+$npm run dev                    # Starts development server
+```
+  
 
 After cloning the repository input:
 
