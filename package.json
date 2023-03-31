@@ -13,6 +13,7 @@
     "@mui/material": "^5.11.8",
     "@mui/styled-engine-sc": "^5.11.0",
     "@nextui-org/react": "^1.0.0-beta.12",
+    "@vercel/analytics": "^0.1.11",
     "clsx": "^1.2.1",
     "date-fns": "^2.29.3",
     "express": "^4.18.2",
