@@ -206,20 +206,7 @@ export default function Aeons() {
                 <Card.Divider />
                 <p>
                   An aeon bound in heavy chains whose fayth statue can be found
-                  in the temple of Yevon-Baaj. Its fayth is Seymour's mother,
-                  and the plate around its neck is engraved with her image.
-                  Anima is first seen as Seymour's chilling aeon, but the party
-                  can acquire it by undertaking a quest. Return to Baaj Temple
-                  from the airship, defeating Geosgaeno, and then enter the
-                  underwater temple. Find the six hidden items in the Cloister
-                  of Trials at each temple, and then approach each statue inside
-                  Anima's shrine. This opens a doorway to the most devastating
-                  aeon in the game. Anima's unique attack, Pain, conjures the
-                  essence of misery and anguish, and unleashes it upon a single
-                  enemy. The attack has a high chance of causing instant death.
-                  Pain has a high recovery time. Her overdrive is Oblivion, the
-                  most horrifying overdrive that inflicts multiple non-elemental
-                  attacks on all enemies.
+                  in the temple of Yevon-Baaj.
                 </p>
                 <Link href={`../aeons/anima/`}>Read More</Link>
               </AccordionDetails>
