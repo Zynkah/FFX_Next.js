@@ -74,7 +74,7 @@ export default function Races() {
         <TabPanel value={value} index={0}>
           <h2>Humaniods</h2>
           <Grid container spacing={2}>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
               <Card isPressable isHoverable variant="bordered">
                 <Accordion>
                   <AccordionSummary>
@@ -107,7 +107,7 @@ export default function Races() {
               </Card>
             </Grid>
             
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
               <Card isPressable isHoverable variant="bordered">
                 <Accordion>
                   <AccordionSummary>
@@ -151,7 +151,7 @@ export default function Races() {
               </Card>
             </Grid>
 
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
               <Card isPressable isHoverable variant="bordered">
                 <Accordion>
                   <AccordionSummary>
@@ -193,7 +193,7 @@ export default function Races() {
               </Card>
             </Grid>
 
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
               <Card isPressable isHoverable variant="bordered">
                 <Accordion>
                   <AccordionSummary>
