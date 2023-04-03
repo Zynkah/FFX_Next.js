@@ -106,6 +106,50 @@ export default function Races() {
                 </Accordion>
               </Card>
             </Grid>
+            
+            <Grid item xs={6}>
+              <Card isPressable isHoverable variant="bordered">
+                <Accordion>
+                  <AccordionSummary>
+                    <Image
+                      src="/images/Ronso.webp"
+                      height={400}
+                      width={590}
+                      style={{
+                        margin: "auto",
+                        borderRadius: "5px",
+                      }}
+                      alt="Ronso"
+                    />
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <h3>Ronso</h3>
+                    <Card.Divider />
+                    <p>
+                      The Ronso is a race of muscular, anthropomorphic feline
+                      humanoids from the world of Spira. They stand above two
+                      meters in height, the males are considerably larger and
+                      more muscular then the females. They have hands with claws
+                      and paws for feet. They are covered in blue fur with
+                      patches of white with fangs, a cats nose, golden eyes and
+                      a tail. They tie back their main in braids and ponytails.
+                      They are formidable warriors, known for their strong sense
+                      of honor and loyalty, as well as their pride and quickness
+                      to anger. The Ronso live at the base of Mt. Gagazet and
+                      guard the sacred mountain. Hardly anything is known about
+                      their culture, other than that they view the mountain a
+                      sacred location and trekking up Gagazet is viewed as a
+                      spiritual journey for a Ronso seeking guidance. The Ronso
+                      take pride in protecting the mountain and compete with
+                      each other to chose who is worthy of being guardian of the
+                      sacred mountain. Kelk Ronso is the tribe leader and their
+                      representative in Bevelle as a Maester of Yevon. The Ronso
+                      have a blitzball team called the Ronso Fangs.
+                    </p>
+                  </AccordionDetails>
+                </Accordion>
+              </Card>
+            </Grid>
 
             <Grid item xs={6}>
               <Card isPressable isHoverable variant="bordered">
@@ -188,50 +232,6 @@ export default function Races() {
                       appointed a Maester of Yevon. Despite their strict
                       religious culture, they are generous and welcoming to
                       guests.
-                    </p>
-                  </AccordionDetails>
-                </Accordion>
-              </Card>
-            </Grid>
-
-            <Grid item xs={6}>
-              <Card isPressable isHoverable variant="bordered">
-                <Accordion>
-                  <AccordionSummary>
-                    <Image
-                      src="/images/Ronso.webp"
-                      height={400}
-                      width={590}
-                      style={{
-                        margin: "auto",
-                        borderRadius: "5px",
-                      }}
-                      alt="Ronso"
-                    />
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <h3>Ronso</h3>
-                    <Card.Divider />
-                    <p>
-                      The Ronso is a race of muscular, anthropomorphic feline
-                      humanoids from the world of Spira. They stand above two
-                      meters in height, the males are considerably larger and
-                      more muscular then the females. They have hands with claws
-                      and paws for feet. They are covered in blue fur with
-                      patches of white with fangs, a cats nose, golden eyes and
-                      a tail. They tie back their main in braids and ponytails.
-                      They are formidable warriors, known for their strong sense
-                      of honor and loyalty, as well as their pride and quickness
-                      to anger. The Ronso live at the base of Mt. Gagazet and
-                      guard the sacred mountain. Hardly anything is known about
-                      their culture, other than that they view the mountain a
-                      sacred location and trekking up Gagazet is viewed as a
-                      spiritual journey for a Ronso seeking guidance. The Ronso
-                      take pride in protecting the mountain and compete with
-                      each other to chose who is worthy of being guardian of the
-                      sacred mountain. Kelk Ronso is the tribe leader and their
-                      representative in Bevelle as a Maester of Yevon. The Ronso
-                      have a blitzball team called the Ronso Fangs.
                     </p>
                   </AccordionDetails>
                 </Accordion>
