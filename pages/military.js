@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
+import { Divider } from "@nextui-org/react";
 
 export default function Military() {
   return (
@@ -20,8 +21,13 @@ export default function Military() {
           />
         </Grid>
         <Grid item xs={12} md={6}>
-          <h2>Crusaders</h2>
-          <hr width={300} />
+          <br />
+          <br />
+          <Divider>
+            <h2>Crusaders</h2>
+          </Divider>
+          <br />
+          <br />
           <p>
             The Crusaders were formed as the Crimson Blades 800 years ago by
             Lord Mi'ihen. As the first volunteer-based organization dedicated to
@@ -48,8 +54,13 @@ export default function Military() {
           />
         </Grid>
         <Grid item xs={12} md={6}>
-          <h2>Guardians</h2>
-          <hr width={300} />
+          <br />
+          <br />
+          <Divider>
+            <h2>Guardians</h2>
+          </Divider>
+          <br />
+          <br />
           <p>
             Guardians are the only individuals allowed to accompany a summoner
             into a Chamber of the Fayth. If anyone else does so, the summoner
@@ -70,8 +81,13 @@ export default function Military() {
           />
         </Grid>
         <Grid item xs={12} md={6}>
-          <h2>Warrior Monks</h2>
-          <hr width={300} />
+          <br />
+          <br />
+          <Divider>
+            <h2>Warrior Monks</h2>
+          </Divider>
+          <br />
+          <br />
           <p>
             The history of the Warrior Monks date back at least 1,000 years
             prior to the events of Final Fantasy X. In the Machina War, the
@@ -93,8 +109,13 @@ export default function Military() {
           />
         </Grid>
         <Grid item xs={12} md={6}>
-          <h2>Crimson Squad</h2>
-          <hr width={300} />
+          <br />
+          <br />
+          <Divider>
+            <h2>Crimson Squad</h2>
+          </Divider>
+          <br />
+          <br />
           <p>
             Maester Wen Kinoc assembled the Crimson Squad under the guise of
             fulfilling the society's demand for a stronger army, but the true
@@ -115,8 +136,13 @@ export default function Military() {
           />
         </Grid>
         <Grid item xs={12} md={6}>
-          <h2>Chocobo Knights</h2>
-          <hr width={300} />
+          <br />
+          <br />
+          <Divider>
+            <h2>Chocobo Knights</h2>
+          </Divider>
+          <br />
+          <br />
           <p>
             The Chocobo Knights of Spira are an elite group of mounted soldiers,
             consisting of the serious but kind Captain Lucil, cheerful Elma, and
