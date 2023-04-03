@@ -34,18 +34,7 @@ export default function Yojimbo() {
             battle.
           </p>
         </Grid>
-        <Grid item xs={12} md={4}>
-          <Image
-            src="/images/Yojimbo-artwork.webp"
-            height={300}
-            width={309}
-            style={{
-              margin: "auto",
-              borderRadius: "5px",
-            }}
-            alt="Yojimbo Body"
-          />
-        </Grid>
+
         <Grid item xs={12} md={8} marginTop={5}>
           <p>
             Proceed to the Chamber of the Fayth and speak to Yojimbo to
@@ -61,9 +50,22 @@ export default function Yojimbo() {
         </Grid>
         <Grid item xs={12} md={4}>
           <Image
+            src="/images/Yojimbo-artwork.webp"
+            height={300}
+            width={322}
+            style={{
+              margin: "auto",
+              borderRadius: "5px",
+            }}
+            alt="Yojimbo Body"
+          />
+        </Grid>
+        
+        <Grid item xs={12} md={4}>
+          <Image
             src="/images/Fayth_Yojimbo.webp"
             height={300}
-            width={309}
+            width={322}
             style={{
               margin: "auto",
               borderRadius: "5px",
