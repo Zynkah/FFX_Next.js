@@ -23,7 +23,7 @@ export default function Anima() {
           <Image
             src="/images/Anima.jpeg"
             height={300}
-            width={309}
+            width={268}
             style={{
               margin: "auto",
               borderRadius: "5px",

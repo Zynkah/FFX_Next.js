@@ -234,34 +234,7 @@ export default function Aeons() {
                 <Card.Divider />
                 <p>
                   Three sister aeons whose fayth statue is situated in Remiem
-                  Temple. Each sister has a different insect motif -- a ladybug
-                  for Cindy, the eldest; a mantis for the middle child, Sandy;
-                  and a hornet for Mindy, the youngest. Each of their magic
-                  circles reflects those characteristics. This trio made a
-                  previous appearance in FF4. They can be yours to summon by
-                  undertaking a side quest. Capture all of the enemies in the
-                  Mt. Gagazet area, and return to the monster arena to get the
-                  Blossom Crown. Acquire all the other aeons, including Yojimbo
-                  and Anima, and return to Remiem Temple in the Calm Lands.
-                  Challenge and defeat Belgemine's versions of your aeons. After
-                  defeating her version of Bahamut, she will give you the Flower
-                  Scepter. Continue to defeat Yojimbo and Anima. Then move to
-                  the door in the back and unseal it with these two key items.
-                  The Magus Sisters are like three separate aeons. As such, they
-                  are a bit difficult to control. There are verbal requests that
-                  must be made, and whether or not they grant Yuna's wishes
-                  depends upon their level of morale. These sisters have 3
-                  unique attacks; Camisade, Razzia and Passado. The sisters
-                  might perform their unique attacks randomly when the "Do what
-                  you will" choice is selected, or they might do it when Yuna
-                  shouts "Go! Go!". Cindy's Camisade shoots blades of fire at an
-                  enemy, while Sandy's Razzia launches her onto her target.
-                  Little Mindy's Passado will rapidly fire a burst of fifteen
-                  stingers at a single enemy. Their overdrive is Delta Attack.
-                  When the Magus Sisters are all in Overdrive mode at the same
-                  time, a new command, "Combine Powers!" appears. The sisters
-                  will join forces and perform one of the most devastating
-                  overdrives in the entire game.
+                  Temple. 
                 </p>
                 <Link href={`../aeons/magus_sisters/`}>Read More</Link>
               </AccordionDetails>

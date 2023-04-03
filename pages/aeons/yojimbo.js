@@ -16,7 +16,7 @@ export default function Yojimbo() {
           <Image
             src="/images/Yojimbo.jpeg"
             height={300}
-            width={309}
+            width={343}
             style={{
               margin: "auto",
               borderRadius: "5px",
