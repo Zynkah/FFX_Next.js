@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Grid from "@mui/material/Grid";
 import { Divider } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
