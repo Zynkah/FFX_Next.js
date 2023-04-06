@@ -2,14 +2,74 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
 import { Divider } from "@nextui-org/react";
+import * as React from "react";
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
 
 export default function Military() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
     <Layout>
       <h1>Military</h1>
       <hr />
-      <Grid container spacing={2} marginTop={5}>
-        <Grid item xs={12} md={6}>
+      <Box sx={{ width: "100%" }}>
+        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="basic tabs"
+            centered
+          >
+            <Tab label="Crusaders" {...a11yProps(0)} />
+            <Tab label="Guardians" {...a11yProps(1)} />
+            <Tab label="Warrior Monks" {...a11yProps(2)} />
+            <Tab label="Crimson Squad" {...a11yProps(3)} />
+            <Tab label="Chocobo Knights" {...a11yProps(4)} />
+          </Tabs>
+        </Box>
+
+        <TabPanel value={value} index={0}>
           <Image
             src="/images/WenKinoc.png"
             height={400}
@@ -19,8 +79,6 @@ export default function Military() {
             }}
             alt="Wen Kinoc Agency"
           />
-        </Grid>
-        <Grid item xs={12} md={6}>
           <br />
           <br />
           <Divider>
@@ -40,8 +98,9 @@ export default function Military() {
             traveled to Bevelle was renamed the Mi'ihen Highroad in reflection
             of his actions.
           </p>
-        </Grid>
-        <Grid item xs={12} md={6}>
+        </TabPanel>
+
+        <TabPanel value={value} index={1}>
           <Image
             src="/images/Zaon.webp"
             height={400}
@@ -52,8 +111,6 @@ export default function Military() {
             }}
             alt="Zaon"
           />
-        </Grid>
-        <Grid item xs={12} md={6}>
           <br />
           <br />
           <Divider>
@@ -67,8 +124,9 @@ export default function Military() {
             may face sanctions as strong as excommunication from Yevon, even if
             they did so without the summoner's knowledge or consent.
           </p>
-        </Grid>
-        <Grid item xs={12} md={6}>
+        </TabPanel>
+
+        <TabPanel value={value} index={2}>
           <Image
             src="/images/Warrior_Monk.webp"
             height={400}
@@ -79,8 +137,6 @@ export default function Military() {
             }}
             alt="Warrior Monk"
           />
-        </Grid>
-        <Grid item xs={12} md={6}>
           <br />
           <br />
           <Divider>
@@ -95,8 +151,9 @@ export default function Military() {
             fight Zanarkand. Many monks died during Sin's destruction of
             Zanarkand, and many Fallen Monks still dwell there as unsent.
           </p>
-        </Grid>
-        <Grid item xs={12} md={6}>
+        </TabPanel>
+
+        <TabPanel value={value} index={3}>
           <Image
             src="/images/Crimson_Squad.webp"
             height={300}
@@ -107,8 +164,6 @@ export default function Military() {
             }}
             alt="Crimson Squad"
           />
-        </Grid>
-        <Grid item xs={12} md={6}>
           <br />
           <br />
           <Divider>
@@ -122,8 +177,9 @@ export default function Military() {
             reason was to privatize the Crusaders by inserting his hand-reared
             Crimson Squad members.
           </p>
-        </Grid>
-        <Grid item xs={12} md={6}>
+        </TabPanel>
+
+        <TabPanel value={value} index={4}>
           <Image
             src="/images/Chocobo_Knights.webp"
             height={300}
@@ -134,8 +190,6 @@ export default function Military() {
             }}
             alt="Chocobo Knights"
           />
-        </Grid>
-        <Grid item xs={12} md={6}>
           <br />
           <br />
           <Divider>
@@ -154,8 +208,8 @@ export default function Military() {
             but they do take part in Operation Mi'ihen and both Lucil and Elma
             are shown giving orders to Luzzu and Gatta.
           </p>
-        </Grid>
-      </Grid>
+        </TabPanel>
+      </Box>
     </Layout>
   );
 }
