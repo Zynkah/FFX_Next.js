@@ -62,7 +62,7 @@ export default function Races() {
           <Tabs
             value={value}
             onChange={handleChange}
-            aria-label="basic tabs example"
+            aria-label="basic tabs"
             centered
           >
             <Tab label="Humaniods" {...a11yProps(0)} />
