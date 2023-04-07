@@ -59,6 +59,8 @@ export default function Scripts() {
             value={value}
             onChange={handleChange}
             aria-label="basic tabs"
+            textColor="secondary"
+            indicatorColor="secondary"
             centered
           >
             <Tab label="Spiran Script" {...a11yProps(0)} />

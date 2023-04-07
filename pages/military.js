@@ -58,6 +58,8 @@ export default function Military() {
             value={value}
             onChange={handleChange}
             aria-label="basic tabs"
+            textColor="secondary"
+            indicatorColor="secondary"
             centered
           >
             <Tab label="Crusaders" {...a11yProps(0)} />
