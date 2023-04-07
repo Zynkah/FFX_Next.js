@@ -63,6 +63,8 @@ export default function Races() {
             value={value}
             onChange={handleChange}
             aria-label="basic tabs"
+            textColor="secondary"
+            indicatorColor="secondary"
             centered
           >
             <Tab label="Humaniods" {...a11yProps(0)} />
