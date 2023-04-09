@@ -57,6 +57,8 @@ export default function Military() {
           <Tabs
             value={value}
             onChange={handleChange}
+            variant="scrollable"
+            scrollButtons
             aria-label="basic tabs"
             textColor="secondary"
             indicatorColor="secondary"
