@@ -53,7 +53,15 @@ export default function Military() {
       <h1>Military</h1>
       <hr />
       <Box sx={{ width: "100%" }}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Box
+          sx={{
+            borderBottom: 1,
+            borderColor: "divider",
+            display: "flex",
+            justifyContent: "center",
+            width: "100%",
+          }}
+        >
           <Tabs
             value={value}
             onChange={handleChange}
@@ -62,7 +70,6 @@ export default function Military() {
             aria-label="basic tabs"
             textColor="secondary"
             indicatorColor="secondary"
-            centered
           >
             <Tab label="Crusaders" {...a11yProps(0)} />
             <Tab label="Guardians" {...a11yProps(1)} />
