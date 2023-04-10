@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Link from "next/link";
 import Grid from "@mui/material/Grid";
 import * as React from "react";
 import PropTypes from "prop-types";
