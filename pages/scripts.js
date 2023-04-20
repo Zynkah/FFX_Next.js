@@ -8,6 +8,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import { Container } from "@nextui-org/react";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -72,9 +73,11 @@ export default function Scripts() {
         <TabPanel value={value} index={0}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} marginY={10}>
-              <Divider>
-                <h2>Spiran Script</h2>
-              </Divider>
+              <Container style={{ marginBottom: "35px" }}>
+                <Divider>
+                  <h2>Spiran Script</h2>
+                </Divider>
+              </Container>
               <br />
               <br />
               <Image
@@ -113,9 +116,11 @@ export default function Scripts() {
         <TabPanel value={value} index={1}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} marginY={10}>
-              <Divider>
-                <h2>Al Bhed Script</h2>
-              </Divider>
+              <Container style={{ marginBottom: "35px" }}>
+                <Divider>
+                  <h2>Al Bhed Script</h2>
+                </Divider>
+              </Container>
               <br />
               <br />
               <br />
@@ -153,9 +158,11 @@ export default function Scripts() {
         <TabPanel value={value} index={2}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} marginY={10}>
+            <Container style={{ marginBottom: "35px" }}>
               <Divider>
                 <h2>Yevon Script</h2>
               </Divider>
+              </Container>
               <br />
               <br />
               <Image
