@@ -60,6 +60,7 @@ export default function Military() {
             display: "flex",
             justifyContent: "center",
             width: "100%",
+            marginBottom: "20px",
           }}
         >
           <Tabs

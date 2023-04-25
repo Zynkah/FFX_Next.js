@@ -61,6 +61,7 @@ export default function Technology() {
             display: "flex",
             justifyContent: "center",
             width: "100%",
+            marginBottom: "20px",
           }}
         >
           <Tabs
