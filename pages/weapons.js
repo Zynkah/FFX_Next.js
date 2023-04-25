@@ -60,6 +60,7 @@ export default function Weapons() {
             display: "flex",
             justifyContent: "center",
             width: "100%",
+            marginBottom: "20px",
           }}
         >
           <Tabs
