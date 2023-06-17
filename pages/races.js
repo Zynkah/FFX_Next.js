@@ -11,7 +11,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-
+import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -55,7 +55,13 @@ export default function Races() {
 
   return (
     <Layout>
-      <h1>Races & Creatures</h1>
+      <Typography
+        variant="h3"
+        sx={{ margin: "20px" }}
+        className={utilStyles.title}
+      >
+        Races & Creatures
+      </Typography>
       <hr />
       <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -108,7 +114,7 @@ export default function Races() {
                 </Accordion>
               </Card>
             </Grid>
-            
+
             <Grid item xs={12} md={6}>
               <Card isPressable isHoverable variant="bordered">
                 <Accordion>

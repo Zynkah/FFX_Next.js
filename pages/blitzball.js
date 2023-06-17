@@ -6,11 +6,19 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { Card } from "@nextui-org/react";
+import Typography from "@mui/material/Typography";
+import utilStyles from "../styles/utils.module.css";
 
 export default function Blitzball() {
   return (
     <Layout>
-      <h1>Blitzball</h1>
+      <Typography
+        variant="h3"
+        sx={{ margin: "20px" }}
+        className={utilStyles.title}
+      >
+        Blitzball
+      </Typography>
       <hr />
       <Image
         src="/images/Blitzball_Logo.jpg"
@@ -329,49 +337,49 @@ export default function Blitzball() {
                 <h2>Recruiting and Scouting</h2>
               </AccordionSummary>
               <AccordionDetails>
-              <Card.Divider />
+                <Card.Divider />
                 <p>
                   There are many players scattered throughout Spira who you can
                   scout and add to your team.
                 </p>
                 <h3>Free Agents</h3>
                 <Grid container spacing={2}>
-                <Grid item xs={12} md={4}>
-                  <ul>
-                    <li>Brother</li>
-                    <li>Wedge</li>
-                    <li>Kiyuri</li>
-                    <li>Kyou</li>
-                    <li>Zalitz</li>
-                    <li>Shaami</li>
-                    <li>Shuu</li>
-                    <li>Jumal</li>
-                  </ul>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <ul>
-                    <li>Svanda</li>
-                    <li>Zev Ronso</li>
-                    <li>Tatts</li>
-                    <li>Durren</li>
-                    <li>Nedus</li>
-                    <li>Naida</li>
-                    <li>Biggs</li>
-                    <li>Vilucha</li>
-                  </ul>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <ul>
-                    <li>Mifurey</li>
-                    <li>Miyu</li>
-                    <li>Mep</li>
-                    <li>Yuma Guado</li>
-                    <li>Linna</li>
-                    <li>Rin</li>
-                    <li>Ropp</li>
-                    <li>Wakka</li>
-                  </ul>
-                </Grid>
+                  <Grid item xs={12} md={4}>
+                    <ul>
+                      <li>Brother</li>
+                      <li>Wedge</li>
+                      <li>Kiyuri</li>
+                      <li>Kyou</li>
+                      <li>Zalitz</li>
+                      <li>Shaami</li>
+                      <li>Shuu</li>
+                      <li>Jumal</li>
+                    </ul>
+                  </Grid>
+                  <Grid item xs={12} md={4}>
+                    <ul>
+                      <li>Svanda</li>
+                      <li>Zev Ronso</li>
+                      <li>Tatts</li>
+                      <li>Durren</li>
+                      <li>Nedus</li>
+                      <li>Naida</li>
+                      <li>Biggs</li>
+                      <li>Vilucha</li>
+                    </ul>
+                  </Grid>
+                  <Grid item xs={12} md={4}>
+                    <ul>
+                      <li>Mifurey</li>
+                      <li>Miyu</li>
+                      <li>Mep</li>
+                      <li>Yuma Guado</li>
+                      <li>Linna</li>
+                      <li>Rin</li>
+                      <li>Ropp</li>
+                      <li>Wakka</li>
+                    </ul>
+                  </Grid>
                 </Grid>
               </AccordionDetails>
             </Accordion>

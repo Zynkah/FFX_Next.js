@@ -12,6 +12,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Link from "next/link";
+import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -54,7 +55,13 @@ export default function Characters() {
   };
   return (
     <Layout>
-      <h1>Characters</h1>
+      <Typography
+        variant="h3"
+        sx={{ margin: "20px" }}
+        className={utilStyles.title}
+      >
+        Characters
+      </Typography>
       <hr />
       <br />
       <Box sx={{ width: "100%" }}>
