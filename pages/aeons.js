@@ -74,8 +74,8 @@ export default function Aeons() {
             textColor="secondary"
             indicatorColor="secondary"
           >
-            <Tab label="Maesters" href={`/maesters/`} value={value} />
-            <Tab label="Summoners" href={`/summoners/`} value={value} />
+            <Tab label="Maesters" href={`/maesters/`} />
+            <Tab label="Summoners" href={`/summoners/`} />
             <Tab label="Aeons" href={`/aeons/`} value={value} />
           </Tabs>
         </Box>
