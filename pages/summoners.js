@@ -67,7 +67,7 @@ export default function Summoners() {
             indicatorColor="secondary"
           >
             <Tab label="Maesters" href={`/maesters/`} />
-            <Tab label="Summoners" href={`/summoners/`} />
+            <Tab label="Summoners" href={`/summoners/`} value={value}/>
             <Tab label="Aeons" href={`/aeons/`} />
           </Tabs>
         </Box>
