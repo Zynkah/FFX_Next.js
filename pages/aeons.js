@@ -1,18 +1,20 @@
 import Layout from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
 import Image from "next/image";
-import Grid from "@mui/material/Grid";
+import {
+  Grid,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Tabs,
+  Tab,
+  Typography,
+  Box,
+} from "@mui/material";
 import Link from "next/link";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
 import { Card } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -76,7 +78,7 @@ export default function Aeons() {
           >
             <Tab label="Maesters" href={`/maesters/`} />
             <Tab label="Summoners" href={`/summoners/`} />
-            <Tab label="Aeons" href={`/aeons/`} value={value} />
+            <Tab label="Aeons" href={`/aeons/`} value={0} />
           </Tabs>
         </Box>
         <hr />
