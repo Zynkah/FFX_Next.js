@@ -59,8 +59,8 @@ export default function Scripts() {
             variant="scrollable"
             scrollButtons
             aria-label="basic tabs"
-            textColor="secondary"
-            indicatorColor="secondary"
+            textColor="none"
+            indicatorColor="none"
           >
             <Tab label="Maesters" href={`/maesters/`} />
             <Tab label="Summoners" href={`/summoners/`} />

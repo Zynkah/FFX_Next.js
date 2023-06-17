@@ -59,8 +59,8 @@ export default function Culture() {
             variant="scrollable"
             scrollButtons
             aria-label="basic tabs"
-            textColor="secondary"
-            indicatorColor="secondary"
+            textColor="none"
+            indicatorColor="none"
           >
             <Tab label="Races & Culture" href={`/races/`} />
             <Tab label="Scripts" href={`/scripts/`} />
