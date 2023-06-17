@@ -11,7 +11,7 @@ import {
   Typography,
   Box,
 } from "@mui/material";
-import { Card } from "@nextui-org/react";
+import { Card, Divider } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
 
@@ -64,7 +64,7 @@ export default function Races() {
       >
         Races & Creatures
       </Typography>
-      <hr />
+      <Divider />
       <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs
