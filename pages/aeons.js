@@ -12,6 +12,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -47,7 +48,13 @@ export default function Aeons() {
   };
   return (
     <Layout>
-      <h1>Aeons</h1>
+      <Typography
+        variant="h3"
+        sx={{ margin: "20px" }}
+        className={utilStyles.title}
+      >
+        Aeons
+      </Typography>
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{
@@ -67,9 +74,9 @@ export default function Aeons() {
             textColor="secondary"
             indicatorColor="secondary"
           >
-            <Tab label="Maesters" href={`/maesters/`} />
-            <Tab label="Summoners" href={`/summoners/`} />
-            <Tab label="Aeons" href={`/aeons/`} />
+            <Tab label="Maesters" href={`/maesters/`} value={value} />
+            <Tab label="Summoners" href={`/summoners/`} value={value} />
+            <Tab label="Aeons" href={`/aeons/`} value={value} />
           </Tabs>
         </Box>
         <hr />
