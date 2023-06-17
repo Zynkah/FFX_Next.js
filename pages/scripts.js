@@ -1,15 +1,10 @@
 import Layout from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
 import Image from "next/image";
-import Grid from "@mui/material/Grid";
-import { Divider } from "@nextui-org/react";
+import { Grid, Tabs, Tab, Typography, Box } from "@mui/material";
+import { Divider, Container } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import { Container } from "@nextui-org/react";
-import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -60,7 +55,7 @@ export default function Scripts() {
       >
         Scripts
       </Typography>
-      <hr />
+      <Divider />
       <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs
@@ -82,28 +77,29 @@ export default function Scripts() {
             <Grid item xs={12} md={6} marginY={10}>
               <Container style={{ marginBottom: "35px" }}>
                 <Divider>
-                  <h2>Spiran Script</h2>
+                  <Typography variant="h3" className={utilStyles.cardTitle}>
+                    Spiran Script
+                  </Typography>
                 </Divider>
               </Container>
-              <br />
-              <br />
               <Image
                 src="/images/Sphere-Broadcast-Billboard.webp"
                 height={200}
                 width={231}
                 style={{
                   margin: "auto",
+                  marginTop: "50px",
+                  marginBottom: "30px",
                   borderRadius: "5px",
                 }}
                 alt="sphere broadcast billboard"
               />
-              <br />
-              <p>
+              <Typography variant="body" className={utilStyles.body}>
                 A curvy script used all across Spira. Characters exist for each
                 uppercase and lowercase letter. This language can be found in
                 many locations. On signs, Blitzball team logos, all over the
                 Luca Stadium, and more.
-              </p>
+              </Typography>
             </Grid>
             <Grid item xs={12} md={6} marginY={10}>
               <Image
@@ -125,28 +121,28 @@ export default function Scripts() {
             <Grid item xs={12} md={6} marginY={10}>
               <Container style={{ marginBottom: "35px" }}>
                 <Divider>
-                  <h2>Al Bhed Script</h2>
+                  <Typography variant="h3" className={utilStyles.cardTitle}>
+                    Al Bhed Script
+                  </Typography>
                 </Divider>
               </Container>
-              <br />
-              <br />
-              <br />
               <Image
                 src="/images/Al-Bhed-Primer-Artwork.webp"
                 height={200}
                 width={296}
                 style={{
                   margin: "auto",
+                  marginTop: "50px",
+                  marginBottom: "30px",
                   borderRadius: "5px",
                 }}
                 alt="Al Bhed Primer"
               />
-              <br />
-              <p>
+              <Typography variant="body" className={utilStyles.body}>
                 The script used by the Al Bhed, distinctive for its combination
                 of two to four fragments to make each character. Uppercase and
                 lowercase variations are very similar across the characters.
-              </p>
+              </Typography>
             </Grid>
             <Grid item xs={12} md={6} marginY={10}>
               <Image
@@ -167,27 +163,28 @@ export default function Scripts() {
             <Grid item xs={12} md={6} marginY={10}>
               <Container style={{ marginBottom: "35px" }}>
                 <Divider>
-                  <h2>Yevon Script</h2>
+                  <Typography variant="h3" className={utilStyles.cardTitle}>
+                    Yevon Script
+                  </Typography>
                 </Divider>
               </Container>
-              <br />
-              <br />
               <Image
                 src="/images/Kilika-temple-artwork-ffx.webp"
                 height={200}
                 width={251}
                 style={{
                   margin: "auto",
+                  marginTop: "50px",
+                  marginBottom: "30px",
                   borderRadius: "5px",
                 }}
                 alt="inside Kilika temple"
               />
-              <br />
-              <p>
+              <Typography variant="body" className={utilStyles.body}>
                 Characters resembling Sanskrit that are used predominantly in
                 Yevon institutions. Some characters have their own individual
                 meanings, such as 'fire' or 'Yevon'.
-              </p>
+              </Typography>
             </Grid>
             <Grid item xs={12} md={6} marginY={10}>
               <Image
