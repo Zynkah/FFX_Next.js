@@ -7,6 +7,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -42,7 +43,13 @@ export default function Culture() {
   };
   return (
     <Layout>
-      <h1>Life in Spira</h1>
+      <Typography
+        variant="h3"
+        sx={{ margin: "20px" }}
+        className={utilStyles.title}
+      >
+        Life in Spira
+      </Typography>
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{

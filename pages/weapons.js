@@ -8,6 +8,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -50,7 +51,13 @@ export default function Weapons() {
   };
   return (
     <Layout>
-      <h1>Weapons & Armor</h1>
+      <Typography
+        variant="h3"
+        sx={{ margin: "20px" }}
+        className={utilStyles.title}
+      >
+        Weapons & Armor
+      </Typography>
       <hr />
       <Box sx={{ width: "100%" }}>
         <Box

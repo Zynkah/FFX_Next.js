@@ -1,11 +1,19 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import utilStyles from "../styles/utils.module.css";
 
 export default function TravelAgency() {
   return (
     <Layout>
-      <h1>Rin's Travel Agencies</h1>
+      <Typography
+        variant="h3"
+        sx={{ margin: "20px" }}
+        className={utilStyles.title}
+      >
+        Rin's Travel Agencies
+      </Typography>
       <hr />
       <p>An Al Bhed named Rin owns these inns scattered thoughout Spira.</p>
       <Grid container spacing={2}>

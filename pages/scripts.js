@@ -9,6 +9,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { Container } from "@nextui-org/react";
+import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -52,7 +53,13 @@ export default function Scripts() {
 
   return (
     <Layout>
-      <h1>Scripts</h1>
+      <Typography
+        variant="h3"
+        sx={{ margin: "20px" }}
+        className={utilStyles.title}
+      >
+        Scripts
+      </Typography>
       <hr />
       <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -158,10 +165,10 @@ export default function Scripts() {
         <TabPanel value={value} index={2}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} marginY={10}>
-            <Container style={{ marginBottom: "35px" }}>
-              <Divider>
-                <h2>Yevon Script</h2>
-              </Divider>
+              <Container style={{ marginBottom: "35px" }}>
+                <Divider>
+                  <h2>Yevon Script</h2>
+                </Divider>
               </Container>
               <br />
               <br />
