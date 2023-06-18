@@ -1,18 +1,19 @@
 import Layout from "../components/layout";
+import Link from "next/link";
 import Image from "next/image";
-import Grid from "@mui/material/Grid";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import { Card } from "@nextui-org/react";
+import {
+  Grid,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Tabs,
+  Tab,
+  Typography,
+  Box,
+} from "@mui/material";
+import { Card, Divider } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import Link from "next/link";
-import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -55,15 +56,10 @@ export default function Characters() {
   };
   return (
     <Layout>
-      <Typography
-        variant="h3"
-        sx={{ margin: "20px" }}
-        className={utilStyles.title}
-      >
+      <Typography variant="h4" sx={{ margin: "20px" }}>
         Characters
       </Typography>
-      <hr />
-      <br />
+      <Divider />
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{
@@ -105,14 +101,14 @@ export default function Characters() {
                     />
                   </AccordionSummary>
                   <AccordionDetails>
-                    <h3>Tidus</h3>
+                    <Typography variant="h6">Tidus</Typography>
                     <Card.Divider />
-                    <p>
+                    <Card.Body css={{ textAlign: 'center'}}>
                       The optimistic crybaby who gives hope to a world gripped
                       in the spiral of death. The son of Jecht, a blitzball
                       legend, Tidus rebelled against his father from an early
                       age.
-                    </p>
+                    </Card.Body>
                     <Link href={`../characters/tidus/`}>Read More</Link>
                   </AccordionDetails>
                 </Accordion>
@@ -135,13 +131,13 @@ export default function Characters() {
                     />
                   </AccordionSummary>
                   <AccordionDetails>
-                    <h3>Yuna</h3>
+                    <Typography variant="h6">Yuna</Typography>
                     <Card.Divider />
-                    <p>
+                    <Card.Body css={{ textAlign: 'center'}}>
                       The summoner possessing endless kindness, willing to
                       sacrifice herself to save the world. Daughter of High
                       Summoner Braska.
-                    </p>
+                    </Card.Body>
                     <Link href={`../characters/yuna/`}>Read More</Link>
                   </AccordionDetails>
                 </Accordion>
@@ -164,14 +160,14 @@ export default function Characters() {
                     />
                   </AccordionSummary>
                   <AccordionDetails>
-                    <h3>Auron</h3>
+                    <Typography variant="h6">Auron</Typography>
                     <Card.Divider />
-                    <p>
+                    <Card.Body css={{ textAlign: 'center'}}>
                       The legendary guardian who guides a young man to fulfill a
                       promise to a friend. A man tasked with watching over Tidus
                       in Dream Zanarkand who created the opportunity for Tidus
                       to venture to Spira.
-                    </p>
+                    </Card.Body>
                     <Link href={`../characters/auron/`}>Read More</Link>
                   </AccordionDetails>
                 </Accordion>
@@ -194,12 +190,12 @@ export default function Characters() {
                     />
                   </AccordionSummary>
                   <AccordionDetails>
-                    <h3>Kimahri</h3>
+                    <Typography variant="h6">Kimahri</Typography>
                     <Card.Divider />
-                    <p>
+                    <Card.Body css={{ textAlign: 'center'}}>
                       The hornless Ronso youth dedicating his life to Yuna. A
                       Ronso who serves as Yuna's first guardian.
-                    </p>
+                    </Card.Body>
                     <Link href={`../characters/kimahri/`}>Read More</Link>
                   </AccordionDetails>
                 </Accordion>
@@ -222,14 +218,14 @@ export default function Characters() {
                     />
                   </AccordionSummary>
                   <AccordionDetails>
-                    <h3>Wakka</h3>
+                    <Typography variant="h6">Wakka</Typography>
                     <Card.Divider />
-                    <p>
+                    <Card.Body css={{ textAlign: 'center'}}>
                       A good-natured older-brother type who has dedicated his
                       youth to blitzball. The young coach and most valuable
                       player of Besaid Village's blitzball team, the Besaid
                       Aurochs.
-                    </p>
+                    </Card.Body>
                     <Link href={`../characters/wakka/`}>Read More</Link>
                   </AccordionDetails>
                 </Accordion>
@@ -252,13 +248,13 @@ export default function Characters() {
                     />
                   </AccordionSummary>
                   <AccordionDetails>
-                    <h3>Lulu</h3>
+                    <Typography variant="h6">Lulu</Typography>
                     <Card.Divider />
-                    <p>
+                    <Card.Body css={{ textAlign: 'center'}}>
                       The severe yet sweet Black Mage who aids her comrades with
                       a wealth of knowledge. A female Black Mage acting as
                       Yuna's guardian who watches over her like a big sister.
-                    </p>
+                    </Card.Body>
                     <Link href={`../characters/lulu/`}>Read More</Link>
                   </AccordionDetails>
                 </Accordion>
@@ -281,15 +277,15 @@ export default function Characters() {
                     />
                   </AccordionSummary>
                   <AccordionDetails>
-                    <h3>Rikku</h3>
+                    <Typography variant="h6">Rikku</Typography>
                     <Card.Divider />
-                    <p>
+                    <Card.Body css={{ textAlign: 'center'}}>
                       A hearty and hard-working Al Bhed lass, constantly
                       thinking about what she can accomplish. Daughter to the
                       chief of the Al Bhed, a tribe of people persecuted for
                       opposing the teachings of Yevon, Rikku is also Yuna's
                       cousin on her mother's side.
-                    </p>
+                    </Card.Body>
                     <Link href={`../characters/rikku/`}>Read More</Link>
                   </AccordionDetails>
                 </Accordion>
@@ -316,12 +312,12 @@ export default function Characters() {
                     />
                   </AccordionSummary>
                   <AccordionDetails>
-                    <h3>Seymour</h3>
+                    <Typography variant="h6">Seymour</Typography>
                     <Card.Divider />
-                    <p>
+                    <Card.Body css={{ textAlign: 'center'}}>
                       Seymour is the son of Jyscal, who became leader of the
                       Guado, and a human woman.
-                    </p>
+                    </Card.Body>
                     <Link href={`../characters/seymour/`}>Read More</Link>
                   </AccordionDetails>
                 </Accordion>
