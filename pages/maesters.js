@@ -1,5 +1,4 @@
 import Layout from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
 import Image from "next/image";
 import { Grid, Tabs, Tab, Typography, Box } from "@mui/material";
 import * as React from "react";
@@ -39,11 +38,7 @@ export default function Scripts() {
   };
   return (
     <Layout>
-      <Typography
-        variant="h3"
-        sx={{ margin: "20px" }}
-        className={utilStyles.title}
-      >
+      <Typography variant="h4" sx={{ margin: "20px" }}>
         Maesters
       </Typography>
       <Box sx={{ width: "100%" }}>
@@ -70,7 +65,7 @@ export default function Scripts() {
             <Tab label="Aeons" href={`/aeons/`} />
           </Tabs>
         </Box>
-        <hr />
+
         <Grid container spacing={2}>
           <Grid item xs={12} md={12} marginTop={10}>
             <Image

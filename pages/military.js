@@ -3,10 +3,8 @@ import Image from "next/image";
 import { Divider } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
+import { Tabs, Tab, Typography, Box } from "@mui/material";
+
 import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
@@ -51,14 +49,10 @@ export default function Military() {
 
   return (
     <Layout>
-      <Typography
-        variant="h3"
-        sx={{ margin: "20px" }}
-        className={utilStyles.title}
-      >
+      <Typography variant="h4" sx={{ margin: "20px" }}>
         Military
       </Typography>
-      <hr />
+      <Divider />
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{
@@ -97,14 +91,10 @@ export default function Military() {
             }}
             alt="Wen Kinoc Agency"
           />
-          <br />
-          <br />
-          <Divider>
-            <h2>Crusaders</h2>
+          <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+            <Typography variant="h5">Crusaders</Typography>
           </Divider>
-          <br />
-          <br />
-          <p>
+          <Typography variant="body">
             The Crusaders were formed as the Crimson Blades 800 years ago by
             Lord Mi'ihen. As the first volunteer-based organization dedicated to
             defending the people of Spira from Sin, the Crimson Blades grew
@@ -115,7 +105,7 @@ export default function Military() {
             to operate as members of the clergy of Yevon. The road Lord Mi'ihen
             traveled to Bevelle was renamed the Mi'ihen Highroad in reflection
             of his actions.
-          </p>
+          </Typography>
         </TabPanel>
 
         <TabPanel value={value} index={1}>
@@ -129,19 +119,15 @@ export default function Military() {
             }}
             alt="Zaon"
           />
-          <br />
-          <br />
-          <Divider>
-            <h2>Guardians</h2>
+          <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+            <Typography variant="h5">Guardians</Typography>
           </Divider>
-          <br />
-          <br />
-          <p>
+          <Typography variant="body">
             Guardians are the only individuals allowed to accompany a summoner
             into a Chamber of the Fayth. If anyone else does so, the summoner
             may face sanctions as strong as excommunication from Yevon, even if
             they did so without the summoner's knowledge or consent.
-          </p>
+          </Typography>
         </TabPanel>
 
         <TabPanel value={value} index={2}>
@@ -155,20 +141,16 @@ export default function Military() {
             }}
             alt="Warrior Monk"
           />
-          <br />
-          <br />
-          <Divider>
-            <h2>Warrior Monks</h2>
+          <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+            <Typography variant="h5">Warrior Monks</Typography>
           </Divider>
-          <br />
-          <br />
-          <p>
+          <Typography variant="body">
             The history of the Warrior Monks date back at least 1,000 years
             prior to the events of Final Fantasy X. In the Machina War, the
             Warrior Monks were under the control of Bevelle and were used to
             fight Zanarkand. Many monks died during Sin's destruction of
             Zanarkand, and many Fallen Monks still dwell there as unsent.
-          </p>
+          </Typography>
         </TabPanel>
 
         <TabPanel value={value} index={3}>
@@ -182,19 +164,15 @@ export default function Military() {
             }}
             alt="Crimson Squad"
           />
-          <br />
-          <br />
-          <Divider>
-            <h2>Crimson Squad</h2>
+          <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+            <Typography variant="h5">Crimson Squad</Typography>
           </Divider>
-          <br />
-          <br />
-          <p>
+          <Typography variant="body">
             Maester Wen Kinoc assembled the Crimson Squad under the guise of
             fulfilling the society's demand for a stronger army, but the true
             reason was to privatize the Crusaders by inserting his hand-reared
             Crimson Squad members.
-          </p>
+          </Typography>
         </TabPanel>
 
         <TabPanel value={value} index={4}>
@@ -208,14 +186,10 @@ export default function Military() {
             }}
             alt="Chocobo Knights"
           />
-          <br />
-          <br />
-          <Divider>
-            <h2>Chocobo Knights</h2>
+          <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+            <Typography variant="h5">Chocobo Knights</Typography>
           </Divider>
-          <br />
-          <br />
-          <p>
+          <Typography variant="body">
             The Chocobo Knights of Spira are an elite group of mounted soldiers,
             consisting of the serious but kind Captain Lucil, cheerful Elma, and
             the uncomfortable and slightly incompetent Clasko. It is mentioned
@@ -225,7 +199,7 @@ export default function Military() {
             never stated directly that the knights are part of the Crusaders,
             but they do take part in Operation Mi'ihen and both Lucil and Elma
             are shown giving orders to Luzzu and Gatta.
-          </p>
+          </Typography>
         </TabPanel>
       </Box>
     </Layout>
