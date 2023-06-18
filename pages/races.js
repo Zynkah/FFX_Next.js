@@ -56,10 +56,10 @@ export default function Races() {
 
   return (
     <Layout>
-      <Typography variant="h3" sx={{ margin: "20px" }}>
+      <Typography variant="h4" sx={{ margin: "20px" }}>
         Races & Creatures
       </Typography>
-      <Divider />
+
       <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs

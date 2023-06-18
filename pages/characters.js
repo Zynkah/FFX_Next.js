@@ -59,7 +59,7 @@ export default function Characters() {
       <Typography variant="h4" sx={{ margin: "20px" }}>
         Characters
       </Typography>
-      <Divider />
+    
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{
