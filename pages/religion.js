@@ -1,5 +1,4 @@
 import Layout from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
 import Image from "next/image";
 import { Grid, Tabs, Tab, Typography, Box } from "@mui/material";
 import * as React from "react";
@@ -39,11 +38,7 @@ export default function Scripts() {
   };
   return (
     <Layout>
-      <Typography
-        variant="h3"
-        sx={{ margin: "20px" }}
-        className={utilStyles.title}
-      >
+      <Typography variant="h4" sx={{ margin: "20px" }}>
         Religion
       </Typography>
       <Box sx={{ width: "100%" }}>
@@ -70,7 +65,6 @@ export default function Scripts() {
             <Tab label="Aeons" href={`/aeons/`} />
           </Tabs>
         </Box>
-        <hr />
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={6} lg={4} marginTop={13}>
             <Image
@@ -85,24 +79,26 @@ export default function Scripts() {
             />
           </Grid>
           <Grid item xs={12} sm={6} md={6} lg={8} marginTop={10}>
-            Religion is an important part of life for many of the peoples of
-            Spira, with a large majority of the population describing themselves
-            as "Yevonites". Though by the end of Final Fantasy X some people had
-            begun to question them, nevertheless the teachings of Yevon were
-            millennium-old and heavily influential. The Yevonite clergy taught
-            that Sin was a divine punishment set upon the people for their pride
-            in the use of machines. As a result, the temples forbade the use of
-            modern technology, and promoted a culture of atonement for past sins
-            in the hopes of appeasing Sin. While the Yevon church forbids most
-            machina including weapons, their capital Bevelle retains machina to
-            ensure its dominance. The Al Bhed are seen as dangerous to the Yevon
-            clergy because they use machina and pose a threat to the church's
-            uncontested control of Spira. The church retains its power by role
-            in using the Final Summoning which results in the sacrifice of the
-            summoner and her guardian to prevent its secrets from being
-            divulged. Though Yevon set up Operation Mi'ihen to instill further
-            loyalty to the teachings by making the Crusaders use machina that
-            would never win against Sin.
+            <Typography variant="body">
+              Religion is an important part of life for many of the peoples of
+              Spira, with a large majority of the population describing
+              themselves as "Yevonites". Though by the end of Final Fantasy X
+              some people had begun to question them, nevertheless the teachings
+              of Yevon were millennium-old and heavily influential. The Yevonite
+              clergy taught that Sin was a divine punishment set upon the people
+              for their pride in the use of machines. As a result, the temples
+              forbade the use of modern technology, and promoted a culture of
+              atonement for past sins in the hopes of appeasing Sin. While the
+              Yevon church forbids most machina including weapons, their capital
+              Bevelle retains machina to ensure its dominance. The Al Bhed are
+              seen as dangerous to the Yevon clergy because they use machina and
+              pose a threat to the church's uncontested control of Spira. The
+              church retains its power by role in using the Final Summoning
+              which results in the sacrifice of the summoner and her guardian to
+              prevent its secrets from being divulged. Though Yevon set up
+              Operation Mi'ihen to instill further loyalty to the teachings by
+              making the Crusaders use machina that would never win against Sin.
+            </Typography>
           </Grid>
         </Grid>
       </Box>
