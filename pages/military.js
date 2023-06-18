@@ -5,8 +5,6 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { Tabs, Tab, Typography, Box } from "@mui/material";
 
-import utilStyles from "../styles/utils.module.css";
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -52,7 +50,6 @@ export default function Military() {
       <Typography variant="h4" sx={{ margin: "20px" }}>
         Military
       </Typography>
-      <Divider />
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{

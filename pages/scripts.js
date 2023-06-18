@@ -48,14 +48,9 @@ export default function Scripts() {
 
   return (
     <Layout>
-      <Typography
-        variant="h3"
-        sx={{ margin: "20px" }}
-        className={utilStyles.title}
-      >
+      <Typography variant="h4" sx={{ margin: "20px" }}>
         Scripts
       </Typography>
-      <Divider />
       <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs
@@ -76,10 +71,8 @@ export default function Scripts() {
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} marginY={10}>
               <Container style={{ marginBottom: "35px" }}>
-                <Divider>
-                  <Typography variant="h3" className={utilStyles.cardTitle}>
-                    Spiran Script
-                  </Typography>
+                <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+                  <Typography variant="h5">Spiran Script</Typography>
                 </Divider>
               </Container>
               <Image
@@ -94,7 +87,7 @@ export default function Scripts() {
                 }}
                 alt="sphere broadcast billboard"
               />
-              <Typography variant="body" className={utilStyles.body}>
+              <Typography variant="body">
                 A curvy script used all across Spira. Characters exist for each
                 uppercase and lowercase letter. This language can be found in
                 many locations. On signs, Blitzball team logos, all over the
@@ -120,10 +113,8 @@ export default function Scripts() {
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} marginY={10}>
               <Container style={{ marginBottom: "35px" }}>
-                <Divider>
-                  <Typography variant="h3" className={utilStyles.cardTitle}>
-                    Al Bhed Script
-                  </Typography>
+                <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+                  <Typography variant="h5">Al Bhed Script</Typography>
                 </Divider>
               </Container>
               <Image
@@ -138,7 +129,7 @@ export default function Scripts() {
                 }}
                 alt="Al Bhed Primer"
               />
-              <Typography variant="body" className={utilStyles.body}>
+              <Typography variant="body">
                 The script used by the Al Bhed, distinctive for its combination
                 of two to four fragments to make each character. Uppercase and
                 lowercase variations are very similar across the characters.
@@ -162,10 +153,8 @@ export default function Scripts() {
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} marginY={10}>
               <Container style={{ marginBottom: "35px" }}>
-                <Divider>
-                  <Typography variant="h3" className={utilStyles.cardTitle}>
-                    Yevon Script
-                  </Typography>
+                <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+                  <Typography variant="h5">Yevon Script</Typography>
                 </Divider>
               </Container>
               <Image
@@ -180,7 +169,7 @@ export default function Scripts() {
                 }}
                 alt="inside Kilika temple"
               />
-              <Typography variant="body" className={utilStyles.body}>
+              <Typography variant="body">
                 Characters resembling Sanskrit that are used predominantly in
                 Yevon institutions. Some characters have their own individual
                 meanings, such as 'fire' or 'Yevon'.
