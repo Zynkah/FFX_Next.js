@@ -68,8 +68,8 @@ export default function Locations() {
             variant="scrollable"
             scrollButtons
             aria-label="basic tabs"
-            textColor="secondary"
-            indicatorColor="secondary"
+            textColor="none"
+            indicatorColor="none"
           >
             <Tab label="Temples" href={`/temples/`} />
             <Tab label="Agencies" href={`/agencies/`} />
