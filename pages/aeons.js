@@ -76,8 +76,8 @@ export default function Aeons() {
             <Tab label="Aeons" href={`/aeons/`} value={0} />
           </Tabs>
         </Box>
-        <hr />
-        <br />
+
+        <Box sx={{ margin: "20px" }} />
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <Card isPressable isHoverable variant="bordered">
