@@ -1,5 +1,4 @@
 import Layout from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
 import Image from "next/image";
 import {
   Grid,
@@ -50,11 +49,7 @@ export default function Aeons() {
   };
   return (
     <Layout>
-      <Typography
-        variant="h3"
-        sx={{ margin: "20px" }}
-        className={utilStyles.title}
-      >
+      <Typography variant="h4" sx={{ margin: "20px" }}>
         Aeons
       </Typography>
       <Box sx={{ width: "100%" }}>
@@ -100,12 +95,12 @@ export default function Aeons() {
                   />
                 </AccordionSummary>
                 <AccordionDetails>
-                  <h3>Valefor</h3>
+                  <Typography variant="h6">Valefor</Typography>
                   <Card.Divider />
-                  <p>
+                  <Card.Body css={{ textAlign: "center" }}>
                     An arieal aeon with great wings whose fayth statue is
                     located in Besaid Temple.
-                  </p>
+                  </Card.Body>
                   <Link href={`../aeons/valefor/`}>Read More</Link>
                 </AccordionDetails>
               </Accordion>
@@ -128,12 +123,12 @@ export default function Aeons() {
                   />
                 </AccordionSummary>
                 <AccordionDetails>
-                  <h3>Ifrit</h3>
+                  <Typography variant="h6">Ifrit</Typography>
                   <Card.Divider />
-                  <p>
+                  <Card.Body css={{ textAlign: "center" }}>
                     A demon that holds dominion over fire, with a fayth statue
                     situated in Kilika Temple.
-                  </p>
+                  </Card.Body>
                   <Link href={`../aeons/ifrit/`}>Read More</Link>
                 </AccordionDetails>
               </Accordion>
@@ -156,12 +151,12 @@ export default function Aeons() {
                   />
                 </AccordionSummary>
                 <AccordionDetails>
-                  <h3>Ixion</h3>
+                  <Typography variant="h6">Ixion</Typography>
                   <Card.Divider />
-                  <p>
+                  <Card.Body css={{ textAlign: "center" }}>
                     A horned beast covered by lightning whose fayth statue
                     stands in Djose Temple.
-                  </p>
+                  </Card.Body>
                   <Link href={`../aeons/ixion/`}>Read More</Link>
                 </AccordionDetails>
               </Accordion>
@@ -184,12 +179,12 @@ export default function Aeons() {
                   />
                 </AccordionSummary>
                 <AccordionDetails>
-                  <h3>Shiva</h3>
+                  <Typography variant="h6">Shiva</Typography>
                   <Card.Divider />
-                  <p>
+                  <Card.Body css={{ textAlign: "center" }}>
                     The frozen queen of ice whose fayth statue is situated
                     inside Macalania Temple.
-                  </p>
+                  </Card.Body>
                   <Link href={`../aeons/shiva/`}>Read More</Link>
                 </AccordionDetails>
               </Accordion>
@@ -212,12 +207,12 @@ export default function Aeons() {
                   />
                 </AccordionSummary>
                 <AccordionDetails>
-                  <h3>Bahamut</h3>
+                  <Typography variant="h6">Bahamut</Typography>
                   <Card.Divider />
-                  <p>
+                  <Card.Body css={{ textAlign: "center" }}>
                     A four-winged sacred dragon beast with a fayth statue
                     located in Bevelle.
-                  </p>
+                  </Card.Body>
                   <Link href={`../aeons/bahamut/`}>Read More</Link>
                 </AccordionDetails>
               </Accordion>
@@ -240,12 +235,12 @@ export default function Aeons() {
                   />
                 </AccordionSummary>
                 <AccordionDetails>
-                  <h3>Yojimbo</h3>
+                  <Typography variant="h6">Yojimbo</Typography>
                   <Card.Divider />
-                  <p>
+                  <Card.Body css={{ textAlign: "center" }}>
                     A master swordsman whose fayth statue is situated in the
                     Cavern of the Stolen Fayth.
-                  </p>
+                  </Card.Body>
                   <Link href={`../aeons/yojimbo/`}>Read More</Link>
                 </AccordionDetails>
               </Accordion>
@@ -268,12 +263,12 @@ export default function Aeons() {
                   />
                 </AccordionSummary>
                 <AccordionDetails>
-                  <h3>Anima</h3>
+                  <Typography variant="h6">Anima</Typography>
                   <Card.Divider />
-                  <p>
+                  <Card.Body css={{ textAlign: "center" }}>
                     An aeon bound in heavy chains whose fayth statue can be
                     found in the temple of Yevon-Baaj.
-                  </p>
+                  </Card.Body>
                   <Link href={`../aeons/anima/`}>Read More</Link>
                 </AccordionDetails>
               </Accordion>
@@ -296,12 +291,12 @@ export default function Aeons() {
                   />
                 </AccordionSummary>
                 <AccordionDetails>
-                  <h3>Magus Sisters</h3>
+                  <Typography variant="h6">Magus Sisters</Typography>
                   <Card.Divider />
-                  <p>
+                  <Card.Body css={{ textAlign: "center" }}>
                     Three sister aeons whose fayth statue is situated in Remiem
                     Temple.
-                  </p>
+                  </Card.Body>
                   <Link href={`../aeons/magus_sisters/`}>Read More</Link>
                 </AccordionDetails>
               </Accordion>
