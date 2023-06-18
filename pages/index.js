@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Date from "../components/date";
 import { getSortedPostsData } from "../lib/posts";
-import { Divider, Container, Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
