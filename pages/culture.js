@@ -1,13 +1,9 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Grid from "@mui/material/Grid";
+import { Grid, Tabs, Tab, Box, Typography } from "@mui/material";
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import utilStyles from "../styles/utils.module.css";
+import { Divider } from "@nextui-org/react";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -43,11 +39,7 @@ export default function Culture() {
   };
   return (
     <Layout>
-      <Typography
-        variant="h3"
-        sx={{ margin: "20px" }}
-        className={utilStyles.title}
-      >
+      <Typography variant="h4" sx={{ margin: "20px" }}>
         Life in Spira
       </Typography>
       <Box sx={{ width: "100%" }}>
@@ -77,7 +69,7 @@ export default function Culture() {
             <Tab label="Blitzball" href={`/blitzball/`} />
           </Tabs>
         </Box>
-        <hr />
+        <Divider />
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={6} lg={4} marginTop={5}>
             <Image
@@ -92,7 +84,7 @@ export default function Culture() {
             />
           </Grid>
           <Grid item xs={12} sm={6} md={6} lg={8} marginTop={15}>
-            <p>
+            <Typography variant="body">
               <b>Spira</b> has a variety of different races and languages
               thoughout its lands. Each region has its own people, with their
               own culture.
@@ -101,7 +93,7 @@ export default function Culture() {
               another thing they have in common. Although they may have differnt
               ways to achieve the
               <b> Calm</b>, they all yearn for peace in the end.
-            </p>
+            </Typography>
           </Grid>
         </Grid>
       </Box>
