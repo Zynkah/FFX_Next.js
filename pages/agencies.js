@@ -9,7 +9,7 @@ export default function TravelAgency() {
       <Typography variant="h4" sx={{ margin: "20px" }}>
         Rin's Travel Agencies
       </Typography>
-      <Divider />
+     
       <Typography variant="body">
         An Al Bhed named Rin owns these inns scattered thoughout Spira.
       </Typography>

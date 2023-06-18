@@ -17,7 +17,7 @@ export default function Blitzball() {
       <Typography variant="h4" sx={{ margin: "20px" }}>
         Blitzball
       </Typography>
-      <Divider />
+
       <Box sx={{ margin: "20px" }}>
         <Image
           src="/images/Blitzball_Logo.jpg"
@@ -341,7 +341,7 @@ export default function Blitzball() {
             <Card isPressable isHoverable variant="bordered">
               <Accordion>
                 <AccordionSummary>
-                  <Card.Header css={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+                  <Card.Header css={{ fontSize: "1.5rem"}}>
                     Recruiting and Scouting
                   </Card.Header>
                 </AccordionSummary>

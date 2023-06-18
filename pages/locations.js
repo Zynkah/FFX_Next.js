@@ -51,7 +51,7 @@ export default function Locations() {
       <Typography variant="h4" sx={{ margin: "20px" }}>
         Locations
       </Typography>
-      <Divider />
+
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{

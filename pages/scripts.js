@@ -1,5 +1,4 @@
 import Layout from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
 import Image from "next/image";
 import { Grid, Tabs, Tab, Typography, Box } from "@mui/material";
 import { Divider, Container } from "@nextui-org/react";
