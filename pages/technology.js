@@ -1,14 +1,9 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Grid from "@mui/material/Grid";
+import { Grid, Tabs, Tab, Box, Typography } from "@mui/material";
 import { Divider } from "@mui/material";
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -52,14 +47,10 @@ export default function Technology() {
 
   return (
     <Layout>
-      <Typography
-        variant="h3"
-        sx={{ margin: "20px" }}
-        className={utilStyles.title}
-      >
+      <Typography variant="h4" sx={{ margin: "20px" }}>
         Technology in Spira
       </Typography>
-      <hr />
+
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{
@@ -92,10 +83,10 @@ export default function Technology() {
         <TabPanel value={value} index={0}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
-              <Divider>
-                <h2>Machina</h2>
+              <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+                <Typography variant="h5">Machina</Typography>
               </Divider>
-              <p>
+              <Typography variant="body">
                 Machina was invented over 3000 years ago and became powerful
                 enough to surpass magic. According to the Final Fantasy X
                 Scenario Ultimania, the first development in Spira was brought
@@ -112,11 +103,9 @@ export default function Technology() {
                 magic, but when it surpassed it new problems arose. Some nations
                 possessed outstanding machina technology, while others didn't,
                 and a new age of inequality began.
-              </p>
+              </Typography>
             </Grid>
             <Grid item xs={12} md={6}>
-              <br />
-              <br />
               <Image
                 src="/images/Machina_Cannon.webp"
                 height={400}
@@ -124,6 +113,7 @@ export default function Technology() {
                 style={{
                   margin: "auto",
                   borderRadius: "5px",
+                  marginTop: "40px",
                 }}
                 alt="Machina Cannon"
               />
@@ -134,10 +124,10 @@ export default function Technology() {
         <TabPanel value={value} index={1}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
-              <Divider>
-                <h2>Movie Spheres</h2>
+              <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+                <Typography variant="h5">Movie Spheres</Typography>
               </Divider>
-              <p>
+              <Typography variant="body">
                 Pyreflies can crystallize into spheres by reacting to people's
                 feelings and memories and binding them with images and audio.
                 Spheres make use of these properties of pyreflies to make
@@ -153,11 +143,9 @@ export default function Technology() {
                 League and New Yevon seek spheres documenting Spira's history.
                 Freelance groups, such as the Gullwings and the Leblanc
                 Syndicate, locate spheres for pleasure or profit.
-              </p>
+              </Typography>
             </Grid>
             <Grid item xs={12} md={6}>
-              <br />
-              <br />
               <Image
                 src="/images/sphere.webp"
                 height={400}
@@ -165,6 +153,7 @@ export default function Technology() {
                 style={{
                   margin: "auto",
                   borderRadius: "5px",
+                  marginTop: "40px",
                 }}
                 alt="Movie Sphere"
               />
@@ -175,10 +164,10 @@ export default function Technology() {
         <TabPanel value={value} index={2}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
-              <Divider>
-                <h2>Gil</h2>
+              <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+                <Typography variant="h5">Gil</Typography>
               </Divider>
-              <p>
+              <Typography variant="body">
                 Gil (ギル, Giru?), also translated as GP, Gold, and G, is the
                 currency in all Final Fantasy games. It is acquired throughout
                 each game and used for making various purchases and occasionally
@@ -196,11 +185,9 @@ export default function Technology() {
                 other Chinese and Japanese currencies, such as the mon, have
                 holes in some of the coins, a trait dating back to feudal times
                 when coins were carried on string.
-              </p>
+              </Typography>
             </Grid>
             <Grid item xs={12} md={6}>
-              <br />
-              <br />
               <Image
                 src="/images/Gil.webp"
                 height={400}
@@ -208,6 +195,7 @@ export default function Technology() {
                 style={{
                   margin: "auto",
                   borderRadius: "5px",
+                  marginTop: "40px",
                 }}
                 alt="Gil"
               />
@@ -218,20 +206,18 @@ export default function Technology() {
         <TabPanel value={value} index={3}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
-              <Divider>
-                <h2>Fire Arms</h2>
+              <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+                <Typography variant="h5">Fire Arms</Typography>
               </Divider>
-              <p>
+              <Typography variant="body">
                 Fire arms are used by many different people in the world of
                 Spira. Mostly seen used by members of the military. Since hand
                 guns and fire arms are used by the military they are not
                 considered as machina. It is not considered blasphemous to use
                 them. In battle you will face many enemies using these weapons.
-              </p>
+              </Typography>
             </Grid>
             <Grid item xs={12} md={6}>
-              <br />
-              <br />
               <Image
                 src="/images/Handguns.webp"
                 height={400}
@@ -239,6 +225,7 @@ export default function Technology() {
                 style={{
                   margin: "auto",
                   borderRadius: "5px",
+                  marginTop: "40px",
                 }}
                 alt="Handguns"
               />
@@ -249,8 +236,8 @@ export default function Technology() {
         <TabPanel value={value} index={4}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={12}>
-              <Divider>
-                <h2>Vehicles</h2>
+              <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+                <Typography variant="h5">Vehicles</Typography>
               </Divider>
             </Grid>
             <Grid item xs={12} md={6}>
@@ -307,8 +294,8 @@ export default function Technology() {
         <TabPanel value={value} index={5}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={12}>
-              <Divider>
-                <h2>Hand Held Items</h2>
+              <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
+                <Typography variant="h5">Hand Held Items</Typography>
               </Divider>
             </Grid>
             <Grid item xs={12} md={6}>

@@ -11,7 +11,7 @@ import {
   Typography,
   Box,
 } from "@mui/material";
-import { Card, Divider } from "@nextui-org/react";
+import { Card } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
 

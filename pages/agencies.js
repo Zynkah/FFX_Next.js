@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import { Divider } from "@nextui-org/react";
 import { Box, Typography, Grid } from "@mui/material";
 
 export default function TravelAgency() {
