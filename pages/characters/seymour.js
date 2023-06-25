@@ -1,12 +1,13 @@
 import Layout from "../../components/layout";
+import { Typography } from "@mui/material";
 // import Image from "next/image";
 // import Grid from "@mui/material/Grid";
 
 export default function Seymour() {
   return (
     <Layout>
-      <h1>Seymour</h1>
-      <p>
+      <Typography variant="h4" component='h2'>Seymour</Typography>
+      <Typography variant="body1" component='p'>
         Though his existence was meant to foster friendship between the Guado
         and human races, it only made him the target of both races' hatred.
         Fearing strife from his people over what they saw as an impure
@@ -26,7 +27,7 @@ export default function Seymour() {
         didn't use her aeon, Anima, to battle Sin. Seymour returned to Baaj
         alone and spent his remaining childhood in the temple where his
         isolation inspired his nihilistic views on life and death.
-      </p>
+      </Typography>
     </Layout>
   );
 }

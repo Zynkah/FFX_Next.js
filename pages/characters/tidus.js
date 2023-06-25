@@ -1,12 +1,13 @@
 import Layout from "../../components/layout";
+import { Typography } from "@mui/material";
 // import Image from "next/image";
 // import Grid from "@mui/material/Grid";
 
 export default function Tidus() {
   return (
     <Layout>
-      <h1>Tidus</h1>
-      <p>
+      <Typography variant="h4" component="h2">Tidus</Typography>
+      <Typography variant="body1" component="p">
         A popular blitzball player from the metropolis of Zanarkand. During a
         match, Tidus is attacked by the monstrous fiend known as Sin. Thrown
         into the unfamiliar world of Spira, he joins the summoner Yuna on her
@@ -19,7 +20,7 @@ export default function Tidus() {
         blaming him for his mothers death. Auron was Tiuds's guardian after
         this, watching him from afar. Tidus's quick moves allow him to attack
         even the swiftest of foes with ease.
-      </p>
+      </Typography>
     </Layout>
   );
 }

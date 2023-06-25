@@ -1,12 +1,15 @@
 import Layout from "../../components/layout";
+import { Typography } from "@mui/material";
 // import Image from "next/image";
 // import Grid from "@mui/material/Grid";
 
 export default function Wakka() {
   return (
     <Layout>
-      <h1>Wakka</h1>
-      <p>
+      <Typography variant="h4" component="h2">
+        Wakka
+      </Typography>
+      <Typography variant="body1" component='p'>
         Tidus reminds Wakka of his late brother Chappu, and Wakka invites him to
         join the team. Wakka has looked after Yuna since she was seven years
         old. Once she becomes a summoner, he joins her pilgrimage as on of her
@@ -18,7 +21,7 @@ export default function Wakka() {
         year's tournament so that he can devote himself entirely as Yuna's
         guardian. His deadly blitzball is especially useful for shooting down
         aerial enemies.
-      </p>
+      </Typography>
     </Layout>
   );
 }

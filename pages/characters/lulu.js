@@ -1,12 +1,13 @@
 import Layout from "../../components/layout";
+import { Typography } from "@mui/material";
 // import Image from "next/image";
 // import Grid from "@mui/material/Grid";
 
 export default function Lulu() {
   return (
     <Layout>
-      <h1>Lulu</h1>
-      <p>
+      <Typography variant="h4" component="h2">Lulu</Typography>
+      <Typography variant="body1" component="p">
         She and Wakka are childhood friends, and she was once engaged to marry
         Wakka's brother, Chappu. Lulu has acted as a summoner's guardian twice
         before, giving her extensive knowledge of the pilgrimage experience. But
@@ -18,7 +19,7 @@ export default function Lulu() {
         as though she were her younger sister. Although she may seem insensitive
         at times, there are depths to her emotions that only her closest friends
         can understand. 
-      </p>
+      </Typography>
     </Layout>
   );
 }

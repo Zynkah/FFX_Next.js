@@ -1,12 +1,15 @@
 import Layout from "../../components/layout";
+import { Typography } from "@mui/material";
 // import Image from "next/image";
 // import Grid from "@mui/material/Grid";
 
 export default function Kimahri() {
   return (
     <Layout>
-      <h1>Kimahri</h1>
-      <p>
+      <Typography variant="h4" component="h2">
+        Kimahri
+      </Typography>
+      <Typography variant="body1" component="p">
         His taciturn nature and leonine appearance makes him hard to approach,
         but in truth Kimahri is thoughtful and affectionate. After the death of
         the high summoner Braska, he brought the young Yuna to Besaid Village
@@ -17,7 +20,7 @@ export default function Kimahri() {
         tribe, Kimahri watched over Yuna during her early years. He is devoted
         to Yuna and serves her loyally as a guardian. Kimahri can learn the
         special attacks of enemies with his Lancet ability.
-      </p>
+      </Typography>
     </Layout>
   );
 }
