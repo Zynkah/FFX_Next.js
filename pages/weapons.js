@@ -1,14 +1,9 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Grid from "@mui/material/Grid";
+import { Grid, Tab, Tabs, Typography, Box } from "@mui/material";
 import { Divider } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import utilStyles from "../styles/utils.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -52,13 +47,11 @@ export default function Weapons() {
   return (
     <Layout>
       <Typography
-        variant="h3"
+        variant="h4"
         sx={{ margin: "20px" }}
-        className={utilStyles.title}
       >
         Weapons & Armor
       </Typography>
-      <hr />
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{
@@ -91,7 +84,7 @@ export default function Weapons() {
 
         <TabPanel value={value} index={0}>
           <Divider>
-            <h2>Tidus</h2>
+            <Typography variant="h5">Tidus</Typography>
           </Divider>
           <br />
           <br />
@@ -126,7 +119,7 @@ export default function Weapons() {
 
         <TabPanel value={value} index={1}>
           <Divider>
-            <h2>Yuna</h2>
+            <Typography variant="h5">Yuna</Typography>
           </Divider>
           <br />
           <br />
@@ -161,7 +154,7 @@ export default function Weapons() {
 
         <TabPanel value={value} index={2}>
           <Divider>
-            <h2>Wakka</h2>
+            <Typography variant="h5">Wakka</Typography>
           </Divider>
           <br />
           <br />
@@ -183,7 +176,7 @@ export default function Weapons() {
 
         <TabPanel value={value} index={3}>
           <Divider>
-            <h2>Lulu</h2>
+            <Typography variant="h5">Lulu</Typography>
           </Divider>
           <br />
           <br />
@@ -276,7 +269,7 @@ export default function Weapons() {
 
         <TabPanel value={value} index={4}>
           <Divider>
-            <h2>Kimahri</h2>
+            <Typography variant="h5">Kimahri</Typography>
           </Divider>
           <br />
           <br />
@@ -324,7 +317,7 @@ export default function Weapons() {
 
         <TabPanel value={value} index={5}>
           <Divider>
-            <h2>Auron</h2>
+            <Typography variant="h5">Auron</Typography>
           </Divider>
           <br />
           <br />
@@ -375,7 +368,7 @@ export default function Weapons() {
 
         <TabPanel value={value} index={6}>
           <Divider>
-            <h2>Rikku</h2>
+            <Typography variant="h5">Rikku</Typography>
           </Divider>
           <br />
           <br />
