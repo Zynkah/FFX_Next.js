@@ -30,7 +30,7 @@ TabPanel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-export default function Scripts() {
+export default function Maester() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -42,7 +42,7 @@ export default function Scripts() {
         Maesters
       </Typography>
       <Box sx={{ width: "100%" }}>
-        <Box
+      <Box
           sx={{
             borderBottom: 1,
             borderColor: "divider",
@@ -57,8 +57,8 @@ export default function Scripts() {
             variant="scrollable"
             scrollButtons
             aria-label="basic tabs"
-            textColor="secondary"
-            indicatorColor="secondary"
+            textColor="none"
+            indicatorColor="none"
           >
             <Tab label="Maesters" href={`/maesters/`} />
             <Tab label="Summoners" href={`/summoners/`} />

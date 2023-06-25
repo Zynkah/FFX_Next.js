@@ -30,7 +30,7 @@ TabPanel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-export default function Scripts() {
+export default function Religion() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
