@@ -1,12 +1,13 @@
 import Layout from "../../components/layout";
+import { Typography } from "@mui/material";
 // import Image from "next/image";
 // import Grid from "@mui/material/Grid";
 
 export default function Yuna() {
   return (
     <Layout>
-      <h1>Yuna</h1>
-      <p>
+      <Typography variant="h4" component="h2">Yuna</Typography>
+      <Typography variant="body1" component="p">
         When her father left for his pilgrimage she was left behind in the city
         she was born, Bevelle. After her father's success she first felt great
         pride, but then realized he would never return, sacrificing his own life
@@ -28,7 +29,7 @@ export default function Yuna() {
         "Calm", a time of peace. Yuna embarks on a pilgrimage to obtain the
         final aeon and defeat Sin. To complete her quest, Yuna has enlisted the
         aid of her most trusted friends as her guardians.
-      </p>
+      </Typography>
     </Layout>
   );
 }
