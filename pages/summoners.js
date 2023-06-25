@@ -52,7 +52,7 @@ export default function Summoners() {
         Summoners
       </Typography>
       <Box sx={{ width: "100%" }}>
-        <Box
+      <Box
           sx={{
             borderBottom: 1,
             borderColor: "divider",
@@ -67,11 +67,11 @@ export default function Summoners() {
             variant="scrollable"
             scrollButtons
             aria-label="basic tabs"
-            textColor="secondary"
-            indicatorColor="secondary"
+            textColor="none"
+            indicatorColor="none"
           >
             <Tab label="Maesters" href={`/maesters/`} />
-            <Tab label="Summoners" href={`/summoners/`} value={0} />
+            <Tab label="Summoners" href={`/summoners/`} />
             <Tab label="Aeons" href={`/aeons/`} />
           </Tabs>
         </Box>

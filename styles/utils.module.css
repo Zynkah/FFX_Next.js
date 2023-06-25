@@ -50,35 +50,3 @@
 .lightText {
   color: #666;
 }
-
-.title {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  line-height: 1.6;
-  font-size: 50px;
-  text-align: center;
-}
-
-.subtitle {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  line-height: 1.6;
-  font-size: 38px;
-  text-align: center;
-}
-
-.cardTitle {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  line-height: 1.6;
-  font-size: 30px;
-  text-align: center;
-}
-
-.body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  line-height: 1.6;
-  font-size: 18px;
-  text-align: center;
-}
