@@ -11,7 +11,7 @@ import {
   Typography,
   Box,
 } from "@mui/material";
-import { Card } from "@nextui-org/react";
+import { Card, Button } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
 
@@ -59,7 +59,7 @@ export default function Characters() {
       <Typography variant="h4" sx={{ margin: "20px" }}>
         Characters
       </Typography>
-    
+
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{
@@ -103,13 +103,28 @@ export default function Characters() {
                   <AccordionDetails>
                     <Typography variant="h6">Tidus</Typography>
                     <Card.Divider />
-                    <Card.Body css={{ textAlign: 'center'}}>
+                    <Card.Body css={{ textAlign: "center" }}>
                       The optimistic crybaby who gives hope to a world gripped
                       in the spiral of death. The son of Jecht, a blitzball
                       legend, Tidus rebelled against his father from an early
                       age.
                     </Card.Body>
-                    <Link href={`../characters/tidus/`}>Read More</Link>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight="light"
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link
+                        href={`../characters/tidus/`}
+                        className="buttonLink"
+                      >
+                        Read More
+                      </Link>
+                    </Button>
                   </AccordionDetails>
                 </Accordion>
               </Card>
@@ -133,12 +148,24 @@ export default function Characters() {
                   <AccordionDetails>
                     <Typography variant="h6">Yuna</Typography>
                     <Card.Divider />
-                    <Card.Body css={{ textAlign: 'center'}}>
+                    <Card.Body css={{ textAlign: "center" }}>
                       The summoner possessing endless kindness, willing to
                       sacrifice herself to save the world. Daughter of High
                       Summoner Braska.
                     </Card.Body>
-                    <Link href={`../characters/yuna/`}>Read More</Link>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight="light"
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link href={`../characters/yuna/`} className="buttonLink">
+                        Read More
+                      </Link>
+                    </Button>
                   </AccordionDetails>
                 </Accordion>
               </Card>
@@ -162,13 +189,28 @@ export default function Characters() {
                   <AccordionDetails>
                     <Typography variant="h6">Auron</Typography>
                     <Card.Divider />
-                    <Card.Body css={{ textAlign: 'center'}}>
+                    <Card.Body css={{ textAlign: "center" }}>
                       The legendary guardian who guides a young man to fulfill a
                       promise to a friend. A man tasked with watching over Tidus
                       in Dream Zanarkand who created the opportunity for Tidus
                       to venture to Spira.
                     </Card.Body>
-                    <Link href={`../characters/auron/`}>Read More</Link>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight="light"
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link
+                        href={`../characters/auron/`}
+                        className="buttonLink"
+                      >
+                        Read More
+                      </Link>
+                    </Button>
                   </AccordionDetails>
                 </Accordion>
               </Card>
@@ -192,11 +234,26 @@ export default function Characters() {
                   <AccordionDetails>
                     <Typography variant="h6">Kimahri</Typography>
                     <Card.Divider />
-                    <Card.Body css={{ textAlign: 'center'}}>
+                    <Card.Body css={{ textAlign: "center" }}>
                       The hornless Ronso youth dedicating his life to Yuna. A
                       Ronso who serves as Yuna's first guardian.
                     </Card.Body>
-                    <Link href={`../characters/kimahri/`}>Read More</Link>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight="light"
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link
+                        href={`../characters/kimahri/`}
+                        className="buttonLink"
+                      >
+                        Read More
+                      </Link>
+                    </Button>
                   </AccordionDetails>
                 </Accordion>
               </Card>
@@ -220,13 +277,28 @@ export default function Characters() {
                   <AccordionDetails>
                     <Typography variant="h6">Wakka</Typography>
                     <Card.Divider />
-                    <Card.Body css={{ textAlign: 'center'}}>
+                    <Card.Body css={{ textAlign: "center" }}>
                       A good-natured older-brother type who has dedicated his
                       youth to blitzball. The young coach and most valuable
                       player of Besaid Village's blitzball team, the Besaid
                       Aurochs.
                     </Card.Body>
-                    <Link href={`../characters/wakka/`}>Read More</Link>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight="light"
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link
+                        href={`../characters/wakka/`}
+                        className="buttonLink"
+                      >
+                        Read More
+                      </Link>
+                    </Button>
                   </AccordionDetails>
                 </Accordion>
               </Card>
@@ -250,12 +322,24 @@ export default function Characters() {
                   <AccordionDetails>
                     <Typography variant="h6">Lulu</Typography>
                     <Card.Divider />
-                    <Card.Body css={{ textAlign: 'center'}}>
+                    <Card.Body css={{ textAlign: "center" }}>
                       The severe yet sweet Black Mage who aids her comrades with
                       a wealth of knowledge. A female Black Mage acting as
                       Yuna's guardian who watches over her like a big sister.
                     </Card.Body>
-                    <Link href={`../characters/lulu/`}>Read More</Link>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight="light"
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link href={`../characters/lulu/`} className="buttonLink">
+                        Read More
+                      </Link>
+                    </Button>
                   </AccordionDetails>
                 </Accordion>
               </Card>
@@ -279,14 +363,29 @@ export default function Characters() {
                   <AccordionDetails>
                     <Typography variant="h6">Rikku</Typography>
                     <Card.Divider />
-                    <Card.Body css={{ textAlign: 'center'}}>
+                    <Card.Body css={{ textAlign: "center" }}>
                       A hearty and hard-working Al Bhed lass, constantly
                       thinking about what she can accomplish. Daughter to the
                       chief of the Al Bhed, a tribe of people persecuted for
                       opposing the teachings of Yevon, Rikku is also Yuna's
                       cousin on her mother's side.
                     </Card.Body>
-                    <Link href={`../characters/rikku/`}>Read More</Link>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight="light"
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link
+                        href={`../characters/rikku/`}
+                        className="buttonLink"
+                      >
+                        Read More
+                      </Link>
+                    </Button>
                   </AccordionDetails>
                 </Accordion>
               </Card>
@@ -314,11 +413,26 @@ export default function Characters() {
                   <AccordionDetails>
                     <Typography variant="h6">Seymour</Typography>
                     <Card.Divider />
-                    <Card.Body css={{ textAlign: 'center'}}>
+                    <Card.Body css={{ textAlign: "center" }}>
                       Seymour is the son of Jyscal, who became leader of the
                       Guado, and a human woman.
                     </Card.Body>
-                    <Link href={`../characters/seymour/`}>Read More</Link>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight="light"
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link
+                        href={`../characters/seymour/`}
+                        className="buttonLink"
+                      >
+                        Read More
+                      </Link>
+                    </Button>
                   </AccordionDetails>
                 </Accordion>
               </Card>
