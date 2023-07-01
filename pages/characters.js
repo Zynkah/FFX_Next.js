@@ -112,10 +112,11 @@ export default function Characters() {
                     <Button
                       bordered
                       color="gradient"
-                      borderWeight="light"
+                      borderWeight
                       size="xs"
                       auto
                       ghost
+                      shadow
                       css={{ margin: "auto" }}
                     >
                       <Link
@@ -156,10 +157,11 @@ export default function Characters() {
                     <Button
                       bordered
                       color="gradient"
-                      borderWeight="light"
+                      borderWeight
                       size="xs"
                       auto
                       ghost
+                      shadow
                       css={{ margin: "auto" }}
                     >
                       <Link href={`../characters/yuna/`} className="buttonLink">
@@ -198,10 +200,11 @@ export default function Characters() {
                     <Button
                       bordered
                       color="gradient"
-                      borderWeight="light"
+                      borderWeight
                       size="xs"
                       auto
                       ghost
+                      shadow
                       css={{ margin: "auto" }}
                     >
                       <Link
@@ -241,10 +244,11 @@ export default function Characters() {
                     <Button
                       bordered
                       color="gradient"
-                      borderWeight="light"
+                      borderWeight
                       size="xs"
                       auto
                       ghost
+                      shadow
                       css={{ margin: "auto" }}
                     >
                       <Link
@@ -286,10 +290,11 @@ export default function Characters() {
                     <Button
                       bordered
                       color="gradient"
-                      borderWeight="light"
+                      borderWeight
                       size="xs"
                       auto
                       ghost
+                      shadow
                       css={{ margin: "auto" }}
                     >
                       <Link
@@ -330,10 +335,11 @@ export default function Characters() {
                     <Button
                       bordered
                       color="gradient"
-                      borderWeight="light"
+                      borderWeight
                       size="xs"
                       auto
                       ghost
+                      shadow
                       css={{ margin: "auto" }}
                     >
                       <Link href={`../characters/lulu/`} className="buttonLink">
@@ -373,10 +379,11 @@ export default function Characters() {
                     <Button
                       bordered
                       color="gradient"
-                      borderWeight="light"
+                      borderWeight
                       size="xs"
                       auto
                       ghost
+                      shadow
                       css={{ margin: "auto" }}
                     >
                       <Link
@@ -420,10 +427,11 @@ export default function Characters() {
                     <Button
                       bordered
                       color="gradient"
-                      borderWeight="light"
+                      borderWeight
                       size="xs"
                       auto
                       ghost
+                      shadow
                       css={{ margin: "auto" }}
                     >
                       <Link
