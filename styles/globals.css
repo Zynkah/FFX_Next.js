@@ -25,6 +25,10 @@ a:hover {
   color: #d333c3;
 }
 
+.buttonLink:hover {
+  color: white;
+}
+
 img {
   max-width: 100%;
   display: block;
