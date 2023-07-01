@@ -11,7 +11,7 @@ import {
   Box,
 } from "@mui/material";
 import Link from "next/link";
-import { Card } from "@nextui-org/react";
+import { Card, Button } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
 
@@ -53,7 +53,7 @@ export default function Aeons() {
         Aeons
       </Typography>
       <Box sx={{ width: "100%" }}>
-      <Box
+        <Box
           sx={{
             borderBottom: 1,
             borderColor: "divider",
@@ -101,7 +101,20 @@ export default function Aeons() {
                     An arieal aeon with great wings whose fayth statue is
                     located in Besaid Temple.
                   </Card.Body>
-                  <Link href={`../aeons/valefor/`}>Read More</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                    <Link href={`../aeons/valefor/`} className="buttonLink">
+                      Read More
+                    </Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -129,7 +142,20 @@ export default function Aeons() {
                     A demon that holds dominion over fire, with a fayth statue
                     situated in Kilika Temple.
                   </Card.Body>
-                  <Link href={`../aeons/ifrit/`}>Read More</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                    <Link href={`../aeons/ifrit/`} className="buttonLink">
+                      Read More
+                    </Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -157,7 +183,18 @@ export default function Aeons() {
                     A horned beast covered by lightning whose fayth statue
                     stands in Djose Temple.
                   </Card.Body>
-                  <Link href={`../aeons/ixion/`}>Read More</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                  <Link href={`../aeons/ixion/`} className="buttonLink">Read More</Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -185,7 +222,18 @@ export default function Aeons() {
                     The frozen queen of ice whose fayth statue is situated
                     inside Macalania Temple.
                   </Card.Body>
-                  <Link href={`../aeons/shiva/`}>Read More</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                  <Link href={`../aeons/shiva/`} className="buttonLink">Read More</Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -213,7 +261,18 @@ export default function Aeons() {
                     A four-winged sacred dragon beast with a fayth statue
                     located in Bevelle.
                   </Card.Body>
-                  <Link href={`../aeons/bahamut/`}>Read More</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                  <Link href={`../aeons/bahamut/`} className="buttonLink">Read More</Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -241,7 +300,18 @@ export default function Aeons() {
                     A master swordsman whose fayth statue is situated in the
                     Cavern of the Stolen Fayth.
                   </Card.Body>
-                  <Link href={`../aeons/yojimbo/`}>Read More</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                  <Link href={`../aeons/yojimbo/`} className="buttonLink">Read More</Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -269,7 +339,18 @@ export default function Aeons() {
                     An aeon bound in heavy chains whose fayth statue can be
                     found in the temple of Yevon-Baaj.
                   </Card.Body>
-                  <Link href={`../aeons/anima/`}>Read More</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                  <Link href={`../aeons/anima/`} className="buttonLink">Read More</Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -297,7 +378,18 @@ export default function Aeons() {
                     Three sister aeons whose fayth statue is situated in Remiem
                     Temple.
                   </Card.Body>
-                  <Link href={`../aeons/magus_sisters/`}>Read More</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                  <Link href={`../aeons/magus_sisters/`} className="buttonLink">Read More</Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
