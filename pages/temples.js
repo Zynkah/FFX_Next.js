@@ -9,20 +9,21 @@ import {
   Typography,
   Box,
 } from "@mui/material";
-import { Card, Divider } from "@nextui-org/react";
+import { Card, Divider, Button } from "@nextui-org/react";
 
 export default function Temples() {
   return (
     <Layout>
-      <Typography variant="h4" sx={{ margin: "20px" }}>
-        Temples in Spira
-      </Typography>
-      <Typography variant="body">
-        Temples of Yevon are found throughout Spira. At the heart of each temple
-        lies a Chamber of the Fayth, a room that contains a fayth—a statue that
-        houses a willingly-given human soul. Through the soul bonding to a
-        summoner mighty creatures called aeons may be made manifest.
-      </Typography>
+      <Box sx={{ margin: "20px" }}>
+        <Typography variant="h4">Temples in Spira</Typography>
+        <Typography variant="body" component="p">
+          Temples of Yevon are found throughout Spira. At the heart of each
+          temple lies a Chamber of the Fayth, a room that contains a fayth — a
+          statue that houses a willingly-given human soul. Through the soul
+          bonding to a summoner mighty creatures called aeons may be made
+          manifest.
+        </Typography>
+      </Box>
       <Divider />
       <Box sx={{ margin: "20px" }} />
       <Grid container spacing={2}>
@@ -48,7 +49,22 @@ export default function Temples() {
                   This temple is in the Besaid Village. It has a Cloister of
                   Trials you will have to complete. It houses the Aeon Valefor,
                   which is the first Aeon Yuna obtains.
-                  <Link href={`/aeons/valefor/`}>Valefor Info →</Link>
+                  <Card.Footer>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link href={`/aeons/valefor/`} className="buttonLink">
+                        Valefor Info →
+                      </Link>
+                    </Button>
+                  </Card.Footer>
+                  <Card.Divider />
                 </Card.Body>
                 <Box />
                 <Image
@@ -88,7 +104,22 @@ export default function Temples() {
                   This temple is just right outside of the Kilika Village. It
                   has a Cloister of Trials you will have to complete. This
                   temple houses the Aeon Ifrit.
-                  <Link href={`/aeons/ifrit`}>Ifrit Info →</Link>
+                  <Card.Footer>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link href={`/aeons/ifrit`} className="buttonLink">
+                        Ifrit Info →
+                      </Link>
+                    </Button>
+                  </Card.Footer>
+                  <Card.Divider />
                 </Card.Body>
                 <Box />
                 <Image
@@ -128,7 +159,22 @@ export default function Temples() {
                   This temple is found in the Thunder Plains. It has a Cloister
                   of Trials you will have to complete. This temple houses the
                   Aeon Ixion.
-                  <Link href={`/aeons/ixion`}>Ixion Info →</Link>
+                  <Card.Footer>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link href={`/aeons/ixion`} className="buttonLink">
+                        Ixion Info →
+                      </Link>
+                    </Button>
+                  </Card.Footer>
+                  <Card.Divider />
                 </Card.Body>
                 <Box />
                 <Image
@@ -168,7 +214,22 @@ export default function Temples() {
                   After passing through the Macalania Woods you will reach the
                   temple. You will need to complete a Cloister of Trials first.
                   This is where the Aeon Shiva is housed.
-                  <Link href={`/aeons/shiva`}>Shiva Info →</Link>
+                  <Card.Footer>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link href={`/aeons/shiva`} className="buttonLink">
+                        Shiva Info →
+                      </Link>
+                    </Button>
+                  </Card.Footer>
+                  <Card.Divider />
                 </Card.Body>
                 <Box />
                 <Image
@@ -208,7 +269,22 @@ export default function Temples() {
                   Inside the city of Bevelle you will find this temple. This
                   temple has a Cloister of Trials you will have to complete.
                   This temple houses the Aeon Bahamut.
-                  <Link href={`/aeons/bahamut`}>Bahamut Info →</Link>
+                  <Card.Footer>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link href={`/aeons/bahamut`} className="buttonLink">
+                        Bahamut Info →
+                      </Link>
+                    </Button>
+                  </Card.Footer>
+                  <Card.Divider />
                 </Card.Body>
                 <Box />
                 <Image
@@ -250,7 +326,22 @@ export default function Temples() {
                   the cave and reach the end where the teleportation pads are
                   located. Yojimbo is the first optional aeon. To obtain Yojimbo
                   you have to pay him.
-                  <Link href={`/aeons/yojimbo`}>Yojimbo Info →</Link>
+                  <Card.Footer>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link href={`/aeons/yojimbo`} className="buttonLink">
+                        Yojimbo Info →
+                      </Link>
+                    </Button>
+                  </Card.Footer>
+                  <Card.Divider />
                 </Card.Body>
                 <Box />
                 <Image
@@ -297,7 +388,22 @@ export default function Temples() {
                   of this room you will need to activate the six statues located
                   in this room. Anima is the second of three option Aeons that
                   you can obtain within Final Fantasy X.
-                  <Link href={`/aeons/anima`}>Anima Info →</Link>
+                  <Card.Footer>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link href={`/aeons/anima`} className="buttonLink">
+                        Anima Info →
+                      </Link>
+                    </Button>
+                  </Card.Footer>
+                  <Card.Divider />
                 </Card.Body>
                 <Box />
                 <Image
@@ -334,7 +440,7 @@ export default function Temples() {
                 <Typography variant="h6">Zanarkand Dome</Typography>
                 <Card.Divider />
                 <Card.Body css={{ textAlign: "center" }}>
-                Aeon: Lord Zaon (Power lost)
+                  Aeon: Lord Zaon (Power lost)
                 </Card.Body>
                 <Image
                   src="/images/Lord_Zaon_Aeon.jpg"
@@ -379,37 +485,55 @@ export default function Temples() {
               <AccordionDetails>
                 <Typography variant="h6">Remiem Temple</Typography>
                 <Card.Divider />
-                <Card.Body css={{ textAlign: "center" }}>This temple is found in the Calm Lands.</Card.Body>
-                    <Image
-                      src="/images/Glyph_Remiem_1.webp"
-                      height={250}
-                      width={333}
-                      style={{
-                        margin: "auto",
-                        borderRadius: "5px",
-                      }}
-                      alt="Cindy Glyph"
-                    />
-                    <Image
-                      src="/images/Glyph_Remiem_2.webp"
-                      height={250}
-                      width={194}
-                      style={{
-                        margin: "auto",
-                        borderRadius: "5px",
-                      }}
-                      alt="Sandy Glyph"
-                    />
-                    <Image
-                      src="/images/Glyph_Remiem_3.webp"
-                      height={250}
-                      width={240}
-                      style={{
-                        margin: "auto",
-                        borderRadius: "5px",
-                      }}
-                      alt="Mindy Glyph"
-                    />
+                <Card.Body css={{ textAlign: "center" }}>
+                  This temple is found in the Calm Lands.
+                  <Card.Footer>
+                    <Button
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
+                      <Link href={`/aeons/magus_sisters`} className="buttonLink">
+                        Magus Sisters Info →
+                      </Link>
+                    </Button>
+                  </Card.Footer>
+                  <Card.Divider />
+                </Card.Body>
+                <Image
+                  src="/images/Glyph_Remiem_1.webp"
+                  height={250}
+                  width={333}
+                  style={{
+                    margin: "auto",
+                    borderRadius: "5px",
+                  }}
+                  alt="Cindy Glyph"
+                />
+                <Image
+                  src="/images/Glyph_Remiem_2.webp"
+                  height={250}
+                  width={194}
+                  style={{
+                    margin: "auto",
+                    borderRadius: "5px",
+                  }}
+                  alt="Sandy Glyph"
+                />
+                <Image
+                  src="/images/Glyph_Remiem_3.webp"
+                  height={250}
+                  width={240}
+                  style={{
+                    margin: "auto",
+                    borderRadius: "5px",
+                  }}
+                  alt="Mindy Glyph"
+                />
               </AccordionDetails>
             </Accordion>
           </Card>
