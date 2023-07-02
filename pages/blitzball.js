@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 import Link from "next/link";
-import { Card, Divider } from "@nextui-org/react";
+import { Card, Divider, Button } from "@nextui-org/react";
 import {
   Box,
   Typography,
@@ -68,7 +68,20 @@ export default function Blitzball() {
                     soars. The player has control over the Besaid Aurochs
                     following the events in Luca.
                   </Card.Body>
-                  <Link href={`../blitzball/aurochs/`}>Team Statistics</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                    <Link href={`../blitzball/aurochs/`} className="buttonLink">
+                      Team Statistics
+                    </Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -101,7 +114,20 @@ export default function Blitzball() {
                     Luca stadium, if the player wishes to add them to their
                     team.
                   </Card.Body>
-                  <Link href={`../blitzball/goers/`}>Team Statistics</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                    <Link href={`../blitzball/goers/`} className="buttonLink">
+                      Team Statistics
+                    </Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -131,7 +157,20 @@ export default function Blitzball() {
                     before he became a summoner. The Kilika Beasts' team members
                     are found throughout Kilika from the port to the temple.
                   </Card.Body>
-                  <Link href={`../blitzball/beasts/`}>Team Statistics</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                    <Link href={`../blitzball/beasts/`} className="buttonLink">
+                      Team Statistics
+                    </Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -165,7 +204,20 @@ export default function Blitzball() {
                     which is right before entering Bevelle, and permanently
                     after the player has finished the events in Zanarkand.
                   </Card.Body>
-                  <Link href={`../blitzball/psyches/`}>Team Statistics</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                    <Link href={`../blitzball/psyches/`} className="buttonLink">
+                      Team Statistics
+                    </Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -195,7 +247,20 @@ export default function Blitzball() {
                     in speed. The Ronso Fangs members are found at the Luca
                     Docks.
                   </Card.Body>
-                  <Link href={`../blitzball/fangs/`}>Team Statistics</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                    <Link href={`../blitzball/fangs/`} className="buttonLink">
+                      Team Statistics
+                    </Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -225,7 +290,20 @@ export default function Blitzball() {
                     speed at the expense of HP, Attack, and Endurance. The Guado
                     Glories team can be found in Guadosalam.
                   </Card.Body>
-                  <Link href={`../blitzball/glories/`}>Team Statistics</Link>
+                  <Button
+                    bordered
+                    color="gradient"
+                    borderWeight
+                    size="xs"
+                    auto
+                    ghost
+                    shadow
+                    css={{ margin: "auto" }}
+                  >
+                    <Link href={`../blitzball/glories/`} className="buttonLink">
+                      Team Statistics
+                    </Link>
+                  </Button>
                 </AccordionDetails>
               </Accordion>
             </Card>
@@ -341,7 +419,7 @@ export default function Blitzball() {
             <Card isPressable isHoverable variant="bordered">
               <Accordion>
                 <AccordionSummary>
-                  <Card.Header css={{ fontSize: "1.5rem"}}>
+                  <Card.Header css={{ fontSize: "1.5rem" }}>
                     Recruiting and Scouting
                   </Card.Header>
                 </AccordionSummary>
