@@ -1,80 +1,25 @@
 import Layout from "../components/layout";
+import ReligionTabs from "../components/religion_tabs";
 import Image from "next/image";
 import {
   Grid,
   Accordion,
   AccordionSummary,
   AccordionDetails,
-  Tabs,
-  Tab,
   Typography,
   Box,
 } from "@mui/material";
 import { Card } from "@nextui-org/react";
 import * as React from "react";
-import PropTypes from "prop-types";
-
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
-};
 
 export default function Summoners() {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
   return (
     <Layout>
       <Typography variant="h4" sx={{ margin: "20px" }}>
         Summoners
       </Typography>
       <Box sx={{ width: "100%" }}>
-      <Box
-          sx={{
-            borderBottom: 1,
-            borderColor: "divider",
-            display: "flex",
-            justifyContent: "center",
-            width: "100%",
-          }}
-        >
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            variant="scrollable"
-            scrollButtons
-            aria-label="basic tabs"
-            textColor="none"
-            indicatorColor="none"
-          >
-            <Tab label="Maesters" href={`/maesters/`} />
-            <Tab label="Summoners" href={`/summoners/`} />
-            <Tab label="Aeons" href={`/aeons/`} />
-          </Tabs>
-        </Box>
+        <ReligionTabs />
 
         <Box sx={{ marginTop: "20px" }}>
           <Grid container spacing={2}>
@@ -519,11 +464,13 @@ export default function Summoners() {
               <Card isPressable isHoverable variant="bordered">
                 <Accordion>
                   <AccordionSummary>
-                  <Card.Header css={{ fontSize: "1.5rem"}}>O'aka's Little Sister</Card.Header>
+                    <Card.Header css={{ fontSize: "1.5rem" }}>
+                      O'aka's Little Sister
+                    </Card.Header>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Card.Divider />
-                    <Card.Body css={{textAlign:'center'}}>
+                    <Card.Body css={{ textAlign: "center" }}>
                       She is not named and only very briefly mentioned in the
                       story. All that is known is that she was younger than 22
                       when she passed.

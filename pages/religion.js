@@ -1,70 +1,17 @@
 import Layout from "../components/layout";
+import ReligionTabs from "../components/religion_tabs";
 import Image from "next/image";
-import { Grid, Tabs, Tab, Typography, Box } from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
 import * as React from "react";
-import PropTypes from "prop-types";
-
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
-};
 
 export default function Religion() {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
   return (
     <Layout>
       <Typography variant="h4" sx={{ margin: "20px" }}>
         Religion
       </Typography>
       <Box sx={{ width: "100%" }}>
-        <Box
-          sx={{
-            borderBottom: 1,
-            borderColor: "divider",
-            display: "flex",
-            justifyContent: "center",
-            width: "100%",
-          }}
-        >
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            variant="scrollable"
-            scrollButtons
-            aria-label="basic tabs"
-            textColor="none"
-            indicatorColor="none"
-          >
-            <Tab label="Maesters" href={`/maesters/`} />
-            <Tab label="Summoners" href={`/summoners/`} />
-            <Tab label="Aeons" href={`/aeons/`} />
-          </Tabs>
-        </Box>
+        <ReligionTabs />
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={6} lg={4} marginTop={13}>
             <Image
