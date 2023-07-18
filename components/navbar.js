@@ -4,24 +4,24 @@ import Image from "next/image";
 export default function Nav() {
   const collapseItems = [
     {
-      name: 'Characters',
-      href: '/characters'
+      name: "Characters",
+      href: "/characters",
     },
     {
-      name: 'Culture',
-      href: '/culture'
+      name: "Culture",
+      href: "/culture",
     },
     {
-      name: 'Locations',
-      href: '/locations'
+      name: "Locations",
+      href: "/locations",
     },
     {
-      name: 'Weapons',
-      href: '/weapons'
+      name: "Weapons",
+      href: "/weapons",
     },
     {
-      name: 'Walkthrough',
-      href: '/walkthrough'
+      name: "Walkthrough",
+      href: "/walkthrough",
     },
   ];
   return (
@@ -42,7 +42,12 @@ export default function Nav() {
           />
         </Link>
       </Navbar.Brand>
-      <Navbar.Content enableCursorHighlight hideIn="xs">
+      <Navbar.Content
+        enableCursorHighlight
+        activeColor="secondary"
+        variant="highlight-rounded"
+        hideIn="xs"
+      >
         <Navbar.Link href="/characters">Characters</Navbar.Link>
         <Navbar.Link href="/culture">Culture</Navbar.Link>
         <Navbar.Link href="/locations">Locations</Navbar.Link>
