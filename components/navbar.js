@@ -1,5 +1,6 @@
-import { Navbar, Link } from "@nextui-org/react";
+import { Navbar, Link, Tooltip } from "@nextui-org/react";
 import Image from "next/image";
+import CultureTooltip from "./cultureTooltip";
 
 export default function Nav() {
   const collapseItems = [
@@ -49,7 +50,9 @@ export default function Nav() {
         hideIn="xs"
       >
         <Navbar.Link href="/characters">Characters</Navbar.Link>
-        <Navbar.Link href="/culture">Culture</Navbar.Link>
+        <Tooltip content={<CultureTooltip />} placement="bottom">
+          <Navbar.Link href="/culture">Culture</Navbar.Link>
+        </Tooltip>
         <Navbar.Link href="/locations">Locations</Navbar.Link>
         <Navbar.Link href="/weapons">Weapons</Navbar.Link>
         <Navbar.Link href="/walkthrough">Walkthrough</Navbar.Link>

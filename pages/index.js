@@ -25,7 +25,11 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <hr />
-        <Typography variant="h3" sx={{ margin: "20px" }} className={utilStyles.title}>
+        <Typography
+          variant="h3"
+          sx={{ margin: "20px" }}
+          className={utilStyles.title}
+        >
           Welcome To Spira
         </Typography>
         <Image
@@ -39,7 +43,11 @@ export default function Home({ allPostsData }) {
           }}
           alt="Sin"
         />
-        <Typography variant="body" sx={{ margin: "30px" }} className={utilStyles.body}>
+        <Typography
+          variant="body"
+          sx={{ margin: "30px" }}
+          className={utilStyles.body}
+        >
           The world of Spira is caught in a cycle of death. Its people live in
           fear of the great menace known only as Sin. The people seek solace in
           the temples of Yevon. The Yevon faith teaches that the only way to

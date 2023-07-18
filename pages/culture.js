@@ -61,7 +61,7 @@ export default function Culture() {
             textColor="none"
             indicatorColor="none"
           >
-            <Tab label="Races & Culture" href={`/races/`} />
+            <Tab label="Races" href={`/races/`} />
             <Tab label="Scripts" href={`/scripts/`} />
             <Tab label="Religion" href={`/religion/`} />
             <Tab label="Military" href={`/military/`} />
