@@ -1,4 +1,5 @@
-import { Link, Spacer } from "@nextui-org/react";
+import { Link, Spacer, Tooltip } from "@nextui-org/react";
+import ReligionToolTip from "./religionTooltip";
 
 export default function CultureTooltip() {
   return (
@@ -11,9 +12,11 @@ export default function CultureTooltip() {
         Scripts
       </Link>
       <Spacer y={1} />
-      <Link css={{ color: "black" }} href={`/religion/`}>
-        Religion
-      </Link>
+      <Tooltip content={<ReligionToolTip />} placement="right">
+        <Link css={{ marginLeft: "10px", color: "black" }} href={`/religion/`}>
+          Religion
+        </Link>
+      </Tooltip>
       <Spacer y={1} />
       <Link css={{ color: "black" }} href={`/military/`}>
         Military
