@@ -69,15 +69,14 @@ export default function Blitzball() {
                     following the events in Luca.
                   </Card.Body>
                   <Button
-                    bordered
-                    color="gradient"
-                    borderWeight
-                    size="xs"
-                    auto
-                    ghost
-                    shadow
-                    css={{ margin: "auto" }}
-                  >
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
                     <Link href={`../blitzball/aurochs/`} className="buttonLink">
                       Team Statistics
                     </Link>
@@ -115,15 +114,14 @@ export default function Blitzball() {
                     team.
                   </Card.Body>
                   <Button
-                    bordered
-                    color="gradient"
-                    borderWeight
-                    size="xs"
-                    auto
-                    ghost
-                    shadow
-                    css={{ margin: "auto" }}
-                  >
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
                     <Link href={`../blitzball/goers/`} className="buttonLink">
                       Team Statistics
                     </Link>
@@ -158,15 +156,14 @@ export default function Blitzball() {
                     are found throughout Kilika from the port to the temple.
                   </Card.Body>
                   <Button
-                    bordered
-                    color="gradient"
-                    borderWeight
-                    size="xs"
-                    auto
-                    ghost
-                    shadow
-                    css={{ margin: "auto" }}
-                  >
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
                     <Link href={`../blitzball/beasts/`} className="buttonLink">
                       Team Statistics
                     </Link>
@@ -205,15 +202,14 @@ export default function Blitzball() {
                     after the player has finished the events in Zanarkand.
                   </Card.Body>
                   <Button
-                    bordered
-                    color="gradient"
-                    borderWeight
-                    size="xs"
-                    auto
-                    ghost
-                    shadow
-                    css={{ margin: "auto" }}
-                  >
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
                     <Link href={`../blitzball/psyches/`} className="buttonLink">
                       Team Statistics
                     </Link>
@@ -248,15 +244,14 @@ export default function Blitzball() {
                     Docks.
                   </Card.Body>
                   <Button
-                    bordered
-                    color="gradient"
-                    borderWeight
-                    size="xs"
-                    auto
-                    ghost
-                    shadow
-                    css={{ margin: "auto" }}
-                  >
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
                     <Link href={`../blitzball/fangs/`} className="buttonLink">
                       Team Statistics
                     </Link>
@@ -291,15 +286,14 @@ export default function Blitzball() {
                     Glories team can be found in Guadosalam.
                   </Card.Body>
                   <Button
-                    bordered
-                    color="gradient"
-                    borderWeight
-                    size="xs"
-                    auto
-                    ghost
-                    shadow
-                    css={{ margin: "auto" }}
-                  >
+                      bordered
+                      color="gradient"
+                      borderWeight
+                      size="xs"
+                      auto
+                      ghost
+                      css={{ margin: "auto" }}
+                    >
                     <Link href={`../blitzball/glories/`} className="buttonLink">
                       Team Statistics
                     </Link>
