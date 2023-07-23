@@ -50,7 +50,7 @@ export default function Nav() {
         hideIn="xs"
       >
         <Navbar.Link href="/characters">Characters</Navbar.Link>
-        <Tooltip content={<CultureTooltip />} placement="bottom">
+        <Tooltip content={<CultureTooltip />} placement="right">
           <Navbar.Link href="/culture">Culture</Navbar.Link>
         </Tooltip>
         <Navbar.Link href="/locations">Locations</Navbar.Link>
