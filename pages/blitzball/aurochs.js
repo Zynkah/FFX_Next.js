@@ -1,209 +1,144 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-import Grid from "@mui/material/Grid";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import { Card } from "@nextui-org/react";
+import { Table } from "@nextui-org/react";
+import { Typography } from "@mui/material";
 
 export default function Aurochs() {
   return (
     <Layout>
-      <h1>Besaid Aurochs</h1>
-      <h3>
-        <b>Team Members</b>
-      </h3>
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
-          <Card isPressable isHoverable variant="bordered">
-            <Accordion>
-              <AccordionSummary>
-                <Image
-                  src="/images/Tidus_blitzball.webp"
-                  height={400}
-                  width={145}
-                  style={{
-                    margin: "auto",
-                    borderRadius: "5px",
-                  }}
-                  alt="Tidus"
-                />
-              </AccordionSummary>
-              <AccordionDetails>
-                <p>
-                  <b>Tidus</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Venom Tackle, Drain Tackle, Anti-Venom 2
-                  <br />
-                  Location Found :
-                  <br />
-                  N/A
-                </p>
-              </AccordionDetails>
-            </Accordion>
-          </Card>
-        </Grid>
-        
-        <Grid item xs={12} md={6}>
-          <Card isPressable isHoverable variant="bordered">
-            <Accordion>
-              <AccordionSummary>
-                <Image
-                  src="/images/Datto.webp"
-                  height={400}
-                  width={174}
-                  style={{
-                    margin: "auto",
-                    borderRadius: "5px",
-                  }}
-                  alt="Datto"
-                />
-              </AccordionSummary>
-              <AccordionDetails>
-                <p>
-                  <b>Datto</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Wither Shot, Anti-Venom, Wither Shot 2
-                  <br />
-                  Location Found :
-                  <br />
-                  Luca Stadium - Aurochs Locker Room
-                </p>
-              </AccordionDetails>
-            </Accordion>
-          </Card>
-        </Grid>
-        
-        <Grid item xs={12} md={6}>
-          <Card isPressable isHoverable variant="bordered">
-            <Accordion>
-              <AccordionSummary>
-                <Image
-                  src="/images/Letty.webp"
-                  height={400}
-                  width={121}
-                  style={{
-                    margin: "auto",
-                    borderRadius: "5px",
-                  }}
-                  alt="Letty"
-                />
-              </AccordionSummary>
-              <AccordionDetails>
-                <p>
-                  <b>Letty</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Wither Tackle, Nap Pass, Venom Pass 3
-                  <br />
-                  Location Found :
-                  <br />
-                  Luca Stadium - Aurochs Locker Room
-                </p>
-              </AccordionDetails>
-            </Accordion>
-          </Card>
-        </Grid>
-        
-        <Grid item xs={12} md={6}>
-          <Card isPressable isHoverable variant="bordered">
-            <Accordion>
-              <AccordionSummary>
-                <Image
-                  src="/images/Jassu.webp"
-                  height={400}
-                  width={183}
-                  style={{
-                    margin: "auto",
-                    borderRadius: "5px",
-                  }}
-                  alt="Jassu"
-                />
-              </AccordionSummary>
-              <AccordionDetails>
-                <p>
-                  <b>Jassu</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Wither Tackle, Wither Tackle 2, Nap Tackle 2
-                  <br />
-                  Location Found :
-                  <br />
-                  Luca Stadium - Aurochs Locker Room
-                </p>
-              </AccordionDetails>
-            </Accordion>
-          </Card>
-        </Grid>
-        
-        <Grid item xs={12} md={6}>
-          <Card isPressable isHoverable variant="bordered">
-            <Accordion>
-              <AccordionSummary>
-                <Image
-                  src="/images/Botta.webp"
-                  height={400}
-                  width={151}
-                  style={{
-                    margin: "auto",
-                    borderRadius: "5px",
-                  }}
-                  alt="Botta"
-                />
-              </AccordionSummary>
-              <AccordionDetails>
-                <p>
-                  <b>Botta</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Venom Shot, Venom Pass 2, Nap Tackle
-                  <br />
-                  Location Found :
-                  <br />
-                  Luca Stadium - Aurochs Locker Room
-                </p>
-              </AccordionDetails>
-            </Accordion>
-          </Card>
-        </Grid>
-        
-        <Grid item xs={12} md={6}>
-          <Card isPressable isHoverable variant="bordered">
-            <Accordion>
-              <AccordionSummary>
-                <Image
-                  src="/images/Keepa.webp"
-                  height={400}
-                  width={150}
-                  style={{
-                    margin: "auto",
-                    borderRadius: "5px",
-                  }}
-                  alt="Keepa"
-                />
-              </AccordionSummary>
-              <AccordionDetails>
-                <p>
-                  <b>Keepa</b>
-                  <br />
-                  Key Techniques :
-                  <br />
-                  Super Goalie, Volley Shoot, Anti-Wither Location Found :
-                  <br />
-                  Luca Stadium - Aurochs Locker Room
-                </p>
-              </AccordionDetails>
-            </Accordion>
-          </Card>
-        </Grid>
-      </Grid>
+      <Typography variant="h4" sx={{ margin: "20px" }}>
+        Besaid Aurochs
+      </Typography>
+      <Typography variant="h6" component="h2">
+        Team Members
+      </Typography>
+      <Table
+        aria-label="Example static collection table"
+        css={{
+          height: "auto",
+          minWidth: "100%",
+        }}
+        selectionMode="single"
+      >
+        <Table.Header>
+          <Table.Column align="center">Photo</Table.Column>
+          <Table.Column align="center">Name</Table.Column>
+          <Table.Column align="center">Key Techniques</Table.Column>
+          <Table.Column align="center">Location Found</Table.Column>
+        </Table.Header>
+
+        <Table.Body>
+          <Table.Row key="1">
+            <Table.Cell>
+              <Image
+                src="/images/Tidus_blitzball.webp"
+                height={200}
+                width={72}
+                style={{
+                  margin: "auto",
+                  borderRadius: "5px",
+                }}
+                alt="Tidus"
+              />
+            </Table.Cell>
+            <Table.Cell>Tidus</Table.Cell>
+            <Table.Cell>Venom Tackle, Drain Tackle, Anti-Venom 2</Table.Cell>
+            <Table.Cell>N/A</Table.Cell>
+          </Table.Row>
+
+          <Table.Row key="2">
+            <Table.Cell>
+              <Image
+                src="/images/Datto.webp"
+                height={200}
+                width={87}
+                style={{
+                  margin: "auto",
+                  borderRadius: "5px",
+                }}
+                alt="Tidus"
+              />
+            </Table.Cell>
+            <Table.Cell>Datto</Table.Cell>
+            <Table.Cell>Wither Shot, Anti-Venom, Wither Shot 2</Table.Cell>
+            <Table.Cell>Luca Stadium - Aurochs Locker Room</Table.Cell>
+          </Table.Row>
+
+          <Table.Row key="3">
+            <Table.Cell>
+              <Image
+                src="/images/Letty.webp"
+                height={200}
+                width={60}
+                style={{
+                  margin: "auto",
+                  borderRadius: "5px",
+                }}
+                alt="Letty"
+              />
+            </Table.Cell>
+            <Table.Cell>Letty</Table.Cell>
+            <Table.Cell>Wither Tackle, Nap Pass, Venom Pass 3</Table.Cell>
+            <Table.Cell>Luca Stadium - Aurochs Locker Room</Table.Cell>
+          </Table.Row>
+
+          <Table.Row key="4">
+            <Table.Cell>
+              <Image
+                src="/images/Jassu.webp"
+                height={200}
+                width={91}
+                style={{
+                  margin: "auto",
+                  borderRadius: "5px",
+                }}
+                alt="Jassu"
+              />
+            </Table.Cell>
+            <Table.Cell>Jassu</Table.Cell>
+            <Table.Cell>
+              Wither Tackle, Wither Tackle 2, Nap Tackle 2
+            </Table.Cell>
+            <Table.Cell>Luca Stadium - Aurochs Locker Room</Table.Cell>
+          </Table.Row>
+
+          <Table.Row key="5">
+            <Table.Cell>
+              <Image
+                src="/images/Botta.webp"
+                height={200}
+                width={75}
+                style={{
+                  margin: "auto",
+                  borderRadius: "5px",
+                }}
+                alt="Botta"
+              />
+            </Table.Cell>
+            <Table.Cell>Botta</Table.Cell>
+            <Table.Cell>Venom Shot, Venom Pass 2, Nap Tackle</Table.Cell>
+            <Table.Cell>Luca Stadium - Aurochs Locker Room</Table.Cell>
+          </Table.Row>
+
+          <Table.Row key="6">
+            <Table.Cell>
+              <Image
+                src="/images/Keepa.webp"
+                height={200}
+                width={75}
+                style={{
+                  margin: "auto",
+                  borderRadius: "5px",
+                }}
+                alt="Keepa"
+              />
+            </Table.Cell>
+            <Table.Cell>Keepa</Table.Cell>
+            <Table.Cell>Super Goalie, Volley Shoot, Anti-Wither</Table.Cell>
+            <Table.Cell>Luca Stadium - Aurochs Locker Room</Table.Cell>
+          </Table.Row>
+        </Table.Body>
+      </Table>
     </Layout>
   );
 }
