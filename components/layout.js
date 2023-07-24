@@ -24,8 +24,8 @@ export default function Layout({ children, home }) {
               priority
               src="/images/logo.jpg"
               className={utilStyles.borderCircle}
-              height={250}
-              width={384}
+              height={200}
+              width={307}
               alt="FFX Logo"
             />
             <h1 className={utilStyles.heading2xl}>{name}</h1>
