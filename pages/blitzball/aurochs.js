@@ -1,9 +1,12 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-import { Table } from "@nextui-org/react";
+import { Table, Button } from "@nextui-org/react";
 import { Typography } from "@mui/material";
+import { useState } from "react";
 
 export default function Aurochs() {
+  // const[modal, setModal] = useState(false)
+
   return (
     <Layout>
       <Typography variant="h4" sx={{ margin: "20px" }}>
@@ -13,18 +16,22 @@ export default function Aurochs() {
         Team Members
       </Typography>
       <Table
-        aria-label="Example static collection table"
+        aria-label="Auroch Team Player Table"
         css={{
           height: "auto",
           minWidth: "100%",
         }}
         selectionMode="single"
+        color="secondary"
+        ghost
+        lined
       >
         <Table.Header>
           <Table.Column align="center">Photo</Table.Column>
           <Table.Column align="center">Name</Table.Column>
           <Table.Column align="center">Key Techniques</Table.Column>
           <Table.Column align="center">Location Found</Table.Column>
+          <Table.Column align="center">View Stats</Table.Column>
         </Table.Header>
 
         <Table.Body>
@@ -44,6 +51,16 @@ export default function Aurochs() {
             <Table.Cell>Tidus</Table.Cell>
             <Table.Cell>Venom Tackle, Drain Tackle, Anti-Venom 2</Table.Cell>
             <Table.Cell>N/A</Table.Cell>
+            <Table.Cell>
+              <Button
+                size="xs"
+                color="secondary"
+                ghost
+                css={{ margin: "auto" }}
+              >
+                Stats
+              </Button>
+            </Table.Cell>
           </Table.Row>
 
           <Table.Row key="2">
@@ -62,6 +79,16 @@ export default function Aurochs() {
             <Table.Cell>Datto</Table.Cell>
             <Table.Cell>Wither Shot, Anti-Venom, Wither Shot 2</Table.Cell>
             <Table.Cell>Luca Stadium - Aurochs Locker Room</Table.Cell>
+            <Table.Cell>
+              <Button
+                size="xs"
+                color="secondary"
+                ghost
+                css={{ margin: "auto" }}
+              >
+                Stats
+              </Button>
+            </Table.Cell>
           </Table.Row>
 
           <Table.Row key="3">
@@ -80,6 +107,16 @@ export default function Aurochs() {
             <Table.Cell>Letty</Table.Cell>
             <Table.Cell>Wither Tackle, Nap Pass, Venom Pass 3</Table.Cell>
             <Table.Cell>Luca Stadium - Aurochs Locker Room</Table.Cell>
+            <Table.Cell>
+              <Button
+                size="xs"
+                color="secondary"
+                ghost
+                css={{ margin: "auto" }}
+              >
+                Stats
+              </Button>
+            </Table.Cell>
           </Table.Row>
 
           <Table.Row key="4">
@@ -100,6 +137,16 @@ export default function Aurochs() {
               Wither Tackle, Wither Tackle 2, Nap Tackle 2
             </Table.Cell>
             <Table.Cell>Luca Stadium - Aurochs Locker Room</Table.Cell>
+            <Table.Cell>
+              <Button
+                size="xs"
+                color="secondary"
+                ghost
+                css={{ margin: "auto" }}
+              >
+                Stats
+              </Button>
+            </Table.Cell>
           </Table.Row>
 
           <Table.Row key="5">
@@ -118,6 +165,16 @@ export default function Aurochs() {
             <Table.Cell>Botta</Table.Cell>
             <Table.Cell>Venom Shot, Venom Pass 2, Nap Tackle</Table.Cell>
             <Table.Cell>Luca Stadium - Aurochs Locker Room</Table.Cell>
+            <Table.Cell>
+              <Button
+                size="xs"
+                color="secondary"
+                ghost
+                css={{ margin: "auto" }}
+              >
+                Stats
+              </Button>
+            </Table.Cell>
           </Table.Row>
 
           <Table.Row key="6">
@@ -136,6 +193,16 @@ export default function Aurochs() {
             <Table.Cell>Keepa</Table.Cell>
             <Table.Cell>Super Goalie, Volley Shoot, Anti-Wither</Table.Cell>
             <Table.Cell>Luca Stadium - Aurochs Locker Room</Table.Cell>
+            <Table.Cell>
+              <Button
+                size="xs"
+                color="secondary"
+                ghost
+                css={{ margin: "auto" }}
+              >
+                Stats
+              </Button>
+            </Table.Cell>
           </Table.Row>
         </Table.Body>
       </Table>

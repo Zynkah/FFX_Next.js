@@ -70,6 +70,7 @@ export default function Nav() {
           >
             <Dropdown.Item
               key="races"
+              // as={Link} href={`/races/`}
               showFullDescription
               description="The variety of races that exist in the world. Includes Humanoids, Demi-Humans and Creatures."
             >
@@ -89,7 +90,7 @@ export default function Nav() {
               showFullDescription
               description="Information on the Yevon religion. Includes Maesters, Summoners and Aeons."
             >
-             <Link href="/religion">Religion</Link>
+              <Link href="/religion">Religion</Link>
             </Dropdown.Item>
 
             <Dropdown.Item
@@ -97,7 +98,7 @@ export default function Nav() {
               showFullDescription
               description="Crusaders, Guardians, Warrior Monks, Crimson Squad and Chocobo Knights."
             >
-             <Link href="/military">Military</Link>
+              <Link href="/military">Military</Link>
             </Dropdown.Item>
 
             <Dropdown.Item
@@ -105,7 +106,7 @@ export default function Nav() {
               showFullDescription
               description="Vehicles, Machina, Currency, Fire Arms and Hand Held items that can be used to take control of the world."
             >
-             <Link href="/technology">Technology</Link>
+              <Link href="/technology">Technology</Link>
             </Dropdown.Item>
 
             <Dropdown.Item
@@ -113,7 +114,7 @@ export default function Nav() {
               showFullDescription
               description="The sport that unites everyone in Spira and helps the people forget about the never ending doom of Sin."
             >
-             <Link href="/blitzball">Blitzball</Link>
+              <Link href="/blitzball">Blitzball</Link>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
