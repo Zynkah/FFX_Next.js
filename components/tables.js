@@ -14,7 +14,7 @@ export default function Tables(props) {
         Team Members
       </Typography>
       <Table
-        aria-label='team table'
+        aria-label="team table"
         css={{
           height: "auto",
           minWidth: "100%",
@@ -65,4 +65,4 @@ export default function Tables(props) {
       </Table>
     </Layout>
   );
-};
+}

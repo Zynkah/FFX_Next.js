@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import Tables from '../../components/tables';
+import React, { useState, useEffect } from "react";
+import Tables from "../../components/tables";
 
 const Aurochs = () => {
   const [team, setTeam] = useState(null);
@@ -8,31 +8,27 @@ const Aurochs = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const teamname = 'Besaid Aurochs';
+        const teamname = "Besaid Aurochs";
 
-        const response = await fetch(`/api/blitzballData?teamname=${encodeURIComponent(teamname)}`);
+        const response = await fetch(
+          `/api/blitzballData?teamname=${encodeURIComponent(teamname)}`
+        );
         if (!response.ok) {
-          throw new Error('Failed to fetch data');
+          throw new Error("Failed to fetch data");
         }
 
         const data = await response.json();
         setTeam(data.team);
         setCharacters(data.characters);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     }
 
     fetchData();
   }, []);
 
-  return (
-    <>
-      {characters && (
-        <Tables data={{ characters }} />
-      )}
-    </>
-  );
+  return <>{characters && <Tables data={{ characters }} />}</>;
 };
 
 export default Aurochs;
