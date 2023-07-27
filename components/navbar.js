@@ -119,9 +119,6 @@ export default function Nav() {
           </Dropdown.Menu>
         </Dropdown>
 
-        {/* <Tooltip content={<CultureTooltip />} placement="right">
-        <Navbar.Link href="/culture">Culture</Navbar.Link>
-        </Tooltip> */}
         <Navbar.Link href="/locations">Locations</Navbar.Link>
         <Navbar.Link href="/weapons">Weapons</Navbar.Link>
         <Navbar.Link href="/walkthrough">Walkthrough</Navbar.Link>
