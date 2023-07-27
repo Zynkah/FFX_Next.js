@@ -1,18 +1,34 @@
-import {
-  get_characters_by_teamname,
-  get_team_by_teamname,
-} from "./blitzballData";
-import Tables from "./tables";
+import React, { useState, useEffect } from "react";
+import Tables from "../../components/tables";
 
-export default function Beasts() {
-  return (
-    <>
-      <Tables
-        data={{
-          team: get_team_by_teamname("Kilika Beasts"),
-          characters: get_characters_by_teamname("Kilika Beasts"),
-        }}
-      />
-    </>
-  );
-}
+const Beasts = () => {
+  const [team, setTeam] = useState(null);
+  const [characters, setCharacters] = useState(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const teamname = "Kilika Beasts";
+
+        const response = await fetch(
+          `/api/blitzballData?teamname=${encodeURIComponent(teamname)}`
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+
+        const data = await response.json();
+        setTeam(data.team);
+        setCharacters(data.characters);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    fetchData();
+  }, []);
+
+  return <>{characters && <Tables data={{ characters }} />}</>;
+};
+
+export default Beasts;

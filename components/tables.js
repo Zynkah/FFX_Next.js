@@ -1,10 +1,10 @@
-import Layout from "../../components/layout";
+import Layout from "./layout";
 import Image from "next/image";
 import { Table, Button } from "@nextui-org/react";
 import { Typography } from "@mui/material";
 
-export default (props) => {
-  const { team, characters } = props.data;
+export default function Tables(props) {
+  const { characters } = props.data;
   return (
     <Layout>
       <Typography variant="h4" sx={{ margin: "20px 0" }}>
@@ -14,7 +14,7 @@ export default (props) => {
         Team Members
       </Typography>
       <Table
-        aria-label={team}
+        aria-label='team table'
         css={{
           height: "auto",
           minWidth: "100%",

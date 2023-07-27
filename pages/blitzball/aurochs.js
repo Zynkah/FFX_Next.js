@@ -1,18 +1,38 @@
-import {
-  get_characters_by_teamname,
-  get_team_by_teamname,
-} from "./blitzballData";
-import Tables from "./tables";
+import React, { useState, useEffect } from 'react';
+import Tables from '../../components/tables';
 
-export default function Aurochs() {
+const Aurochs = () => {
+  const [team, setTeam] = useState(null);
+  const [characters, setCharacters] = useState(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const teamname = 'Besaid Aurochs';
+
+        const response = await fetch(`/api/blitzballData?teamname=${encodeURIComponent(teamname)}`);
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+
+        const data = await response.json();
+        setTeam(data.team);
+        setCharacters(data.characters);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+
+    fetchData();
+  }, []);
+
   return (
     <>
-      <Tables
-        data={{
-          team: get_team_by_teamname("Besaid Aurochs"),
-          characters: get_characters_by_teamname("Besaid Aurochs"),
-        }}
-      />
+      {characters && (
+        <Tables data={{ characters }} />
+      )}
     </>
   );
-}
+};
+
+export default Aurochs;
