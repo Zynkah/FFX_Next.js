@@ -1,134 +1,34 @@
-import Layout from "../../components/layout";
-import Image from "next/image";
-import { Table, Button } from "@nextui-org/react";
-import { Typography } from "@mui/material";
+import React, { useState, useEffect } from "react";
+import Tables from "../../components/tables";
 
-export default function Aurochs() {
-  return (
-    <Layout>
-      <Typography variant="h4" sx={{ margin: "20px" }}>
-        Luca Goers
-      </Typography>
-      <Typography variant="h6" component="h2">
-        Team Members
-      </Typography>
-      <Table
-        aria-label="Goers Team Members table"
-        css={{
-          height: "auto",
-          minWidth: "100%",
-        }}
-        selectionMode="single"
-        color="secondary"
-        bordered
-        lined
-      >
-        <Table.Header>
-          <Table.Column align="center">Photo</Table.Column>
-          <Table.Column align="center">Name</Table.Column>
-          <Table.Column align="center">Key Techniques</Table.Column>
-          <Table.Column align="center">Location Found</Table.Column>
-          <Table.Column align="center">View Stats</Table.Column>
-        </Table.Header>
-        <Table.Body>
-          <Table.Row key="1">
-            <Table.Cell></Table.Cell>
-            <Table.Cell>Bickson</Table.Cell>
-            <Table.Cell>Wither Shot, Nap Pass, Anti-Nap</Table.Cell>
-            <Table.Cell>Luca Harbor - Number 3 Dock</Table.Cell>
-            <Table.Cell>
-              <Button
-                size="xs"
-                color="secondary"
-                ghost
-                css={{ margin: "auto" }}
-              >
-                Stats
-              </Button>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row key="2">
-            <Table.Cell></Table.Cell>
-            <Table.Cell>Abus</Table.Cell>
-            <Table.Cell>Grip Gloves, Venom Tackle 2, Venom Shot 3</Table.Cell>
-            <Table.Cell>Luca Harbor - Number 3 Dock</Table.Cell>
-            <Table.Cell>
-              <Button
-                size="xs"
-                color="secondary"
-                ghost
-                css={{ margin: "auto" }}
-              >
-                Stats
-              </Button>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row key="3">
-            <Table.Cell></Table.Cell>
-            <Table.Cell>Graav</Table.Cell>
-            <Table.Cell>Venom Pass, Tackle Slip, Drain Tackle 2</Table.Cell>
-            <Table.Cell>Luca Harbor - Number 3 Dock</Table.Cell>
-            <Table.Cell>
-              <Button
-                size="xs"
-                color="secondary"
-                ghost
-                css={{ margin: "auto" }}
-              >
-                Stats
-              </Button>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row key="4">
-            <Table.Cell></Table.Cell>
-            <Table.Cell>Doram</Table.Cell>
-            <Table.Cell>Wither Tackle, Nap Tackle, Volley Shot</Table.Cell>
-            <Table.Cell>Luca Harbor - Number 3 Dock</Table.Cell>
-            <Table.Cell>
-              <Button
-                size="xs"
-                color="secondary"
-                ghost
-                css={{ margin: "auto" }}
-              >
-                Stats
-              </Button>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row key="5">
-            <Table.Cell></Table.Cell>
-            <Table.Cell>Balgerda</Table.Cell>
-            <Table.Cell>Nap Tackle, Anti-Wither, Drain Tackle</Table.Cell>
-            <Table.Cell>Luca Harbor - Number 3 Dock</Table.Cell>
-            <Table.Cell>
-              <Button
-                size="xs"
-                color="secondary"
-                ghost
-                css={{ margin: "auto" }}
-              >
-                Stats
-              </Button>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row key="6">
-            <Table.Cell></Table.Cell>
-            <Table.Cell>Raudy</Table.Cell>
-            <Table.Cell>Grip Gloves, Gamble, Tackle Slip 2</Table.Cell>
-            <Table.Cell>Luca Harbor - Number 3 Dock</Table.Cell>
-            <Table.Cell>
-              <Button
-                size="xs"
-                color="secondary"
-                ghost
-                css={{ margin: "auto" }}
-              >
-                Stats
-              </Button>
-            </Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-    </Layout>
-  );
-}
+const Goers = () => {
+  const [team, setTeam] = useState(null);
+  const [characters, setCharacters] = useState(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const teamname = "Luca Goers";
+
+        const response = await fetch(
+          `/api/blitzballData?teamname=${encodeURIComponent(teamname)}`
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+
+        const data = await response.json();
+        setTeam(data.team);
+        setCharacters(data.characters);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    fetchData();
+  }, []);
+
+  return <>{characters && <Tables data={{ characters }} />}</>;
+};
+
+export default Goers;
