@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Tables from "../../components/tables";
 
-const Goers = () => {
+export default function Goers() {
   const [team, setTeam] = useState(null);
   const [characters, setCharacters] = useState(null);
 
@@ -30,5 +30,3 @@ const Goers = () => {
 
   return <>{characters && <Tables data={{ characters }} />}</>;
 };
-
-export default Goers;
