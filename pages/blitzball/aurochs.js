@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Tables from "../../components/tables";
 
-const Aurochs = () => {
+export default function Aurochs() {
   const [team, setTeam] = useState(null);
   const [characters, setCharacters] = useState(null);
 
@@ -31,4 +31,3 @@ const Aurochs = () => {
   return <>{characters && <Tables data={{ characters }} />}</>;
 };
 
-export default Aurochs;
