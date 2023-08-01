@@ -1,4 +1,4 @@
-import { get_characters_by_teamname, get_team_by_teamname } from '../../lib/data';
+import { get_players_by_teamname, get_team_by_teamname } from '../../lib/data';
 
 export default function handler(req, res) {
   const { teamname } = req.query;
@@ -6,8 +6,8 @@ export default function handler(req, res) {
   if (req.method === 'GET') {
     if (teamname) {
       const team = get_team_by_teamname(teamname);
-      const characters = get_characters_by_teamname(teamname);
-      res.status(200).json({ team, characters });
+      const players = get_players_by_teamname(teamname);
+      res.status(200).json({ team, players });
     } else {
       res.status(400).json({ message: 'Team name not provided.' });
     }
