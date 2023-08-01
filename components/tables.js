@@ -4,11 +4,11 @@ import { Table, Button } from "@nextui-org/react";
 import { Typography } from "@mui/material";
 
 export default function Tables(props) {
-  const { characters } = props.data;
+  const { players } = props.data;
   return (
     <Layout>
       <Typography variant="h4" sx={{ margin: "20px 0" }}>
-        {characters[0].teamname}
+        {players[0].teamname}
       </Typography>
       <Typography variant="h6" component="h2">
         Team Members
@@ -32,7 +32,7 @@ export default function Tables(props) {
           <Table.Column align="center">View Stats</Table.Column>
         </Table.Header>
         <Table.Body>
-          {characters.map((character) => (
+          {players.map((character) => (
             <Table.Row key={character.key}>
               <Table.Cell>
                 <Image

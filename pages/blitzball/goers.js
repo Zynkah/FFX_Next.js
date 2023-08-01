@@ -3,7 +3,7 @@ import Tables from "../../components/tables";
 
 export default function Goers() {
   const [team, setTeam] = useState(null);
-  const [characters, setCharacters] = useState(null);
+  const [players, setPlayers] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -19,7 +19,7 @@ export default function Goers() {
 
         const data = await response.json();
         setTeam(data.team);
-        setCharacters(data.characters);
+        setPlayers(data.players);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -28,5 +28,5 @@ export default function Goers() {
     fetchData();
   }, []);
 
-  return <>{characters && <Tables data={{ characters }} />}</>;
+  return <>{players && <Tables data={{ players }} />}</>;
 };
