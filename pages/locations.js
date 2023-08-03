@@ -320,7 +320,7 @@ export default function Locations() {
                         margin: "auto",
                         borderRadius: "5px",
                       }}
-                      alt="Lucca"
+                      alt="Luca"
                     />
                   </AccordionSummary>
                   <AccordionDetails>
