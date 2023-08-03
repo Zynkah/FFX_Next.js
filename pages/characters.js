@@ -3,32 +3,57 @@ import CharacterCards from "../components/characterCard";
 
 export default function Characters() {
   const [mainCharacters, setMainCharacters] = useState(null);
+  const [supportingCharacters, setSupportingCharacters] = useState(null);
 
   useEffect(() => {
-    async function fetchData() {
+    async function fetchMainCharacters() {
       try {
         const role = "Main Characters";
 
         const response = await fetch(
           `/api/characterData?role=${encodeURIComponent(role)}`
         );
-        console.log(response);
-        
+
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
 
         const data = await response.json();
-        setMainCharacters(data.role);
+        setMainCharacters(data.character);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     }
 
-    fetchData();
+    async function fetchSupportingCharacters() {
+      try {
+        const role = "Supporting Characters";
+
+        const response = await fetch(
+          `/api/characterData?role=${encodeURIComponent(role)}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch supporting characters data");
+        }
+
+        const data = await response.json();
+        setSupportingCharacters(data.character);
+      } catch (error) {
+        console.error("Error fetching supporting characters data:", error);
+      }
+    }
+
+    fetchMainCharacters();
+    fetchSupportingCharacters();
   }, []);
 
-  return <>{mainCharacters && <CharacterCards data={{ mainCharacters }} />}</>;
+  return (
+    <>
+      {mainCharacters && <CharacterCards data={mainCharacters} />}
+      {supportingCharacters && <CharacterCards data={supportingCharacters} />}
+    </>
+  );
 }
 
 // import Layout from "../components/layout";

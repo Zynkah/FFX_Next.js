@@ -48,7 +48,7 @@ function a11yProps(index) {
 }
 
 export default function CharacterCards(props) {
-  const { characters } = props;
+  const characters = props.data;
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -91,7 +91,7 @@ export default function CharacterCards(props) {
               characters
                 .filter((character) => character.role === "Main Characters")
                 .map((character) => (
-                  <Grid key={character.index} item xs={12} md={6}>
+                  <Grid key={character.key} item xs={12} md={6}>
                     <Card isPressable isHoverable variant="bordered">
                       <Accordion>
                         <AccordionSummary>
@@ -139,7 +139,6 @@ export default function CharacterCards(props) {
           </Grid>
         </TabPanel>
 
-        {/* Render the character cards for Supporting Characters */}
         <TabPanel value={value} index={1}>
           <Grid container spacing={2}>
             {characters &&
@@ -148,7 +147,7 @@ export default function CharacterCards(props) {
                   (character) => character.role === "Supporting Characters"
                 )
                 .map((character) => (
-                  <Grid key={character.index} item xs={12} md={6}>
+                  <Grid key={character.key} item xs={12} md={6}>
                     <Card isPressable isHoverable variant="bordered">
                       <Accordion>
                         <AccordionSummary>
