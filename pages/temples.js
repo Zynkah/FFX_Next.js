@@ -352,7 +352,7 @@ export default function Temples() {
                     margin: "auto",
                     borderRadius: "5px",
                   }}
-                  alt="Macalania Glyph"
+                  alt="Stolen Fayth Glyph"
                 />
               </AccordionDetails>
             </Accordion>
