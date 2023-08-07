@@ -1,4 +1,7 @@
-import { get_character_by_role, get_name_by_character } from "../../lib/data";
+import {
+  get_character_by_role,
+  get_name_by_character,
+} from "../../lib/characters/charactersData";
 
 export default function handler(req, res) {
   const { role } = req.query;
