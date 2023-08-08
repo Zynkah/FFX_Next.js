@@ -32,23 +32,23 @@ export default function Tables(props) {
           <Table.Column align="center">View Stats</Table.Column>
         </Table.Header>
         <Table.Body>
-          {players.map((character) => (
-            <Table.Row key={character.key}>
+          {players.map((player) => (
+            <Table.Row key={player.key}>
               <Table.Cell>
                 <Image
-                  src={character.image}
-                  height={character.image_height}
-                  width={character.image_width}
+                  src={player.image}
+                  height={player.image_height}
+                  width={player.image_width}
                   style={{
                     margin: "auto",
                     borderRadius: "5px",
                   }}
-                  alt={character.name}
+                  alt={player.name}
                 />
               </Table.Cell>
-              <Table.Cell>{character.name}</Table.Cell>
-              <Table.Cell>{character.techniques}</Table.Cell>
-              <Table.Cell>{character.location}</Table.Cell>
+              <Table.Cell>{player.name}</Table.Cell>
+              <Table.Cell>{player.techniques}</Table.Cell>
+              <Table.Cell>{player.location}</Table.Cell>
               <Table.Cell>
                 <Button
                   size="xs"
