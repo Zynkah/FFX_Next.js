@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import {
   Grid,
@@ -6,7 +6,7 @@ import {
   AccordionSummary,
   AccordionDetails,
   Typography,
-  Box,
+
 } from "@mui/material";
 import { Card, Button, Link } from "@nextui-org/react";
 

@@ -65,7 +65,7 @@ export default function Maester() {
               style={{
                 margin: "auto",
               }}
-              alt="Wen Kinoc"
+              alt="Seymour"
             />
           </Grid>
         </Grid>
