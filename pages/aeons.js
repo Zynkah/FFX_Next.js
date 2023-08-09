@@ -16,7 +16,7 @@ export default function Aeons() {
         const response = await fetch(
           `/api/aeonsData?role=${encodeURIComponent(role)}`
         );
-        console.log(response);
+
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
