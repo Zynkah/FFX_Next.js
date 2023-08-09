@@ -3,15 +3,15 @@ import {
   get_summoners_by_role,
 } from "../../lib/summoners/summonersData";
 
-export default async function handler(req, res) {
+export default function handler(req, res) {
   const { role } = req.query;
 
   if (req.method === "GET") {
     if (role) {
       const summonersByRole = get_summoners_by_role(role);
       if (summonersByRole) {
-        const summoners = get_summoners_by_name(role);
-        res.status(200).json({ role, summoners });
+        const summoner = get_summoners_by_name(role);
+        res.status(200).json({ role, summoner });
       } else {
         res
           .status(200)

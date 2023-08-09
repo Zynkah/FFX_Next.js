@@ -22,19 +22,25 @@ export default function SummonerCards(props) {
                 <Card isPressable isHoverable variant="bordered">
                   <Accordion>
                     <AccordionSummary>
-                      <Image
-                        src={summoner.image}
-                        height={summoner.image_height}
-                        width={summoner.image_width}
-                        style={{
-                          margin: "auto",
-                          borderRadius: "5px",
-                        }}
-                        alt={summoner.name}
-                      />
+                      {summoner.image ? (
+                        <Image
+                          src={summoner.image || ""}
+                          height={summoner.image_height}
+                          width={summoner.image_width}
+                          style={{
+                            margin: "auto",
+                            borderRadius: "5px",
+                          }}
+                          alt={summoner.name}
+                        />
+                      ) : (
+                        <Typography variant="h6">{summoner.name}</Typography>
+                      )}
                     </AccordionSummary>
                     <AccordionDetails>
-                      <Typography variant="h6">{summoner.name}</Typography>
+                      {!summoner.name && (
+                        <Typography variant="h6">{summoner.name}</Typography>
+                      )}
                       <Card.Divider />
                       <Card.Body css={{ textAlign: "center" }}>
                         {summoner.description}

@@ -37,7 +37,7 @@ export default function Summoners() {
       <Box sx={{ width: "100%" }}>
         <ReligionTabs />
         <Box sx={{ marginTop: "20px" }}>
-          {summoners && <SummonerCards summoners={summoners} />}
+          {summoners && <SummonerCards data={summoners} />}
         </Box>
       </Box>
     </Layout>
