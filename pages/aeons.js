@@ -22,7 +22,7 @@ export default function Aeons() {
         }
 
         const data = await response.json();
-        setAeons(data.aeons);
+        setAeons(data.aeon);
       } catch (error) {
         console.error("Error fetching data:", error);
       }

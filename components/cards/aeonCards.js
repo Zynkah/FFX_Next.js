@@ -10,14 +10,14 @@ import Link from "next/link";
 import { Card, Button } from "@nextui-org/react";
 import * as React from "react";
 
-export default function AeonCards() {
+export default function AeonCards(props) {
   const aeons = props.data;
   return (
     <>
       <Grid container spacing={2}>
         {aeons &&
           aeons
-            .filter((aeon) => aeon.role === "aeon")
+            .filter((aeon) => aeon.role === "Aeon")
             .map((aeon) => (
               <Grid key={aeon.key} item xs={12} md={6}>
                 <Card isPressable isHoverable variant="bordered">
@@ -25,7 +25,7 @@ export default function AeonCards() {
                     <AccordionSummary>
                       <Image
                         src={aeon.image}
-                        height={aeon.imgae_height}
+                        height={aeon.image_height}
                         width={aeon.image_width}
                         style={{
                           margin: "auto",
@@ -51,10 +51,7 @@ export default function AeonCards() {
                           ghost
                           css={{ margin: "auto" }}
                         >
-                          <Link
-                            href={aeon.link}
-                            className="buttonLink"
-                          >
+                          <Link href={aeon.link} className="buttonLink">
                             Learn More →
                           </Link>
                         </Button>
