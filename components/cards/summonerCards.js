@@ -38,7 +38,7 @@ export default function SummonerCards(props) {
                       )}
                     </AccordionSummary>
                     <AccordionDetails>
-                      {!summoner.name && (
+                      {summoner.image && (
                         <Typography variant="h6">{summoner.name}</Typography>
                       )}
                       <Card.Divider />
