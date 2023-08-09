@@ -14,7 +14,7 @@ export default function handler(req, res) {
         res.status(200).json({ role, character });
       } else {
         res
-          .status(404)
+          .status(200)
           .json({ message: "Character not found for the given role." });
       }
     } else {
