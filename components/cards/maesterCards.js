@@ -19,7 +19,7 @@ export default function MaesterCards(props) {
                   style={{
                     margin: "auto",
                   }}
-                  alt="Grand Maester Mika"
+                  alt={maester.name}
                 />
               </Grid>
             ))}
