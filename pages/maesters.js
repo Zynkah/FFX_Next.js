@@ -1,10 +1,36 @@
+import { useState, useEffect } from "react";
 import Layout from "../components/layout";
 import ReligionTabs from "../components/religion_tabs";
-import Image from "next/image";
-import { Grid, Typography, Box } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import * as React from "react";
+import MaesterCards from "../components/cards/maesterCards";
 
 export default function Maester() {
+  const [maester, setMaester] = useState(null);
+
+  useEffect(() => {
+    async function fetchMaesters() {
+      try {
+        const role = "Maester";
+
+        const response = await fetch(
+          `/api/maesterData?role=${encodeURIComponent(role)}`
+        );
+        console.log(response);
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+
+        const data = await response.json();
+        setMaester(data.maester);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+    fetchMaesters();
+  }, []);
+
   return (
     <Layout>
       <Typography variant="h4" sx={{ margin: "20px" }}>
@@ -12,63 +38,7 @@ export default function Maester() {
       </Typography>
       <Box sx={{ width: "100%" }}>
         <ReligionTabs />
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={12} marginTop={10}>
-            <Image
-              src="/images/Mika.webp"
-              height={350}
-              width={350}
-              style={{
-                margin: "auto",
-              }}
-              alt="Grand Maester Mika"
-            />
-          </Grid>
-          <Grid item xs={12} md={6} marginTop={10}>
-            <Image
-              src="/images/WenKinoc.png"
-              height={400}
-              width={190}
-              style={{
-                margin: "auto",
-              }}
-              alt="Wen Kinoc"
-            />
-          </Grid>
-          <Grid item xs={12} md={6} marginTop={10}>
-            <Image
-              src="/images/Kelk.webp"
-              height={400}
-              width={241}
-              style={{
-                margin: "auto",
-              }}
-              alt="Kelk"
-            />
-          </Grid>
-          <Grid item xs={12} md={6} marginTop={10}>
-            <Image
-              src="/images/Jyscal.webp"
-              height={400}
-              width={250}
-              style={{
-                margin: "auto",
-              }}
-              alt="Jyscal"
-            />
-          </Grid>
-          <Grid item xs={12} md={6} marginTop={10}>
-            <Image
-              src="/images/Seymour.jpg"
-              height={400}
-              width={322}
-              style={{
-                margin: "auto",
-              }}
-              alt="Seymour"
-            />
-          </Grid>
-        </Grid>
+        {maester && <MaesterCards data={maester} />}
       </Box>
     </Layout>
   );
