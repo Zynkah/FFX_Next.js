@@ -1,9 +1,9 @@
+import { useState, useEffect } from "react";
 import Layout from "../components/layout";
-import Image from "next/image";
-import { Divider } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
 import { Tabs, Tab, Typography, Box } from "@mui/material";
+import MilitaryCards from "../components/cards/militaryCards";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -39,11 +39,119 @@ function a11yProps(index) {
 }
 
 export default function Military() {
+  const [crusaders, setCrusaders] = useState(null);
+  const [guardians, setGuardians] = useState(null);
+  const [warriorMonks, setWarriorMonks] = useState(null);
+  const [crimsonSquad, setCrimsonSquad] = useState(null);
+  const [chocoboKnights, setChocoboKnights] = useState(null);
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  useEffect(() => {
+    async function fetchCrusaders() {
+      try {
+        const role = "Crusaders";
+
+        const response = await fetch(
+          `/api/militaryData?role=${encodeURIComponent(role)}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch military branch data");
+        }
+
+        const data = await response.json();
+        setCrusaders(data.military);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    async function fetchGuardians() {
+      try {
+        const role = "Guardians";
+
+        const response = await fetch(
+          `/api/militaryData?role=${encodeURIComponent(role)}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch military branch data");
+        }
+
+        const data = await response.json();
+        setGuardians(data.military);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    async function fetchWarriorMonks() {
+      try {
+        const role = "Warrior Monks";
+
+        const response = await fetch(
+          `/api/militaryData?role=${encodeURIComponent(role)}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch military branch data");
+        }
+
+        const data = await response.json();
+        setWarriorMonks(data.military);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    async function fetchCrimsonSquad() {
+      try {
+        const role = "Crimson Squad";
+
+        const response = await fetch(
+          `/api/militaryData?role=${encodeURIComponent(role)}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch military branch data");
+        }
+
+        const data = await response.json();
+        setCrimsonSquad(data.military);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    async function fetchChocoboKnight() {
+      try {
+        const role = "Chocobo Knights";
+
+        const response = await fetch(
+          `/api/militaryData?role=${encodeURIComponent(role)}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch military branch data");
+        }
+
+        const data = await response.json();
+        setChocoboKnights(data.military);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    fetchCrusaders();
+    fetchGuardians();
+    fetchWarriorMonks();
+    fetchCrimsonSquad();
+    fetchChocoboKnight();
+  }, []);
 
   return (
     <Layout>
@@ -79,124 +187,19 @@ export default function Military() {
         </Box>
 
         <TabPanel value={value} index={0}>
-          <Image
-            src="/images/WenKinoc.png"
-            height={400}
-            width={190}
-            style={{
-              margin: "auto",
-            }}
-            alt="Wen Kinoc Agency"
-          />
-          <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
-            <Typography variant="h5">Crusaders</Typography>
-          </Divider>
-          <Typography variant="body">
-            The Crusaders were formed as the Crimson Blades 800 years ago by
-            Lord Mi'ihen. As the first volunteer-based organization dedicated to
-            defending the people of Spira from Sin, the Crimson Blades grew
-            quickly in number. The Maesters of Yevon began to fear their numbers
-            and accused the Crimson Blades of rebellion. Lord Mi'ihen traveled
-            to Bevelle to fight the claims, and won the Maesters' trust. He
-            renamed the Crimson Blades the Crusaders, and the organization began
-            to operate as members of the clergy of Yevon. The road Lord Mi'ihen
-            traveled to Bevelle was renamed the Mi'ihen Highroad in reflection
-            of his actions.
-          </Typography>
+          {crusaders && <MilitaryCards data={crusaders} />}
         </TabPanel>
-
         <TabPanel value={value} index={1}>
-          <Image
-            src="/images/Zaon.webp"
-            height={400}
-            width={219}
-            style={{
-              margin: "auto",
-              borderRadius: "5px",
-            }}
-            alt="Zaon"
-          />
-          <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
-            <Typography variant="h5">Guardians</Typography>
-          </Divider>
-          <Typography variant="body">
-            Guardians are the only individuals allowed to accompany a summoner
-            into a Chamber of the Fayth. If anyone else does so, the summoner
-            may face sanctions as strong as excommunication from Yevon, even if
-            they did so without the summoner's knowledge or consent.
-          </Typography>
+          {guardians && <MilitaryCards data={guardians} />}
         </TabPanel>
-
         <TabPanel value={value} index={2}>
-          <Image
-            src="/images/Warrior_Monk.webp"
-            height={400}
-            width={177}
-            style={{
-              margin: "auto",
-              borderRadius: "5px",
-            }}
-            alt="Warrior Monk"
-          />
-          <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
-            <Typography variant="h5">Warrior Monks</Typography>
-          </Divider>
-          <Typography variant="body">
-            The history of the Warrior Monks date back at least 1,000 years
-            prior to the events of Final Fantasy X. In the Machina War, the
-            Warrior Monks were under the control of Bevelle and were used to
-            fight Zanarkand. Many monks died during Sin's destruction of
-            Zanarkand, and many Fallen Monks still dwell there as unsent.
-          </Typography>
+          {warriorMonks && <MilitaryCards data={warriorMonks} />}
         </TabPanel>
-
         <TabPanel value={value} index={3}>
-          <Image
-            src="/images/Crimson_Squad.webp"
-            height={300}
-            width={451}
-            style={{
-              margin: "auto",
-              borderRadius: "5px",
-            }}
-            alt="Crimson Squad"
-          />
-          <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
-            <Typography variant="h5">Crimson Squad</Typography>
-          </Divider>
-          <Typography variant="body">
-            Maester Wen Kinoc assembled the Crimson Squad under the guise of
-            fulfilling the society's demand for a stronger army, but the true
-            reason was to privatize the Crusaders by inserting his hand-reared
-            Crimson Squad members.
-          </Typography>
+          {crimsonSquad && <MilitaryCards data={crimsonSquad} />}
         </TabPanel>
-
         <TabPanel value={value} index={4}>
-          <Image
-            src="/images/Chocobo_Knights.webp"
-            height={300}
-            width={451}
-            style={{
-              margin: "auto",
-              borderRadius: "5px",
-            }}
-            alt="Chocobo Knights"
-          />
-          <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
-            <Typography variant="h5">Chocobo Knights</Typography>
-          </Divider>
-          <Typography variant="body">
-            The Chocobo Knights of Spira are an elite group of mounted soldiers,
-            consisting of the serious but kind Captain Lucil, cheerful Elma, and
-            the uncomfortable and slightly incompetent Clasko. It is mentioned
-            by an NPC that normally one must be a skilled chocobo rider or
-            achieve combat merit to become a chocobo knight, and that Clasko was
-            likely knighted because he is good at earning chocobos' trust. It is
-            never stated directly that the knights are part of the Crusaders,
-            but they do take part in Operation Mi'ihen and both Lucil and Elma
-            are shown giving orders to Luzzu and Gatta.
-          </Typography>
+          {chocoboKnights && <MilitaryCards data={chocoboKnights} />}
         </TabPanel>
       </Box>
     </Layout>

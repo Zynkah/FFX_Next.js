@@ -1,0 +1,4 @@
+{
+    "aws.codeWhisperer.importRecommendation": true,
+    "aws.codeWhisperer.includeSuggestionsWithCodeReferences": true
+}

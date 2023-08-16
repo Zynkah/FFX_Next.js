@@ -3,7 +3,7 @@ import {
   get_script_by_role,
 } from "../../lib/scripts/scriptsData";
 
-export default function halder(req, res) {
+export default function handler(req, res) {
   const { role } = req.query;
 
   if (req.method === "GET") {

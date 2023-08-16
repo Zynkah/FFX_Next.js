@@ -60,7 +60,6 @@ export default function Scripts() {
         if (!response.ok) {
           throw new Error("Failed to fetch script data");
         }
-        console.log(response);
 
         const data = await response.json();
         setSpiranScript(data.script);
