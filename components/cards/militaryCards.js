@@ -20,6 +20,7 @@ export default function MilitaryCards(props) {
                   width={military.image_width}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt={military.name}
                 />
@@ -42,6 +43,7 @@ export default function MilitaryCards(props) {
                   width={military.image_width}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt={military.name}
                 />
@@ -64,6 +66,7 @@ export default function MilitaryCards(props) {
                   width={military.image_width}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt={military.name}
                 />
@@ -86,6 +89,7 @@ export default function MilitaryCards(props) {
                   width={military.image_width}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt={military.name}
                 />
@@ -108,6 +112,7 @@ export default function MilitaryCards(props) {
                   width={military.image_width}
                   style={{
                     margin: "auto",
+                    borderRadius: "5px",
                   }}
                   alt={military.name}
                 />
