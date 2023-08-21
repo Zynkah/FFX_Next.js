@@ -11,7 +11,7 @@
     "@fontsource/roboto": "^4.5.8",
     "@mui/base": "^5.0.0-alpha.123",
     "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.11.16",
+    "@mui/material": "^5.14.2",
     "@mui/styled-engine-sc": "^5.11.11",
     "@nextui-org/react": "^1.0.0-beta.12",
     "@react-aria/ssr": "^3.7.0",
