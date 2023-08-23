@@ -130,7 +130,7 @@ export default function Technology() {
 
     async function fetchVehicles() {
       try {
-        const role = "Vehicles";
+        const role = "Vehicle";
 
         const response = await fetch(
           `/api/technologyData?role=${encodeURIComponent(role)}`
