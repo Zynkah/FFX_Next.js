@@ -134,7 +134,12 @@ export default function TechnologyCards(props) {
             .filter((tech) => tech.role === "Vehicle")
             .map((tech) => (
               <>
-                <Grid key={tech.key} item xs={12} md={6}>
+                <Grid
+                  key={tech.key}
+                  item
+                  xs={12}
+                  md={6}
+                >
                   <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
                     <Typography variant="h5" component="h2">
                       {tech.name}
