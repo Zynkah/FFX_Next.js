@@ -60,7 +60,7 @@ export default function Races() {
         }
 
         const data = await response.json();
-        setRace(data)
+        setRace(data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }

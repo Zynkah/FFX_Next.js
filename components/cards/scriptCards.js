@@ -4,7 +4,7 @@ import { Divider, Container } from "@nextui-org/react";
 import * as React from "react";
 
 export default function ScriptCards(props) {
-  const scripts = props.data;
+  const scripts = props.data.script;
 
   return (
     <>
