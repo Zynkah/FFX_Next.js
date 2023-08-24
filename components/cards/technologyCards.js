@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Grid, Typography } from "@mui/material";
-import { Divider, Container } from "@mui/material";
+import { Divider } from "@mui/material";
 import * as React from "react";
 
 export default function TechnologyCards(props) {
@@ -15,11 +15,11 @@ export default function TechnologyCards(props) {
             .map((tech) => (
               <>
                 <Grid key={tech.key} item xs={12} md={6}>
-                <Container style={{ marginBottom: "35px" }}>
                   <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
-                    <Typography variant="h5">{tech.name}</Typography>
+                    <Typography variant="h5" component="h2">
+                      {tech.name}
+                    </Typography>
                   </Divider>
-                  </Container>
                   <Typography variant="body">{tech.description}</Typography>
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -46,7 +46,9 @@ export default function TechnologyCards(props) {
               <>
                 <Grid key={tech.key} item xs={12} md={6}>
                   <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
-                    <Typography variant="h5">{tech.name}</Typography>
+                    <Typography variant="h5" component="h2">
+                      {tech.name}
+                    </Typography>
                   </Divider>
                   <Typography variant="body">{tech.description}</Typography>
                 </Grid>
@@ -74,7 +76,9 @@ export default function TechnologyCards(props) {
               <>
                 <Grid key={tech.key} item xs={12} md={6}>
                   <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
-                    <Typography variant="h5">{tech.name}</Typography>
+                    <Typography variant="h5" component="h2">
+                      {tech.name}
+                    </Typography>
                   </Divider>
                   <Typography variant="body">{tech.description}</Typography>
                 </Grid>
@@ -102,7 +106,9 @@ export default function TechnologyCards(props) {
               <>
                 <Grid key={tech.key} item xs={12} md={6}>
                   <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
-                    <Typography variant="h5">{tech.name}</Typography>
+                    <Typography variant="h5" component="h2">
+                      {tech.name}
+                    </Typography>
                   </Divider>
                   <Typography variant="body">{tech.description}</Typography>
                 </Grid>
@@ -128,17 +134,15 @@ export default function TechnologyCards(props) {
             .filter((tech) => tech.role === "Vehicle")
             .map((tech) => (
               <>
-
                 <Grid key={tech.key} item xs={12} md={6}>
-
                   <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
-
-                    <Typography variant="h5">{tech.name}</Typography>
+                    <Typography variant="h5" component="h2">
+                      {tech.name}
+                    </Typography>
                   </Divider>
-
-                  <Typography variant="body">{tech.description}</Typography>
+                  {/* <Typography variant="body">{tech.description}</Typography>
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6}> */}
                   <Image
                     src={tech.image}
                     height={tech.image_height}
@@ -153,7 +157,6 @@ export default function TechnologyCards(props) {
                 </Grid>
               </>
             ))}
-
       </Grid>
       <Grid container spacing={2}>
         {technology &&
@@ -163,11 +166,13 @@ export default function TechnologyCards(props) {
               <>
                 <Grid key={tech.key} item xs={12} md={6}>
                   <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
-                    <Typography variant="h5">{tech.name}</Typography>
+                    <Typography variant="h5" component="h2">
+                      {tech.name}
+                    </Typography>
                   </Divider>
-                  <Typography variant="body">{tech.description}</Typography>
-                </Grid>
-                <Grid item xs={12} md={6}>
+                  {/* <Typography variant="body">{tech.description}</Typography> */}
+                  {/* </Grid>
+                <Grid item xs={12} md={6}> */}
                   <Image
                     src={tech.image}
                     height={tech.image_height}
