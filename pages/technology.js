@@ -52,10 +52,8 @@ export default function Technology() {
   };
 
   useEffect(() => {
-    async function fetchMachina() {
+    async function fetchTechnology(role, setTechnology) {
       try {
-        const role = "Machina";
-
         const response = await fetch(
           `/api/technologyData?role=${encodeURIComponent(role)}`
         );
@@ -65,112 +63,17 @@ export default function Technology() {
         }
 
         const data = await response.json();
-        setMachina(data.technology);
+        setTechnology(data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     }
-
-    async function fetchMovieSphere() {
-      try {
-        const role = "Movie Sphere";
-
-        const response = await fetch(
-          `/api/technologyData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch tech item data");
-        }
-
-        const data = await response.json();
-        setMovieSphere(data.technology);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    async function fetchGil() {
-      try {
-        const role = "Gil";
-
-        const response = await fetch(
-          `/api/technologyData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch tech item data");
-        }
-
-        const data = await response.json();
-        setGil(data.technology);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    async function fetchFireArms() {
-      try {
-        const role = "Fire Arms";
-
-        const response = await fetch(
-          `/api/technologyData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch tech item data");
-        }
-
-        const data = await response.json();
-        setFireArms(data.technology);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    async function fetchVehicles() {
-      try {
-        const role = "Vehicle";
-
-        const response = await fetch(
-          `/api/technologyData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch tech item data");
-        }
-
-        const data = await response.json();
-        setVehicles(data.technology);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    async function fetchHandHeldItem() {
-      try {
-        const role = "Hand Held Items";
-
-        const response = await fetch(
-          `/api/technologyData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch tech item data");
-        }
-
-        const data = await response.json();
-        setHandHeldItems(data.technology);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-    fetchHandHeldItem();
-    fetchVehicles();
-    fetchFireArms();
-    fetchGil();
-    fetchMachina();
-    fetchMovieSphere();
+    fetchTechnology("Machina", setMachina);
+    fetchTechnology("Movie Sphere", setMovieSphere);
+    fetchTechnology("Gil", setGil);
+    fetchTechnology("Fire Arms", setFireArms);
+    fetchTechnology("Vehicle", setVehicles);
+    fetchTechnology("Hand Held Items", setHandHeldItems);
   }, []);
 
   return (

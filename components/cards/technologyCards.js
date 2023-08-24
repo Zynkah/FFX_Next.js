@@ -4,8 +4,8 @@ import { Divider } from "@mui/material";
 import * as React from "react";
 
 export default function TechnologyCards(props) {
-  const technology = props.data;
-
+  const technology = props.data.technology;
+  console.log(technology);
   return (
     <>
       <Grid container spacing={2}>
@@ -134,12 +134,7 @@ export default function TechnologyCards(props) {
             .filter((tech) => tech.role === "Vehicle")
             .map((tech) => (
               <>
-                <Grid
-                  key={tech.key}
-                  item
-                  xs={12}
-                  md={6}
-                >
+                <Grid key={tech.key} item xs={12} md={6}>
                   <Divider css={{ marginTop: "40px", marginBottom: "40px" }}>
                     <Typography variant="h5" component="h2">
                       {tech.name}
