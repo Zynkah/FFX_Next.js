@@ -6,12 +6,11 @@ import {
   AccordionSummary,
   AccordionDetails,
   Typography,
-
 } from "@mui/material";
 import { Card, Button, Link } from "@nextui-org/react";
 
 export default function CharacterCards(props) {
-  const characters = props.data;
+  const characters = props.data.character;
 
   return (
     <>

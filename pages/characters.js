@@ -47,29 +47,8 @@ export default function Characters() {
   };
 
   useEffect(() => {
-    async function fetchMainCharacters() {
+    async function fetchCharacter(role, setCharacter) {
       try {
-        const role = "Main Characters";
-
-        const response = await fetch(
-          `/api/characterData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
-
-        const data = await response.json();
-        setMainCharacters(data.character);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    async function fetchSupportingCharacters() {
-      try {
-        const role = "Supporting Characters";
-
         const response = await fetch(
           `/api/characterData?role=${encodeURIComponent(role)}`
         );
@@ -79,14 +58,14 @@ export default function Characters() {
         }
 
         const data = await response.json();
-        setSupportingCharacters(data.character);
+        setCharacter(data);
       } catch (error) {
         console.error("Error fetching supporting characters data:", error);
       }
     }
 
-    fetchMainCharacters();
-    fetchSupportingCharacters();
+    fetchCharacter("Main Characters", setMainCharacters);
+    fetchCharacter("Supporting Characters", setSupportingCharacters);
   }, []);
 
   return (

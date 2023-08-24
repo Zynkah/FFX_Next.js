@@ -4,7 +4,8 @@ import * as React from "react";
 import { Typography } from "@mui/material";
 
 export default function MilitaryCards(props) {
-  const military = props.data;
+  const military = props.data.military;
+  console.log(military);
 
   return (
     <>

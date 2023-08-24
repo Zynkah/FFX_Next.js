@@ -49,10 +49,8 @@ export default function Scripts() {
   };
 
   useEffect(() => {
-    async function fetchSpiranScript() {
+    async function fetchScript(role, setScript) {
       try {
-        const role = "Spiran Scripts";
-
         const response = await fetch(
           `/api/scriptData?role=${encodeURIComponent(role)}`
         );
@@ -62,53 +60,15 @@ export default function Scripts() {
         }
 
         const data = await response.json();
-        setSpiranScript(data.script);
+        setScript(data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     }
 
-    async function fetchAlBhedSpcript() {
-      try {
-        const role = "Al Bhed Scripts";
-
-        const response = await fetch(
-          `/api/scriptData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch script data");
-        }
-
-        const data = await response.json();
-        setAlBhedSpcript(data.script);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    async function fetchYevonScript() {
-      try {
-        const role = "Yevon Scripts";
-
-        const response = await fetch(
-          `/api/scriptData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch script data");
-        }
-
-        const data = await response.json();
-        setYevonScript(data.script);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    fetchSpiranScript();
-    fetchAlBhedSpcript();
-    fetchYevonScript();
+    fetchScript("Spiran Scripts", setSpiranScript);
+    fetchScript("Al Bhed Scripts", setAlBhedSpcript);
+    fetchScript("Yevon Scripts", setYevonScript);
   }, []);
 
   return (

@@ -51,10 +51,8 @@ export default function Military() {
   };
 
   useEffect(() => {
-    async function fetchCrusaders() {
+    async function fetchMilitary(role, setMilitary) {
       try {
-        const role = "Crusaders";
-
         const response = await fetch(
           `/api/militaryData?role=${encodeURIComponent(role)}`
         );
@@ -64,93 +62,16 @@ export default function Military() {
         }
 
         const data = await response.json();
-        setCrusaders(data.military);
+        setMilitary(data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     }
-
-    async function fetchGuardians() {
-      try {
-        const role = "Guardians";
-
-        const response = await fetch(
-          `/api/militaryData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch military branch data");
-        }
-
-        const data = await response.json();
-        setGuardians(data.military);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    async function fetchWarriorMonks() {
-      try {
-        const role = "Warrior Monks";
-
-        const response = await fetch(
-          `/api/militaryData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch military branch data");
-        }
-
-        const data = await response.json();
-        setWarriorMonks(data.military);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    async function fetchCrimsonSquad() {
-      try {
-        const role = "Crimson Squad";
-
-        const response = await fetch(
-          `/api/militaryData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch military branch data");
-        }
-
-        const data = await response.json();
-        setCrimsonSquad(data.military);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    async function fetchChocoboKnight() {
-      try {
-        const role = "Chocobo Knights";
-
-        const response = await fetch(
-          `/api/militaryData?role=${encodeURIComponent(role)}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch military branch data");
-        }
-
-        const data = await response.json();
-        setChocoboKnights(data.military);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    fetchCrusaders();
-    fetchGuardians();
-    fetchWarriorMonks();
-    fetchCrimsonSquad();
-    fetchChocoboKnight();
+    fetchMilitary("Crusaders", setCrusaders);
+    fetchMilitary("Guardians", setGuardians);
+    fetchMilitary("Warrior Monks", setWarriorMonks);
+    fetchMilitary("Crimson Squad", setCrimsonSquad);
+    fetchMilitary("Chocobo Knights", setChocoboKnights);
   }, []);
 
   return (
