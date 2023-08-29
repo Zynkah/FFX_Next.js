@@ -130,7 +130,7 @@ export default function Nav() {
       </Navbar.Content>
       <Navbar.Collapse>
         {collapseItems.map((item) => (
-          <Navbar.CollapseItem key={item}>
+          <Navbar.CollapseItem key={item.href}>
             <Link
               color="inherit"
               css={{
