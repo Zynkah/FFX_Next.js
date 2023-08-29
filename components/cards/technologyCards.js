@@ -5,7 +5,7 @@ import * as React from "react";
 
 export default function TechnologyCards(props) {
   const technology = props.data.technology;
-  console.log(technology);
+
   return (
     <>
       <Grid container spacing={2}>
