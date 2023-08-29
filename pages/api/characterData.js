@@ -1,6 +1,6 @@
 import {
   get_character_by_role,
-  get_name_by_character,
+  get_character_by_name,
 } from "../../lib/characters/charactersData";
 
 export default function handler(req, res) {
@@ -10,7 +10,7 @@ export default function handler(req, res) {
     if (role) {
       const characterByRole = get_character_by_role(role);
       if (characterByRole) {
-        const character = get_name_by_character(role);
+        const character = get_character_by_name(role);
         res.status(200).json({ role, character });
       } else {
         res
