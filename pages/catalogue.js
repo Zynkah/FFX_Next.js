@@ -73,7 +73,7 @@ export default function Catalogue({ aeons }) {
               <Link href={`/walkthrough/`}>Walkthrough</Link>
             </li>
             <li>
-              <Link href={`/weapons/`}>Weapons</Link>
+              <Link href={`/equipment/`}>Equipment</Link>
             </li>
           </ul>
         </Grid>

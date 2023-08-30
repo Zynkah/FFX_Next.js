@@ -45,9 +45,7 @@ export default function RaceCards(props) {
                 </Card>
               </Grid>
             ))}
-      </Grid>
 
-      <Grid container spacing={2}>
         {races &&
           races
             .filter((race) => race.role === "Demi-Humanoids")
@@ -78,9 +76,7 @@ export default function RaceCards(props) {
                 </Card>
               </Grid>
             ))}
-      </Grid>
 
-      <Grid container spacing={2}>
         {races &&
           races
             .filter((race) => race.role === "Creatures")
