@@ -5,7 +5,7 @@ import * as React from "react";
 
 export default function TechnologyCards(props) {
   const technology = props.data.technology;
-  console.log(technology);
+
   return (
     <>
       <Grid container spacing={2}>
@@ -37,8 +37,7 @@ export default function TechnologyCards(props) {
                 </Grid>
               </>
             ))}
-      </Grid>
-      <Grid container spacing={2}>
+
         {technology &&
           technology
             .filter((tech) => tech.role === "Movie Sphere")
@@ -67,8 +66,7 @@ export default function TechnologyCards(props) {
                 </Grid>
               </>
             ))}
-      </Grid>
-      <Grid container spacing={2}>
+
         {technology &&
           technology
             .filter((tech) => tech.role === "Gil")
@@ -97,8 +95,7 @@ export default function TechnologyCards(props) {
                 </Grid>
               </>
             ))}
-      </Grid>
-      <Grid container spacing={2}>
+
         {technology &&
           technology
             .filter((tech) => tech.role === "Fire Arms")
@@ -127,8 +124,7 @@ export default function TechnologyCards(props) {
                 </Grid>
               </>
             ))}
-      </Grid>
-      <Grid container spacing={2}>
+
         {technology &&
           technology
             .filter((tech) => tech.role === "Vehicle")
@@ -157,8 +153,7 @@ export default function TechnologyCards(props) {
                 </Grid>
               </>
             ))}
-      </Grid>
-      <Grid container spacing={2}>
+
         {technology &&
           technology
             .filter((tech) => tech.role === "Hand Held Items")

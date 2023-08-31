@@ -16,8 +16,8 @@ export default function Nav() {
       href: "/locations",
     },
     {
-      name: "Weapons",
-      href: "/weapons",
+      name: "Equipment",
+      href: "/equipment",
     },
     {
       name: "Walkthrough",
@@ -120,7 +120,7 @@ export default function Nav() {
         </Dropdown>
 
         <Navbar.Link href="/locations">Locations</Navbar.Link>
-        <Navbar.Link href="/weapons">Weapons</Navbar.Link>
+        <Navbar.Link href="/equipment">Equipment</Navbar.Link>
         <Navbar.Link href="/walkthrough">Walkthrough</Navbar.Link>
       </Navbar.Content>
       <Navbar.Content>
