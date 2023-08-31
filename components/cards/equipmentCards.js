@@ -5,7 +5,7 @@ import * as React from "react";
 
 export default function EquipmentCards(props) {
   const equipment = props && props.data.equipment;
-  console.log(equipment);
+
   return (
     props && (
       <>

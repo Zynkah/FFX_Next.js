@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Layout from "../components/layout";
 import Image from "next/image";
 import { Tabs, Tab, Box, Typography } from "@mui/material";
-import { Card, Divider } from "@nextui-org/react";
+import { Divider } from "@nextui-org/react";
 import * as React from "react";
 import PropTypes from "prop-types";
 import LocationCards from "../components/cards/locationCards";
@@ -86,7 +86,7 @@ export default function Locations() {
             variant="scrollable"
             scrollButtons
             aria-label="basic tabs"
-            textColor="none"
+            textColor="inherit"
             indicatorColor="none"
           >
             <Tab label="Temples" href={`/temples/`} />
