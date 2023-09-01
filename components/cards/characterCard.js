@@ -91,7 +91,7 @@ export default function CharacterCards(props) {
                       </Card.Body>
                       <Card.Divider />
                       <Card.Footer>
-                        <Button
+                        {/* <Button
                           bordered
                           color="gradient"
                           borderWeight
@@ -103,7 +103,7 @@ export default function CharacterCards(props) {
                           <Link href={character.link} className="buttonLink">
                             Learn More →
                           </Link>
-                        </Button>
+                        </Button> */}
                       </Card.Footer>
                     </AccordionDetails>
                   </Accordion>

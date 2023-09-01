@@ -54,13 +54,13 @@ export default function Characters() {
         );
 
         if (!response.ok) {
-          throw new Error("Failed to fetch supporting characters data");
+          throw new Error("Failed to fetch characters data");
         }
 
         const data = await response.json();
         setCharacter(data);
       } catch (error) {
-        console.error("Error fetching supporting characters data:", error);
+        console.error("Error fetching characters data:", error);
       }
     }
 
