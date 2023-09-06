@@ -1,12 +1,13 @@
 import Layout from "../../components/layout";
 import { Typography } from "@mui/material";
-// import Image from "next/image";
-// import Grid from "@mui/material/Grid";
+import { Spacer, Divider, Table } from "@nextui-org/react";
 
 export default function Yuna() {
   return (
     <Layout>
-      <Typography variant="h4" component="h2">Yuna</Typography>
+      <Typography variant="h4" component="h2">
+        Yuna
+      </Typography>
       <Typography variant="body1" component="p">
         When her father left for his pilgrimage she was left behind in the city
         she was born, Bevelle. After her father's success she first felt great
@@ -29,6 +30,32 @@ export default function Yuna() {
         "Calm", a time of peace. Yuna embarks on a pilgrimage to obtain the
         final aeon and defeat Sin. To complete her quest, Yuna has enlisted the
         aid of her most trusted friends as her guardians.
+      </Typography>
+      <Spacer y={3} />
+      <Divider />
+      <Typography variant="h5" sx={{ marginTop: "1rem" }}>
+        Yuna in formation
+      </Typography>
+      <Typography variant="body1" component="p">
+        Since Yuna already knows the Cure spell and will elarn many more protective and restorative spells as she travels across the Sphere Grid, bring her into the action whenver other party members need healing or status ailment cured. Her physical are ineffective, but by summoning aeons Yuna can cause more damage to enemies than any other character.
+      </Typography>
+      <Spacer y={3} />
+      <Divider />
+      <Typography variant="h5" sx={{ marginTop: "1rem" }}>
+        Yuna on the Sphere Grid
+      </Typography>
+      <Typography variant="body1" component="p">
+Yuna will quickly learn usefull skills like NulFrost and NulBlaze, which negate the next corresponding elemental attack on the party. Eventually, she will become the backbone of the party by learning spell such as Shell and Protect, which are effective at decreasing damage due to characters from magic and physical attacks. 
+      </Typography>
+      <Spacer y={3} />
+      <Divider />
+      <Typography variant="h5" sx={{ marginTop: "1rem" }}>
+        Overdrive
+      </Typography>
+      <Typography variant="body1" component="p">
+        Overdrive: Grand Summoning
+        <br />
+Yuna's overdrive is Grand Summon. Any aeon so summoned will appear with a full Overdive gauge. After the aeon uses its Overdrive attack, its guage will revert to its previous condition. Thus, the previous gauge isn't wasted. 
       </Typography>
     </Layout>
   );
