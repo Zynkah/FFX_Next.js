@@ -39,97 +39,86 @@ export default function Kimahri() {
         <Spacer y={2} />
         <Divider />
         <Grid item xs={12}>
-        <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-          Kimahri in formation
-        </Typography>
-        <Typography variant="body1" component="p">
-          Kimahri is versatile character. The fact that he begins in the center
-          of the Sphere Grid is an advantage, because you can then choose any
-          direction to further Kimahri's development on the Sphere Grid. It all
-          depends on how you choose to develop Kimahri.
-        </Typography>
+          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
+            Kimahri in formation
+          </Typography>
+          <Typography variant="body1" component="p">
+            Kimahri is versatile character. The fact that he begins in the
+            center of the Sphere Grid is an advantage, because you can then
+            choose any direction to further Kimahri's development on the Sphere
+            Grid. It all depends on how you choose to develop Kimahri.
+          </Typography>
         </Grid>
         <Spacer y={3} />
         <Divider />
         <Grid item sx={12} md={6}>
-        <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-          Kimahri on the Sphere Grid
-        </Typography>
-        <Typography variant="body1" component="p">
-          Kimahri has a small area on the Sphere Grid. Soon, the player must
-          choose a path of another character for Kimahri to emulate and unlock
-          it using a Lv. 1 Key Sphere. If you want Kimahri to hit harder, follow
-          Wakka's path. To make Kimahri a theif, follow Rikku's path. If you
-          want Kimahri to become more agile and learn Haste, follow Tidus' path.
-          Lastly, if you want Kimahri to cast magic, follow Yuna's Lulu's path.
-          Pick a path of your liking and follow it.
-        </Typography></Grid>
+          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
+            Kimahri on the Sphere Grid
+          </Typography>
+          <Typography variant="body1" component="p">
+            Kimahri has a small area on the Sphere Grid. Soon, the player must
+            choose a path of another character for Kimahri to emulate and unlock
+            it using a Lv. 1 Key Sphere. If you want Kimahri to hit harder,
+            follow Wakka's path. To make Kimahri a theif, follow Rikku's path.
+            If you want Kimahri to become more agile and learn Haste, follow
+            Tidus' path. Lastly, if you want Kimahri to cast magic, follow
+            Yuna's Lulu's path. Pick a path of your liking and follow it.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
+            Overdrive: Ronso Rage
+          </Typography>
+          <Typography variant="body1" component="p">
+            Except for Jump, Kimahri learns enemy skills by using the Lancet
+            ability. Once you see a monster using one of the abilities, bring
+            Kimarhi and use Lancet. Kimahri's Overdive guage will instantly fill
+            up whenever he learns a new technique.
+          </Typography>
+        </Grid>
         <Spacer y={3} />
         <Divider />
-        <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-          Overdrive
-        </Typography>
-        <Table
-          aria-label="team table"
-          css={{
-            height: "auto",
-            minWidth: "100%",
-          }}
-          selectionMode="single"
-          color="secondary"
-          ghost
-          lined
-        >
-          <Table.Header>
-            <Table.Column align="center">Overdrive</Table.Column>
-          </Table.Header>
-          <Table.Body>
-            <Table.Row>
-              <Table.Cell>Jump</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Fire Breath</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Seed Cannon</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Self-Destruct</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Thrust Kick</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Stone Breath</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Aqua Breath</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Doom</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>White Wind</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Bad Breath</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Mighty Guard</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Nova</Table.Cell>
-            </Table.Row>
-          </Table.Body>
-        </Table>
-        <Typography variant="body1" component="p">
-          Overdrive: Ronso Rage
-          <br />
-          Except for Jump, Kimahri learns enemy skills by using the Lancet
-          ability. Once you see a monster using one of the abilities, bring
-          Kimarhi and use Lancet. Kimahri's Overdive guage will instantly fill
-          up whenever he learns a new technique.
-        </Typography>
+        <Grid item xs={12}>
+          <Table
+            aria-label="team table"
+            css={{
+              height: "auto",
+              minWidth: "100%",
+            }}
+            selectionMode="single"
+            color="secondary"
+            ghost
+            lined
+          >
+            <Table.Header>
+              <Table.Column align="center"></Table.Column>
+              <Table.Column align="center">Overdrive</Table.Column>
+              <Table.Column align="center"></Table.Column>
+            </Table.Header>
+            <Table.Body>
+              <Table.Row>
+                <Table.Cell>Jump</Table.Cell>
+                <Table.Cell>Fire Breath</Table.Cell>
+                <Table.Cell>Seed Cannon</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>Self-Destruct</Table.Cell>
+                <Table.Cell>Thrust Kick</Table.Cell>
+                <Table.Cell>Stone Breath</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>Aqua Breath</Table.Cell>
+                <Table.Cell>Doom</Table.Cell>
+                <Table.Cell>White Wind</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>Bad Breath</Table.Cell>
+                <Table.Cell>Mighty Guard</Table.Cell>
+                <Table.Cell>Nova</Table.Cell>
+              </Table.Row>
+            </Table.Body>
+          </Table>
+        </Grid>
       </Grid>
     </Layout>
   );
