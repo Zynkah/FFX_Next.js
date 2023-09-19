@@ -1,69 +1,45 @@
+import { useState, useEffect } from "react";
 import Layout from "../../components/layout";
 import { Typography, Grid } from "@mui/material";
-import { Spacer, Divider, Table, Image } from "@nextui-org/react";
+import { Spacer, Divider, Table } from "@nextui-org/react";
+import Bio from "../../components/characterPage/Bio";
+import Formation from "../../components/characterPage/Formation";
+import SphereGrid from "../../components/characterPage/SphereGrid";
 
 export default function Lulu() {
+  const [bio, setBio] = useState(null);
+  const [formation, setFormation] = useState(null);
+  const [sphereGrid, setSphereGrid] = useState(null);
+
+  useEffect(() => {
+    async function fetchCharacter(name, setCharacter) {
+      try {
+        const response = await fetch(
+          `/api/characterPageData?name=${encodeURIComponent(name)}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+
+        const data = await response.json();
+        setCharacter(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+    fetchCharacter("Lulu", setBio);
+    fetchCharacter("Lulu", setFormation);
+    fetchCharacter("Lulu", setSphereGrid);
+  }, []);
+
   return (
     <Layout>
       <Grid container spacing={2} sx={{ marginTop: "3rem" }}>
+        {bio && <Bio data={bio} />}
+        {formation && <Formation data={formation} />}
         <Grid item xs={12} md={6}>
-          <Typography variant="h4" component="h2">
-            Lulu
-          </Typography>
-          <Typography variant="body1" component="p">
-            She and Wakka are childhood friends, and she was once engaged to
-            marry Wakka's brother, Chappu. Lulu has acted as a summoner's
-            guardian twice before, giving her extensive knowledge of the
-            pilgrimage experience. But each prior pilgrimage ended in failure
-            and the death of the summoner, leaving deep scars in Lulu's heart.
-            Though she is harsh on herself and others, Lulu is kind at heart and
-            hides a secret weakness. She even has a cute side, using her
-            collection of stuffed animals as weapons. Lulu's experience and
-            wisdom are valuable assets to the party. She treats Yuna as though
-            she were her younger sister. Although she may seem insensitive at
-            times, there are depths to her emotions that only her closest
-            friends can understand.
-          </Typography>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Image
-            src="/images/FullBodyLulu.webp"
-            height={500}
-            width={281}
-            style={{
-              margin: "auto",
-              borderRadius: "5px",
-            }}
-            alt="Lulu Body"
-          />
-        </Grid>
-        <Spacer y={3} />
-        <Divider />
-        <Grid item xs={12}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Lulu in formation
-          </Typography>
-          <Typography variant="body1" component="p">
-            Bring in Lulu wheneve an enemy is strong against physical attacks or
-            weak against a specific element. Her spellcasting enables her to
-            attack from long range, and she can elimate aerial enemies as well.
-            However, her weak physical defense and low HP make her vulnerable to
-            physical attack.
-          </Typography>
-        </Grid>
-        <Spacer y={3} />
-        <Divider />
-        <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Lulu on the Sphere Grid
-          </Typography>
-          <Typography variant="body1" component="p">
-            As Lulu's Magic attribute rises, her spells increase in power. When
-            she reaches the end of her portion of the Sphere Grid, it's a good
-            idea to learn spells like Drain, Osmose and Ultima. You can also
-            mover her over to Yuna's section of the grid, so that she can learn
-            white magic and continue to increase her Magic Attributes.
-          </Typography>
+          {sphereGrid && <SphereGrid data={sphereGrid} />}
         </Grid>
         <Grid item xs={12} md={6}>
           <Typography variant="h5" sx={{ marginTop: "1rem" }}>
@@ -80,8 +56,10 @@ export default function Lulu() {
             enemies. Targets are randomly chosen.
           </Typography>
         </Grid>
+
         <Spacer y={3} />
         <Divider />
+
         <Grid item xs={12}>
           <Table
             aria-label="team table"

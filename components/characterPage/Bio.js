@@ -2,7 +2,7 @@ import { Typography, Grid } from "@mui/material";
 import { Image } from "@nextui-org/react";
 
 export default function Bio(props) {
-  const character = props.data;
+  const character = props.data.character;
 
   return (
     <>

@@ -3,15 +3,17 @@ import Layout from "../../components/layout";
 import { Typography, Grid } from "@mui/material";
 import { Spacer, Divider, Table } from "@nextui-org/react";
 import Bio from "../../components/characterPage/Bio";
+import Formation from "../../components/characterPage/Formation";
+import SphereGrid from "../../components/characterPage/SphereGrid";
 
 export default function Tidus() {
   const [bio, setBio] = useState(null);
+  const [formation, setFormation] = useState(null);
+  const [sphereGrid, setSphereGrid] = useState(null);
 
   useEffect(() => {
-    async function fetchBio() {
+    async function fetchCharacter(name, setCharacter) {
       try {
-        const name = "Tidus";
-
         const response = await fetch(
           `/api/characterPageData?name=${encodeURIComponent(name)}`
         );
@@ -21,48 +23,23 @@ export default function Tidus() {
         }
 
         const data = await response.json();
-        setBio(data.character);
+        setCharacter(data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     }
-    fetchBio();
+    fetchCharacter("Tidus", setBio);
+    fetchCharacter("Tidus", setFormation);
+    fetchCharacter("Tidus", setSphereGrid);
   }, []);
 
   return (
     <Layout>
       <Grid container spacing={2} sx={{ marginTop: "3rem" }}>
         {bio && <Bio data={bio} />}
-        <Grid item xs={12}>
-          <Spacer y={1} />
-          <Divider />
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Tidus in formation
-          </Typography>
-          <Typography variant="body1" component="p">
-            Bring Tidus into the party whenever an enemy is too agile for other
-            characters to hit. He can eliminate swift, four-legged creatures
-            iwth ease. As his strength and agility improve, he will become able
-            to eliminate aerial enemies as well.
-          </Typography>
-        </Grid>
-        <Spacer y={2} />
-        <Divider />
-
+        {formation && <Formation data={formation} />}
         <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Tidus on the Sphere Grid
-          </Typography>
-          <Typography variant="body1" component="p">
-            As Tidus advances from his starting point, he can learn many support
-            spells such as Haste and Slow. Tidus' main benefit to the party is
-            his ability to increase the frequency fo the party's turns and
-            reduce those of the enemy through abilities like Hastega, Slowga,
-            Buster, and Quick Attack. After you complete Tidus' section of the
-            Sphere Grid, he can proceed into Yuna's. Teaching Curaga, Dispel,
-            and Reflect to Tidus is a good idea, but his low Magic attribute
-            makes him a weak healer.
-          </Typography>
+          {sphereGrid && <SphereGrid data={sphereGrid} />}
         </Grid>
         <Grid item xs={12} md={6}>
           <Typography variant="h5" sx={{ marginTop: "1rem" }}>
@@ -77,8 +54,10 @@ export default function Tidus() {
             the more techniques he will learn.
           </Typography>
         </Grid>
+
         <Spacer y={2} />
         <Divider />
+
         <Grid item xs={12}>
           <Table
             aria-label="team table"
