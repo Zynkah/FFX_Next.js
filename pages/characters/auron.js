@@ -5,11 +5,13 @@ import { Spacer, Divider, Table } from "@nextui-org/react";
 import Bio from "../../components/characterPage/Bio";
 import Formation from "../../components/characterPage/Formation";
 import SphereGrid from "../../components/characterPage/SphereGrid";
+import Overdrive from "../../components/characterPage/Overdrive";
 
 export default function Auron() {
   const [bio, setBio] = useState(null);
   const [formation, setFormation] = useState(null);
   const [sphereGrid, setSphereGrid] = useState(null);
+  const [overdrive, setOverdrive] = useState(null);
 
   useEffect(() => {
     async function fetchCharacter(name, setCharacter) {
@@ -31,6 +33,7 @@ export default function Auron() {
     fetchCharacter("Auron", setBio);
     fetchCharacter("Auron", setFormation);
     fetchCharacter("Auron", setSphereGrid);
+    fetchCharacter("Auron", setOverdrive);
   }, []);
   return (
     <Layout>
@@ -41,21 +44,7 @@ export default function Auron() {
           {sphereGrid && <SphereGrid data={sphereGrid} />}
         </Grid>
         <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Overdrive: Bushido
-          </Typography>
-          <Typography variant="body1" component="p">
-            Auron's Overdrives require the swift input of button combinations
-            before time runs out. The quicker you can input the sequence, the
-            more powerful Auron's attack becomes. Auron gains new Overdrives
-            through the acquisition of recorded spheres that recount the journey
-            of Auron's adventures with Braska. After defeating the Sperimorph at
-            Lake Macalania, you can locate Jacht's and Braska's Spheres that are
-            scattered across Spira. The status ailments are inflicted only when
-            the command input is successful, although certain enemies can resist
-            the ailments. If resisted, the damage inflicted is slightly
-            increased to compensate.
-          </Typography>
+          {overdrive && <Overdrive data={overdrive} />}
         </Grid>
 
         <Spacer y={2} />

@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import Layout from "../../components/layout";
-import { Typography, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Spacer, Divider, Table } from "@nextui-org/react";
 import Bio from "../../components/characterPage/Bio";
 import Formation from "../../components/characterPage/Formation";
 import SphereGrid from "../../components/characterPage/SphereGrid";
+import Overdrive from "../../components/characterPage/Overdrive";
 
 export default function Wakka() {
   const [bio, setBio] = useState(null);
   const [formation, setFormation] = useState(null);
   const [sphereGrid, setSphereGrid] = useState(null);
+  const [overdrive, setOverdrive] = useState(null);
 
   useEffect(() => {
     async function fetchCharacter(name, setCharacter) {
@@ -31,6 +33,7 @@ export default function Wakka() {
     fetchCharacter("Wakka", setBio);
     fetchCharacter("Wakka", setFormation);
     fetchCharacter("Wakka", setSphereGrid);
+    fetchCharacter("Wakka", setOverdrive);
   }, []);
 
   return (
@@ -46,19 +49,7 @@ export default function Wakka() {
         <Divider />
 
         <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Overdrive: Slots
-          </Typography>
-          <Typography variant="body1" component="p">
-            Wakka starts off with Elemental Reels adn acquires his other
-            Overdives by winning blitzball games in both Leagues and
-            Tournaments. Whenever you use Wakka's Elemental Reels Overdive, slot
-            wheels start spinning. If you match all three wheels, then Wakka
-            performs a double-elemental attack against a single, randomly-chosen
-            enemy. If no wheels match up, Wakka perfomrs a physical attack
-            against on randomly-chosen enemy. A similar concept is employed in
-            his other Overdives.
-          </Typography>
+          {overdrive && <Overdrive data={overdrive} />}
         </Grid>
         <Grid item xs={12} md={6}>
           <Table

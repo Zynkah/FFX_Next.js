@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
 import Layout from "../../components/layout";
-import { Typography, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import Bio from "../../components/characterPage/Bio";
 import Formation from "../../components/characterPage/Formation";
 import SphereGrid from "../../components/characterPage/SphereGrid";
+import Overdrive from "../../components/characterPage/Overdrive";
 
 export default function Yuna() {
   const [bio, setBio] = useState(null);
   const [formation, setFormation] = useState(null);
   const [sphereGrid, setSphereGrid] = useState(null);
+  const [overdrive, setOverdrive] = useState(null);
 
   useEffect(() => {
     async function fetchCharacter(name, setCharacter) {
@@ -30,6 +32,7 @@ export default function Yuna() {
     fetchCharacter("Yuna", setBio);
     fetchCharacter("Yuna", setFormation);
     fetchCharacter("Yuna", setSphereGrid);
+    fetchCharacter("Yuna", setOverdrive);
   }, []);
 
   return (
@@ -44,17 +47,7 @@ export default function Yuna() {
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Overdrive
-          </Typography>
-          <Typography variant="body1" component="p">
-            Overdrive: Grand Summoning
-            <br />
-            Yuna's overdrive is Grand Summon. Any aeon so summoned will appear
-            with a full Overdive gauge. After the aeon uses its Overdrive
-            attack, its guage will revert to its previous condition. Thus, the
-            previous gauge isn't wasted.
-          </Typography>
+          {overdrive && <Overdrive data={overdrive} />}
         </Grid>
       </Grid>
     </Layout>

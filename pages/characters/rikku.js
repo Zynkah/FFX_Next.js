@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import Layout from "../../components/layout";
-import { Typography, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Spacer, Divider, Table } from "@nextui-org/react";
 import Bio from "../../components/characterPage/Bio";
 import Formation from "../../components/characterPage/Formation";
 import SphereGrid from "../../components/characterPage/SphereGrid";
+import Overdrive from "../../components/characterPage/Overdrive";
 
 export default function Rikku() {
   const [bio, setBio] = useState(null);
   const [formation, setFormation] = useState(null);
   const [sphereGrid, setSphereGrid] = useState(null);
+  const [overdrive, setOverdrive] = useState(null);
 
   useEffect(() => {
     async function fetchCharacter(name, setCharacter) {
@@ -31,6 +33,7 @@ export default function Rikku() {
     fetchCharacter("Rikku", setBio);
     fetchCharacter("Rikku", setFormation);
     fetchCharacter("Rikku", setSphereGrid);
+    fetchCharacter("Rikku", setOverdrive);
   }, []);
 
   return (
@@ -46,12 +49,7 @@ export default function Rikku() {
         <Spacer y={3} />
         <Divider />
         <Grid item xs={12}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Overdrive: Mix
-          </Typography>
-          <Typography variant="body1" component="p">
-            Rikku's Overdrives are created by mixing any two items.
-          </Typography>
+          {overdrive && <Overdrive data={overdrive} />}
           <Table
             aria-label="team table"
             css={{

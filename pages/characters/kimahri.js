@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import Layout from "../../components/layout";
-import { Typography, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Spacer, Divider, Table } from "@nextui-org/react";
 import Bio from "../../components/characterPage/Bio";
 import Formation from "../../components/characterPage/Formation";
 import SphereGrid from "../../components/characterPage/SphereGrid";
+import Overdrive from "../../components/characterPage/Overdrive";
 
 export default function Kimahri() {
   const [bio, setBio] = useState(null);
   const [formation, setFormation] = useState(null);
   const [sphereGrid, setSphereGrid] = useState(null);
+  const [overdrive, setOverdrive] = useState(null);
 
   useEffect(() => {
     async function fetchCharacter(name, setCharacter) {
@@ -31,6 +33,7 @@ export default function Kimahri() {
     fetchCharacter("Kimahri", setBio);
     fetchCharacter("Kimahri", setFormation);
     fetchCharacter("Kimahri", setSphereGrid);
+    fetchCharacter("Kimahri", setOverdrive);
   }, []);
 
   return (
@@ -42,15 +45,7 @@ export default function Kimahri() {
           {sphereGrid && <SphereGrid data={sphereGrid} />}
         </Grid>
         <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Overdrive: Ronso Rage
-          </Typography>
-          <Typography variant="body1" component="p">
-            Except for Jump, Kimahri learns enemy skills by using the Lancet
-            ability. Once you see a monster using one of the abilities, bring
-            Kimarhi and use Lancet. Kimahri's Overdive guage will instantly fill
-            up whenever he learns a new technique.
-          </Typography>
+          {overdrive && <Overdrive data={overdrive} />}
         </Grid>
 
         <Spacer y={3} />

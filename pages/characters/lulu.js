@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import Layout from "../../components/layout";
-import { Typography, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Spacer, Divider, Table } from "@nextui-org/react";
 import Bio from "../../components/characterPage/Bio";
 import Formation from "../../components/characterPage/Formation";
 import SphereGrid from "../../components/characterPage/SphereGrid";
+import Overdrive from "../../components/characterPage/Overdrive";
 
 export default function Lulu() {
   const [bio, setBio] = useState(null);
   const [formation, setFormation] = useState(null);
   const [sphereGrid, setSphereGrid] = useState(null);
+  const [overdrive, setOverdrive] = useState(null);
 
   useEffect(() => {
     async function fetchCharacter(name, setCharacter) {
@@ -31,6 +33,7 @@ export default function Lulu() {
     fetchCharacter("Lulu", setBio);
     fetchCharacter("Lulu", setFormation);
     fetchCharacter("Lulu", setSphereGrid);
+    fetchCharacter("Lulu", setOverdrive);
   }, []);
 
   return (
@@ -42,19 +45,7 @@ export default function Lulu() {
           {sphereGrid && <SphereGrid data={sphereGrid} />}
         </Grid>
         <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Overdrive: Fury
-          </Typography>
-          <Typography variant="body1" component="p">
-            When Lulu hits Overdive, she can cast any black magic spell she
-            knows multiple times whitout spending MP. Select the Fury command,
-            and then choose a spell. Start rotating the right analog stick
-            clockwise in full rotations as rapidly as possible. Depending on the
-            spell you've chosen, the spell will cast on time for each several
-            times you rotate the stick. Lulu's Overdive is available even when
-            she's silenced, and isn't affect by any Shell or Reflect effects on
-            enemies. Targets are randomly chosen.
-          </Typography>
+          {overdrive && <Overdrive data={overdrive} />}
         </Grid>
 
         <Spacer y={3} />

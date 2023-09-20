@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import Layout from "../../components/layout";
-import { Typography, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Spacer, Divider, Table } from "@nextui-org/react";
 import Bio from "../../components/characterPage/Bio";
 import Formation from "../../components/characterPage/Formation";
 import SphereGrid from "../../components/characterPage/SphereGrid";
+import Overdrive from "../../components/characterPage/Overdrive";
 
 export default function Tidus() {
   const [bio, setBio] = useState(null);
   const [formation, setFormation] = useState(null);
   const [sphereGrid, setSphereGrid] = useState(null);
+  const [overdrive, setOverdrive] = useState(null);
 
   useEffect(() => {
     async function fetchCharacter(name, setCharacter) {
@@ -31,6 +33,7 @@ export default function Tidus() {
     fetchCharacter("Tidus", setBio);
     fetchCharacter("Tidus", setFormation);
     fetchCharacter("Tidus", setSphereGrid);
+    fetchCharacter("Tidus", setOverdrive);
   }, []);
 
   return (
@@ -42,19 +45,9 @@ export default function Tidus() {
           {sphereGrid && <SphereGrid data={sphereGrid} />}
         </Grid>
         <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Overdrive: Swordplay
-          </Typography>
-          <Typography variant="body1" component="p">
-            Tidus executes devastating sword attacks against one or all enemies
-            through his Overdives. After choosing an Overdive technique, watch
-            the meter carefully and press 'X' when the cursor is in the middle
-            of the bar. The strength of Tidus' Overdive attack depends upon how
-            much time remains on the timer. The more Tidus uses his Overdrive,
-            the more techniques he will learn.
-          </Typography>
+          {overdrive && <Overdrive data={overdrive} />}
         </Grid>
-
+        
         <Spacer y={2} />
         <Divider />
 
