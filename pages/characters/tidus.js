@@ -1,92 +1,56 @@
+import { useState, useEffect } from "react";
 import Layout from "../../components/layout";
-import { Typography, Grid } from "@mui/material";
-import { Spacer, Divider, Table, Image } from "@nextui-org/react";
-
+import { Grid } from "@mui/material";
+import { Spacer, Divider, Table } from "@nextui-org/react";
+import Bio from "../../components/characterPage/Bio";
+import Formation from "../../components/characterPage/Formation";
+import SphereGrid from "../../components/characterPage/SphereGrid";
+import Overdrive from "../../components/characterPage/Overdrive";
 
 export default function Tidus() {
+  const [bio, setBio] = useState(null);
+  const [formation, setFormation] = useState(null);
+  const [sphereGrid, setSphereGrid] = useState(null);
+  const [overdrive, setOverdrive] = useState(null);
+
+  useEffect(() => {
+    async function fetchCharacter(name, setCharacter) {
+      try {
+        const response = await fetch(
+          `/api/characterPageData?name=${encodeURIComponent(name)}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+
+        const data = await response.json();
+        setCharacter(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+    fetchCharacter("Tidus", setBio);
+    fetchCharacter("Tidus", setFormation);
+    fetchCharacter("Tidus", setSphereGrid);
+    fetchCharacter("Tidus", setOverdrive);
+  }, []);
+
   return (
     <Layout>
       <Grid container spacing={2} sx={{ marginTop: "3rem" }}>
+        {bio && <Bio data={bio} />}
+        {formation && <Formation data={formation} />}
         <Grid item xs={12} md={6}>
-          <Typography variant="h4" component="h2">
-            Tidus
-          </Typography>
-          <Typography variant="body1" component="p">
-            A popular blitzball player from the metropolis of Zanarkand. During
-            a match, Tidus is attacked by the monstrous fiend known as Sin.
-            Thrown into the unfamiliar world of Spira, he joins the summoner
-            Yuna on her journey. Tidas is a cheerful young teenager, the star
-            blitzball player of the Zanarkand Abes. He has long resented his
-            father, a renowned blitzball player who disappeared during Tidus's
-            youth. Shortly after his father's disappearance, Tidus's mother died
-            of heart break, she deeply loved Jecht and just completely gave up
-            on everything after he was gone, even neglecting her own son. This
-            made Tidus hate his father even more, blaming him for his mothers
-            death. Auron was Tiuds's guardian after this, watching him from
-            afar. Tidus's quick moves allow him to attack even the swiftest of
-            foes with ease.
-          </Typography>
+          {sphereGrid && <SphereGrid data={sphereGrid} />}
         </Grid>
-
         <Grid item xs={12} md={6}>
-          <Image
-            src="/images/FullBodyTidus.webp"
-            height={500}
-            width={354}
-            style={{
-              margin: "auto",
-              borderRadius: "5px",
-            }}
-            alt="Tidus Body"
-          />
+          {overdrive && <Overdrive data={overdrive} />}
         </Grid>
-
-        <Grid item xs={12}>
-          <Spacer y={1} />
-          <Divider />
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Tidus in formation
-          </Typography>
-          <Typography variant="body1" component="p">
-            Bring Tidus into the party whenever an enemy is too agile for other
-            characters to hit. He can eliminate swift, four-legged creatures
-            iwth ease. As his strength and agility improve, he will become able
-            to eliminate aerial enemies as well.
-          </Typography>
-        </Grid>
+        
         <Spacer y={2} />
         <Divider />
 
-        <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Tidus on the Sphere Grid
-          </Typography>
-          <Typography variant="body1" component="p">
-            As Tidus advances from his starting point, he can learn many support
-            spells such as Haste and Slow. Tidus' main benefit to the party is
-            his ability to increase the frequency fo the party's turns and
-            reduce those of the enemy through abilities like Hastega, Slowga,
-            Buster, and Quick Attack. After you complete Tidus' section of the
-            Sphere Grid, he can proceed into Yuna's. Teaching Curaga, Dispel,
-            and Reflect to Tidus is a good idea, but his low Magic attribute
-            makes him a weak healer.
-          </Typography>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ marginTop: "1rem" }}>
-            Overdrive: Swordplay
-          </Typography>
-          <Typography variant="body1" component="p">
-            Tidus executes devastating sword attacks against one or all enemies
-            through his Overdives. After choosing an Overdive technique, watch
-            the meter carefully and press 'X' when the cursor is in the middle
-            of the bar. The strength of Tidus' Overdive attack depends upon how
-            much time remains on the timer. The more Tidus uses his Overdrive,
-            the more techniques he will learn.
-          </Typography>
-        </Grid>
-        <Spacer y={2} />
-        <Divider />
         <Grid item xs={12}>
           <Table
             aria-label="team table"
@@ -133,4 +97,4 @@ export default function Tidus() {
       </Grid>
     </Layout>
   );
-}                                     
+}
