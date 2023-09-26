@@ -12,7 +12,7 @@
     "@mui/base": "^5.0.0-alpha.123",
     "@mui/icons-material": "^5.14.7",
     "@mui/material": "^5.11.16",
-    "@mui/styled-engine-sc": "^5.14.7",
+    "@mui/styled-engine-sc": "^5.14.8",
     "@nextui-org/react": "^1.0.0-beta.12",
     "@react-aria/ssr": "^3.7.1",
     "@vercel/analytics": "^0.1.11",
