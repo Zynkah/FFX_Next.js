@@ -24,12 +24,12 @@
     "mongoose": "^8.0.0",
     "morgan": "^1.10.0",
     "next": "^14.1.1",
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark": "^14.0.3",
     "remark-html": "^15.0.2",
-    "styled-components": "^5.3.11",
+    "styled-components": "^6.1.0",
     "swr": "^2.0.1"
   }
 }
